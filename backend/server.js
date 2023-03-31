@@ -22,7 +22,11 @@ if (process.env.NODE_ENV === "production") {
     )
   );
 } else {
-  app.get("/", (req, res) => res.send("Please set to production"));
+  app.get("/", (req, res) =>
+    res.send(
+      `Please set to production, you are currently in ${process.env.NODE_ENV}`
+    )
+  );
 }
 
 app.listen(port, () => console.log(port));
