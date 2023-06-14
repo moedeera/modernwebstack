@@ -1,0 +1,90 @@
+.login-form {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+  background-color: white;
+  padding: 35px 10px;
+  width: 100;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 5px;
+  min-height: 500px;
+}
+
+.image-container {
+  height: 50px;
+  width: 50px;
+  background-color: #947eb0;
+  border-radius: 7px;
+  margin: 0 auto;
+}
+
+.input-section-container {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  font-weight: 600;
+  padding: 15px 0px;
+}
+
+.input-section {
+  border: 1px solid grey;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+.input-section input {
+  border: none;
+  width: 100%;
+}
+
+.input-section input:focus {
+  outline: none;
+}
+
+.input-section small {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.forget-remember-section {
+  display: flex;
+  justify-content: space-between;
+}
+.forget-section {
+  cursor: pointer;
+}
+
+.btn1 {
+  padding: 10px 5px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 5px 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+.login-button {
+  background-color: #947eb0;
+  color: white;
+}
+.google-sign-button {
+}
+.sign-up-text span {
+  color: #947eb0;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media only screen and (min-width: 600px) {
+  .login-button:hover {
+    background-color: aliceblue;
+    color: #333333;
+  }
+  .google-sign-button:hover {
+    background-color: #333333;
+    color: white;
+  }
+}
