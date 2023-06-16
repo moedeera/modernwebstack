@@ -5,7 +5,7 @@ import { RegisterForm } from "./RegisterForm/RegisterForm";
 
 export const LoginPage = () => {
   // loading div
-  const [page, setPage] = useState("register");
+  const [page, setPage] = useState("login");
 
   return (
     <div className="container">

@@ -1,7 +1,12 @@
 import React from "react";
 import "./LoginForm.css";
+import { useState } from "react";
 
 export const LoginForm = ({ setPage }) => {
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <div className="login-form">
       <div className="image-container"></div>
@@ -12,7 +17,12 @@ export const LoginForm = ({ setPage }) => {
         <div className="input-section-container">
           <label>Email</label>
           <div className="input-section">
-            <input type="text" placeholder="Enter your email" />
+            <input
+              type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+            />
           </div>
         </div>
       </div>
@@ -20,8 +30,21 @@ export const LoginForm = ({ setPage }) => {
       <div className="input-section-container">
         <label>Password</label>
         <div className="input-section">
-          <input type="text" placeholder="Enter your password" />
-          <small> Show</small>
+          <input
+            type={showPassword ? "text" : "password"}
+            placeholder="Enter your password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <small
+            onClick={() => {
+              setShowPassword(!showPassword);
+            }}
+          >
+            {" "}
+            {showPassword ? "Hide" : "Show"}
+          </small>
         </div>
       </div>
       <div className="forget-remember-section">
