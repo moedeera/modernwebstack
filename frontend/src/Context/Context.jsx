@@ -11,18 +11,14 @@ export const SiteContextProvider = ({ children }) => {
     largeLogo: null,
     tagline: "",
     menuList: [
-      { name: "Blog", link: "/blog" },
+      { name: "Home", link: "/" },
+      { name: "Portfolio", link: "/portfolio" },
       { name: "About", link: "/about" },
-      { name: "Contact", link: "/contact" },
     ],
-    menuButtons: [
-      { name: "Join", link: "join" },
-      { name: "Sign", link: "login" },
-    ],
+    menuButtons: [{ name: "contact", link: "contact" }],
     menuExpanded: [
       { name: "Home", link: "/" },
       { name: "About", link: "/about" },
-
       { name: "Blog", link: "/blog" },
       { name: "Sign", link: "/login" },
     ],
@@ -51,7 +47,6 @@ export const SiteContextProvider = ({ children }) => {
       value={{
         menuList,
         websiteInfo,
-        images,
       }}
     >
       {children}
