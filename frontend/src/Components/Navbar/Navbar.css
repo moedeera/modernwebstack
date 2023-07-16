@@ -27,6 +27,11 @@
   max-width: 30px;
 }
 
+.close {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
 .side-menu {
   top: 0;
   left: 0;

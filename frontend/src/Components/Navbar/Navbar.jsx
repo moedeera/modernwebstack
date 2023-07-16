@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { siteContext } from "../../Context/Context";
 import menu from "./menu.png";
+import close from "./close.png";
 import { useState } from "react";
 
 export const Navbar = () => {
@@ -60,9 +61,23 @@ export const Navbar = () => {
       >
         {" "}
         <div>
+          <div
+            className="close"
+            onClick={() => {
+              showSideMenu(false);
+            }}
+          >
+            <img src={close} alt="" />
+          </div>
           {websiteInfo.menuList.map((links) => {
             return (
-              <Link to={`${links.link}`} key={links.name}>
+              <Link
+                to={`${links.link}`}
+                key={links.name}
+                onClick={() => {
+                  showSideMenu(false);
+                }}
+              >
                 <h3>{links.name}</h3>
               </Link>
             );
