@@ -8,6 +8,9 @@
   align-items: center;
   position: relative;
   overflow: visible;
+  text-transform: capitalize;
+  position: fixed;
+  top: 0;
 }
 
 .links,
@@ -46,7 +49,7 @@
   .links {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
   }
   .contact-login {

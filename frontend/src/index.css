@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  max-width: 1600px !important;
+  margin: 0 auto;
 }
 
 a {
@@ -24,7 +26,11 @@ a:hover {
 }
 
 .container {
-  height: 100vh;
+  width: 100%;
+  margin-top: 150px;
+  max-width: 1600px !important;
+  min-height: 100vh;
+  border: 1px solid red;
 }
 
 @media (prefers-color-scheme: light) {

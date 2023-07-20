@@ -13,7 +13,7 @@ export const Navbar = () => {
   const [sideMenu, showSideMenu] = useState(false);
 
   return (
-    <div className="container">
+    <div className="container-small">
       <div className="navbar">
         <div className="logo">
           <Link to={"/"}>
@@ -24,7 +24,7 @@ export const Navbar = () => {
           {websiteInfo.menuList.map((links) => {
             return (
               <Link to={`${links.link}`} key={links.name}>
-                <h3>{links.name}</h3>
+                <p>{links.name}</p>
               </Link>
             );
           })}
