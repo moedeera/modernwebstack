@@ -40,7 +40,7 @@ export const Navbar = () => {
           />
         </div>
 
-        <div className="contact-login">
+        {/* <div className="contact-login">
           {websiteInfo.menuButtons.map((links) => {
             return (
               <Link to={`${links.link}`}>
@@ -48,7 +48,7 @@ export const Navbar = () => {
               </Link>
             );
           })}
-        </div>
+        </div> */}
       </div>
 
       <div

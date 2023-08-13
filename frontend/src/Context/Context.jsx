@@ -14,6 +14,7 @@ export const SiteContextProvider = ({ children }) => {
       { name: "Home", link: "/" },
       { name: "Portfolio", link: "/portfolio" },
       { name: "About", link: "/about" },
+      { name: "Contact", link: "/contact" },
     ],
     menuButtons: [{ name: "contact", link: "contact" }],
     menuExpanded: [
