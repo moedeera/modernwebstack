@@ -80,7 +80,7 @@ export const RegisterForm = ({ setPage }) => {
             setPage("login");
           }}
         >
-          Login
+          Login?
         </span>
       </small>
     </div>
