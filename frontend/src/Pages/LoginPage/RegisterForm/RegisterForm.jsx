@@ -74,7 +74,7 @@ export const RegisterForm = ({ setPage }) => {
       <button className="btn1 login-button">Register</button>
       <button className="btn1 google-sign-button">Sign up with Google</button>
       <small className="sign-up-text">
-        Already have an account???{" "}
+        Already have an account????{" "}
         <span
           onClick={() => {
             setPage("login");
