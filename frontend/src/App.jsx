@@ -7,6 +7,7 @@ import { Navbar } from "./Components/Navbar/Navbar";
 import { SiteContextProvider } from "./Context/Context";
 import { Portfolio } from "./Pages/Portfolio/Portfolio";
 import { About } from "./Pages/About/About";
+import { Register } from "./Pages/Register/Register";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/budget" element={<Budget />} />

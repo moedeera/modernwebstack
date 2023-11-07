@@ -1,73 +1,34 @@
-import React from "react";
-import "./LoginForm.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./LoginPage.css";
 
 export const LoginForm = ({ setPage }) => {
-  const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
-
   return (
-    <div className="login-form">
-      <div className="image-container"></div>
-      <div className="form-header">
-        {" "}
-        <h3>Login</h3>
-        <small>Welcome back</small>
-        <div className="input-section-container">
-          <label>Email</label>
-          <div className="input-section">
-            <input
-              type="text"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="input-section-container">
-        <label>Password</label>
-        <div className="input-section">
-          <input
-            type={showPassword ? "text" : "password"}
-            placeholder="Enter your password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <small
-            onClick={() => {
-              setShowPassword(!showPassword);
-            }}
-          >
-            {" "}
-            {showPassword ? "Hide" : "Show"}
+    <div className="container">
+      <div className="login-container">
+        <div className="login-form">
+          <h3>Login </h3>
+          <small>
+            Don't have an account?{" "}
+            <Link className="b" to={"/"}>
+              Create a new one
+            </Link>
           </small>
+          <p>Email</p>
+          <input type="text" placeholder="Enter your email" />
+          <p>Password</p>
+          <input type="password" placeholder="Enter Your password" />
+          <button className="btn btn-primary">Login</button>
         </div>
+        {/* <div className="login-form-image">
+          <div className="white-overlay">
+            <h1>
+              Start <br /> Immersing yourself in a{" "}
+              <span className="title-span">Story</span>
+            </h1>
+          </div>
+        </div> */}
       </div>
-      <div className="forget-remember-section">
-        <div className="remember-section">
-          <input type="checkbox" />
-          <small>Keep me signed in</small>
-        </div>
-        <div className="forget-section">
-          <small>Forgot Password? </small>
-        </div>
-      </div>
-      <button className="btn1 login-button">Sign in</button>
-      <button className="btn1 google-sign-button">Sign in with Google</button>
-      <small className="sign-up-text">
-        Don't have an account?{" "}
-        <span
-          onClick={() => {
-            setPage("register");
-          }}
-        >
-          Sign Up
-        </span>
-      </small>
     </div>
   );
 };

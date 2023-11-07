@@ -1,21 +1,26 @@
-import React from "react";
 import { useState } from "react";
-import { LoginForm } from "./LoginForm/LoginForm";
-import { RegisterForm } from "./RegisterForm/RegisterForm";
+import { Link } from "react-router-dom";
+import "./LoginPage.css";
 
-export const LoginPage = () => {
-  // loading div
-  const [page, setPage] = useState("login");
-
+export const LoginPage = ({ setPage }) => {
   return (
     <div className="container">
-      {page === "login" && <LoginForm setPage={setPage} />}
-
-      {page === "register" && <RegisterForm setPage={setPage} />}
-
-      {page === "loading" && <div className="register-form">Register</div>}
-
-      {page == "success" && <div className="success-page">Success</div>}
+      <div className="login-container">
+        <div className="login-form">
+          <h3>Login </h3>
+          <small>
+            Don't have an account?{" "}
+            <Link className="b" to={"/"}>
+              Create a new one
+            </Link>
+          </small>
+          <p>Email</p>
+          <input type="text" placeholder="Enter your email" />
+          <p>Password</p>
+          <input type="password" placeholder="Enter Your password" />
+          <button className="btn btn-primary">Login</button>
+        </div>
+      </div>
     </div>
   );
 };
