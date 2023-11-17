@@ -1,84 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 :root {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Inter", sans-serif;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --primary-color-bg: #4e598c;
-  --primary-button: #9ed8db;
-  --width: 95%;
+  /* --primary-color-bg: #4e598c; */
+
   --max-width-main: 1340px;
   --padding-top-sm: 80px;
   --padding-top-md: 100px;
   --padding-top-lg: 120px;
-  --main-font: white;
-  --dark-font: #213547;
-  --light-font: white;
+
+  --max-width: 1400px;
+  --width: 95%;
+  --padding-top: 50px;
+  --text-primary: black;
+  --primary-button: #0d6efd;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+}
 * {
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  line-height: 130%;
+  font-size: 50px;
+  margin-bottom: 5px;
+  letter-spacing: -2px;
+  line-height: 1.1em;
 }
-
 h3 {
-  font-size: 32px;
-  font-weight: 500;
-  letter-spacing: -0.1px;
-  line-height: 130%;
-  margin-bottom: 20px;
-  color: var(--dark-font);
-}
-
-h4 {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 0;
+  font-size: 35px;
+  letter-spacing: -2px;
+  line-height: 1.1em;
+  margin-bottom: 5px;
 }
 
 p {
-  font-size: medium;
-  line-height: 1.8em;
-  width: 95%;
-  max-width: 600px;
-  color: var(--main-font);
-}
-
-small {
-  color: var(--main-font);
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 a,
 a:visited {
-  font-weight: 500;
-  color: black;
   text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 16px;
 }
 
-body {
-  background-color: var(--primary-color-bg);
-  overflow-x: hidden;
-  /* width: 100%; */
+span {
+  color: goldenrod;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid grey;
+.btn,
+.btn a,
+.btn a:visited {
+  background-color: var(--primary-button);
+  padding: 10px 28px !important;
+  color: white !important;
+  border-radius: 100px;
+  margin-bottom: 5px;
+}
+.container {
+  width: var(--width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  min-height: 100vh;
+  padding-top: var(--padding-top);
 }
 input {
   padding: 20px 15px;
@@ -95,31 +104,29 @@ textarea {
   border: none;
 }
 
-.btn,
-.btn a,
-.btn a:visited {
-  background-color: var(--primary-button);
-  border-radius: 6px;
-  padding: 10px 20px;
-  color: var(--dark-font);
-  transition: all 0.5s ease-in-out;
-  font-size: medium;
-  text-transform: uppercase;
-  width: max-content;
-  cursor: pointer;
-}
-
-.btn-green {
-  background-color: rgb(96, 151, 96);
-  color: white;
-}
-.container {
-  min-height: 100vh;
-  background-color: transparent;
-  width: var(--width);
-  margin: 0 auto;
-  transition: all 0.5s ease-in-out;
-}
-
 @media (prefers-color-scheme: light) {
+}
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 70px;
+    margin-bottom: 5px;
+    letter-spacing: -3.5px;
+  }
+
+  h3 {
+    letter-spacing: -3px;
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }

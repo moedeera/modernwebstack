@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   width: 99%;
@@ -64,5 +64,73 @@
   }
   .side-menu {
     display: none;
+  }
+} */
+/* <div className="navbar-menu-button">
+<div className="bar-main bar-top"></div>
+<div className="bar-main bar-bottom"></div>
+</div> */
+.navbar-logo,
+.navbar-logo a {
+  font-weight: 700;
+  color: var(--primary-button) !important;
+}
+
+.navbar-container {
+  padding: 20px 0px;
+  width: 95%;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-links-lg {
+  display: none;
+}
+.btn-nav {
+  display: none;
+}
+
+.navbar-menu-button {
+  border: 1px solid lightgrey;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bar-main {
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bar-top {
+  top: 35%;
+}
+.bar-bottom {
+  top: 65%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar-menu-button {
+    display: none;
+  }
+  .navbar-links-lg,
+  .btn-nav {
+    display: block;
+  }
+  .navbar-links-lg {
+    display: flex;
+    gap: 10px;
+  }
+  .navbar-links-lg a {
+    font-size: 14px;
+    font-weight: 700;
   }
 }

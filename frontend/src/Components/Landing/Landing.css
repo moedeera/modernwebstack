@@ -1,0 +1,30 @@
+.landing-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.landing-container img {
+  max-width: 300px;
+}
+.landing-container p {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+.landing-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+@media only screen and (min-width: 600px) {
+  .landing-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .landing-container img {
+    max-width: 500px;
+  }
+}
