@@ -22,7 +22,7 @@
   --max-width: 1400px;
   --width: 95%;
   --padding-top: 50px;
-  --text-primary: black;
+  --text-primary: white;
   --primary-button: #0d6efd;
 }
 
@@ -31,6 +31,7 @@
   padding: 0;
   color: var(--text-primary);
   text-align: left;
+  background-color: black;
 }
 
 img {
