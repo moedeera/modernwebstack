@@ -8,6 +8,7 @@ import { SiteContextProvider } from "./Context/Context";
 import { Portfolio } from "./Pages/Portfolio/Portfolio";
 import { About } from "./Pages/About/About";
 import { Register } from "./Pages/Register/Register";
+import { Footer } from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/budget" element={<Budget />} />
           </Routes>
+          <Footer />
         </Router>
       </div>
     </SiteContextProvider>

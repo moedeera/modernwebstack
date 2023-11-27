@@ -73,7 +73,7 @@
 .navbar-logo,
 .navbar-logo a {
   font-weight: 700;
-  color: var(--primary-button) !important;
+  color: white;
 }
 
 .navbar-container {
