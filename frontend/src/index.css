@@ -26,6 +26,23 @@
   --primary-button: #0d6efd;
 }
 
+.gradient {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 0;
+  right: 0;
+  background: rgb(37, 110, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 110, 255, 1) 0%,
+    rgba(69, 171, 228, 1) 0%,
+    rgba(53, 111, 173, 1) 100%
+  );
+  z-index: 2;
+  border-radius: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -129,5 +146,11 @@ textarea {
 
   p {
     font-size: 18px;
+  }
+
+  .gradient {
+    height: 500px;
+    width: 500px;
+    opacity: 0;
   }
 }

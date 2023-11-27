@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Block1.css";
 import { Link } from "react-router-dom";
-import basicImage from "./pic3.svg";
+import basicImage from "../Landing/code1.jpg";
 
 export const Block1 = ({ data }) => {
   const [info, setInfo] = useState({

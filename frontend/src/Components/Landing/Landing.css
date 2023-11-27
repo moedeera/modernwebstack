@@ -1,4 +1,13 @@
 .landing-container {
+  position: relative;
+  min-height: 70vh;
+}
+.landing-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -20,11 +29,20 @@
   align-items: baseline;
 }
 @media only screen and (min-width: 600px) {
-  .landing-container {
+  .landing-content {
     flex-direction: row;
     justify-content: space-between;
   }
   .landing-container img {
     max-width: 500px;
+  }
+  .landing-text {
+    justify-content: center;
+    gap: 20px;
+  }
+  .landing-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
