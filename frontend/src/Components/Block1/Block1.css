@@ -12,9 +12,19 @@
   flex-direction: column;
   align-items: baseline;
   gap: 10px;
+  padding: 0 5px;
+  margin-bottom: 30px;
 }
 .block-1-text h3 {
-  max-width: 400px;
+  max-width: 650px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .block-1-image {
   padding: 5px;
@@ -29,7 +39,10 @@
 }
 @media only screen and (min-width: 600px) {
   .block-1-container {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
+  }
+  .reverse {
+    flex-direction: row-reverse;
   }
 }
