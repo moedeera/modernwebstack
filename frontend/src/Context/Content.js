@@ -38,7 +38,39 @@ const landingPageLearning = {
   reverse: false,
 };
 
+const codeblock1 = `
+import { useEffect, useState } from "react";
+import "./Block1.css";
+import { Link } from "react-router-dom";
+import basicImage from "../Landing/code1.jpg";
+
+export const Block1 = ({ data }) => {
+ 
+  return (
+    <div
+      className={
+        info.reverse ? "block-1-container reverse" : "block-1-container"
+      }
+    >
+      <div className="block-1-text">
+        <small>{info.small}</small>
+        <h3>{info.header}</h3>
+        <p>{info.text}</p>
+        <Link className="btn btn-primary" to={info.link}>
+          {info.buttonText}
+        </Link>
+      </div>
+      <div className="block-1-image">
+        <img src={basicImage} alt="" />
+      </div>
+    </div>
+  );
+};
+
+`;
+
 export {
   landingPageAbout as landingPageAbout,
   landingPageLearning as landingPageLearning,
+  codeblock1 as codeblock1,
 };

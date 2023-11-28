@@ -9,18 +9,22 @@ export const Navbar = () => {
   ];
   return (
     <div className="navbar-container">
-      <Link to="/" className="navbar-logo">
-        <span>Modern</span>
-        <br />
-        WebStack
-      </Link>
-      <div className="navbar-links-lg">
-        {menu.map((item) => (
-          <Link key={item.id} to="/">
-            {item.name}
-          </Link>
-        ))}
+      <div className="navbar-main">
+        {" "}
+        <Link to="/" className="navbar-logo">
+          <span>Modern</span>
+          <br />
+          WebStack
+        </Link>
+        <div className="navbar-links-lg">
+          {menu.map((item) => (
+            <Link key={item.id} to="/">
+              {item.name}
+            </Link>
+          ))}
+        </div>
       </div>
+
       <Link to="/" className="btn btn-nav">
         Login
       </Link>

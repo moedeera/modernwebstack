@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap");
+
+.block0-container {
+  margin-bottom: 150px;
+}
+
+.block0-codeblock {
+  border: 1px solid white;
+
+  background-color: #091427;
+  position: relative;
+
+  min-height: 30vh;
+  font-size: small;
+}
+
+.codeblock-upper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+.codeblock-upper > div {
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.801);
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.codeblock-code {
+  margin-top: 5%;
+  padding: 5px;
+  font-family: "Inconsolata", monospace;
+  line-height: 1.7;
+}

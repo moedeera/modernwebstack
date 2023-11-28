@@ -13,6 +13,7 @@
   "author": "mwt",
   "license": "MIT",
   "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
     "colors": "^1.4.0",
     "concurrently": "^8.0.1",
     "cors": "^2.8.5",
