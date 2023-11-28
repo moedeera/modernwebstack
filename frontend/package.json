@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/parser": "^7.23.4",
+    "@babel/traverse": "^7.23.4",
+    "@monaco-editor/react": "^4.6.0",
     "cors": "^2.8.5",
+    "monaco-jsx-highlighter": "^2.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
