@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap");
 
 .code-snippet-container {
-  border: 1px solid white;
-  min-height: 30vh;
+  border: none;
+  height: 40vh;
   background-color: #1e152a;
   margin-bottom: 100px;
   width: 95%;
   max-width: 700px;
   position: relative;
+  border-radius: 5px;
+  overflow-y: scroll;
 }
 
 .code-snippet-options {
@@ -16,21 +18,28 @@
   position: absolute;
   width: 33%;
   height: 10%;
-  top: 0;
-  right: 0;
+  top: 2%;
+  right: 1%;
   gap: 10px;
   justify-content: flex-end;
   font-size: small;
 }
 .code-snippet-options > div {
   cursor: pointer;
-  border-right: 2px solid white;
-  padding-right: 5px;
+  border: 1px solid white;
+  padding: 1px;
+  border-radius: 3px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 .code-snippet-codeblock {
-  padding-top: 50px;
   font-family: "Inconsolata", monospace;
+  padding: 15px 10px 20px;
+  font-size: small;
 }
 
 .cs-import-line {
@@ -42,7 +51,7 @@
 }
 
 .code-snippet-starter {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .code-ender {
   margin-top: 10px;
@@ -51,4 +60,13 @@
 .empty {
   color: transparent;
   width: 20px;
+}
+.code-snippet-nodes {
+  margin: 5px 0;
+}
+.node-class {
+  color: aqua;
+}
+.node-type {
+  color: steelblue;
 }

@@ -13,7 +13,10 @@ export const Test = () => {
           More
         </Link>
       </div>
-      <div className="test-image">{/* <img src="" alt="" /> */}</div>
+      <div className="test-image">
+        <h3>Image 1 </h3>
+        <img src="" alt="" />
+      </div>
     </div>
   );
 };
