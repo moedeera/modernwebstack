@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./CodeSnippet.css";
-import { ImportsMapper } from "./importsMapper";
+import { ImportsMapper } from "./ImportsMapper";
 import { EndStart } from "./EndStart";
 import { NodeMapper } from "./NodeMapper";
 
