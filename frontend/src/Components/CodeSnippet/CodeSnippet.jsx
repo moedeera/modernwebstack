@@ -75,8 +75,10 @@ export const CodeSnippet = ({ code }) => {
       <div className="code-snippet-codeblock">
         <ImportsMapper imports={codeSnippet.imports} />
         <EndStart type={"start"} info={codeSnippet.name} />
-        {codeSnippet.nodes.map((node) => (
-          <NodeMapper node={node} />
+        {codeSnippet.nodes.map((node, index) => (
+          <div key={index}>
+            <NodeMapper node={node} />
+          </div>
         ))}
         <EndStart type={"end"} />
       </div>
