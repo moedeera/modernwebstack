@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap");
+
+.code-snippet-container {
+  border: 1px solid white;
+  min-height: 30vh;
+  background-color: #1e152a;
+  margin-bottom: 100px;
+  width: 95%;
+  max-width: 700px;
+  position: relative;
+}
+
+.code-snippet-options {
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+  width: 33%;
+  height: 10%;
+  top: 0;
+  right: 0;
+  gap: 10px;
+  justify-content: flex-end;
+  font-size: small;
+}
+.code-snippet-options > div {
+  cursor: pointer;
+  border-right: 2px solid white;
+  padding-right: 5px;
+}
+
+.code-snippet-codeblock {
+  padding-top: 50px;
+  font-family: "Inconsolata", monospace;
+}
+
+.cs-import-line {
+  color: aquamarine;
+  margin-bottom: 5px;
+}
+.cs-import-line span {
+  color: orange;
+}
+
+.code-snippet-starter {
+  margin-top: 10px;
+}
+.code-ender {
+  margin-top: 10px;
+}
+
+.empty {
+  color: transparent;
+  width: 20px;
+}

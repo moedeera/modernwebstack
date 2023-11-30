@@ -29,18 +29,15 @@ export const Block3 = ({ data }) => {
         <img
           src="https://www.modernwebstack.com/assets/code1-ba39da29.jpg"
           alt=""
-          srcset=""
         />
         <img
           src="https://www.modernwebstack.com/assets/code1-ba39da29.jpg"
           alt=""
-          srcset=""
         />
 
         <img
           src="https://www.modernwebstack.com/assets/code1-ba39da29.jpg"
           alt=""
-          srcset=""
         />
       </div>
     </div>

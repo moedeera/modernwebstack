@@ -6,6 +6,7 @@ import { landingPageAbout, landingPageLearning } from "../../Context/Content";
 import { Block0 } from "../../Components/Block0/Block0";
 import { Block3 } from "../../Components/Block3/Block3";
 import CodeEditor from "../../Components/CodeEditor/CodeEditor";
+import { CodeSnippet } from "../../Components/CodeSnippet/CodeSnippet";
 
 export const Homepage = () => {
   return (
@@ -14,10 +15,7 @@ export const Homepage = () => {
       <Block1 data={landingPageAbout} />
       <Block1 data={landingPageLearning} />
       <Block3 />
-      {/* <Block0 /> */}
-
-      <CodeEditor />
-      <CodeEditor />
+      <CodeSnippet />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import Editor, { DiffEditor, useMonaco, loader } from "@monaco-editor/react";
 import "./CodeEditor.css";
-import { codeblock1 } from "../../Context/Content";
+import { codeblock1, codeblock2 } from "../../Context/Content";
 
 const CodeEditor = () => {
   return (
@@ -10,10 +10,10 @@ const CodeEditor = () => {
         height="650px"
         width="50%"
         language="typescript"
-        value={codeblock1}
+        value={codeblock2}
         theme="vs-dark"
         options={{
-          selectOnLineNumbers: true,
+          selectOnLineNumbers: false,
           // automaticLayout: true,
           readOnly: true, // Set to true to disable editing
         }}
