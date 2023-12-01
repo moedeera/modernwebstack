@@ -13,11 +13,11 @@ export const CreateElement = ({ element }) => {
               {" "}
               {element.className !== "" && `"${node.className}"`}
             </span>
-            {element.tags.map((tag) => (
-              <>
+            {element.tags.map((tag, index) => (
+              <span key={index}>
                 {`${tag.label}=`}
                 <span>{`${tag.data} `}</span>{" "}
-              </>
+              </span>
             ))}
             {`/>`}
           </span>
