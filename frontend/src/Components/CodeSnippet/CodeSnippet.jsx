@@ -1,14 +1,34 @@
 import React, { useState } from "react";
 import "./CodeSnippet.css";
-import { ImportsMapper } from "./importsMapper";
-import { EndStart } from "./EndStart";
-import { NodeMapper } from "./NodeMapper";
+import { ImportsMapper } from "./SubFunctions/ImportsMapper";
+import { EndStart } from "./SubFunctions/EndStart";
+import { NodeMapper } from "./SubFunctions/NodeMapper";
 
 export const CodeSnippet = ({ code }) => {
   const [codeSnippet, setCodeSnippet] = useState({
     imports: [
       { name: "React", from: "react", default: true },
       { name: "Link", from: "react-router-dom", default: false },
+    ],
+    legacyImports: ["react", "useEffect", "useState"],
+    functions: [
+      {
+        type: "useState",
+        code: `{
+  id: 0,
+  name: "John",
+  info: [{ age: "27" }, { gender: "male" }],
+  registered: false,
+}`,
+      },
+      { type: "useEffect", code: ` console.log("hello");`, dep: [] },
+      {
+        type: "callback",
+        code: `let x = 10;
+  console.log("hello");
+  return x;`,
+        input: [],
+      },
     ],
     name: "Test",
     nodes: [
@@ -33,7 +53,7 @@ export const CodeSnippet = ({ code }) => {
           },
           {
             type: "Link",
-            tags: [{ label: "to", data: "/" }],
+            tags: [{ label: "to", data: `"/"` }],
             className: "btn",
             text: "More",
           },
@@ -54,8 +74,8 @@ export const CodeSnippet = ({ code }) => {
           {
             type: "img",
             tags: [
-              { label: "src", data: "" },
-              { label: "alt", data: "" },
+              { label: "src", data: `"./img1"` },
+              { label: "alt", data: `"icon"` },
             ],
             className: "",
             text: " Our AI engine gives you everything you need to create stunning designs",

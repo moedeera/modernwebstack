@@ -26,7 +26,7 @@
 }
 .code-snippet-options > div {
   cursor: pointer;
-  border: 1px solid white;
+  border: 0.5px solid grey;
   padding: 1px;
   border-radius: 3px;
   width: 30%;
@@ -69,4 +69,8 @@
 }
 .node-type {
   color: steelblue;
+}
+
+.class-span {
+  color: white !important;
 }
