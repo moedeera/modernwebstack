@@ -4,91 +4,15 @@ import { ImportsMapper } from "./SubFunctions/ImportsMapper";
 import { EndStart } from "./SubFunctions/EndStart";
 import { NodeMapper } from "./SubFunctions/NodeMapper";
 import CssCodeFormatter from "./SubFunctions/CSSMapper";
+import { useEffect } from "react";
+import { cssSyntax, codeSyntax } from "../../Context/TemplateVariable";
 
-export const CodeSnippet = ({ code }) => {
+export const CodeSnippet = ({ code, cssInfo }) => {
   const [view, setView] = useState("JSX");
   const [copyState, setCopyState] = useState("Copy");
 
-  const [codeSnippet, setCodeSnippet] = useState({
-    imports: [
-      { name: "React", from: "react", default: true },
-      { name: "Link", from: "react-router-dom", default: false },
-    ],
-    legacyImports: ["react", "useEffect", "useState"],
-    functions: [
-      {
-        type: "useState",
-        code: `{
-  id: 0,
-  name: "John",
-  info: [{ age: "27" }, { gender: "male" }],
-  registered: false,
-}`,
-      },
-      { type: "useEffect", code: ` console.log("hello");`, dep: [] },
-      {
-        type: "callback",
-        code: `let x = 10;
-  console.log("hello");
-  return x;`,
-        input: [],
-      },
-    ],
-    name: "Test",
-    nodes: [
-      {
-        className: "test-text",
-        type: "div",
-        internal: [
-          {
-            type: "h3",
-            tags: [],
-            className: "",
-            text: "Welcome",
-            internal: [],
-            functions: [],
-          },
-          {
-            type: "p",
-            tags: [],
-            className: "",
-            text: " Our AI engine gives you everything you need to create stunning designs",
-            functions: [],
-          },
-          {
-            type: "Link",
-            tags: [{ label: "to", data: `"/"` }],
-            className: "btn",
-            text: "More",
-          },
-        ],
-      },
-      {
-        className: "test-image",
-        type: "div",
-        internal: [
-          {
-            type: "h3",
-            tags: [],
-            className: "",
-            text: "Image 1",
-            internal: [],
-            functions: [],
-          },
-          {
-            type: "img",
-            tags: [
-              { label: "src", data: `"./img1"` },
-              { label: "alt", data: `"icon"` },
-            ],
-            className: "",
-            text: " Our AI engine gives you everything you need to create stunning designs",
-            functions: [],
-          },
-        ],
-      },
-    ],
-  });
+  const [css, setCss] = useState(cssSyntax);
+  const [codeSnippet, setCodeSnippet] = useState(codeSyntax);
 
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
@@ -99,6 +23,15 @@ export const CodeSnippet = ({ code }) => {
       setCopyState("Copy");
     }, 2000);
   };
+
+  useEffect(() => {
+    if (code) {
+      setCodeSnippet(code);
+    }
+    if (cssInfo) {
+      setCss(cssInfo);
+    }
+  }, []);
 
   return (
     <div className="code-snippet-container">
@@ -142,19 +75,7 @@ export const CodeSnippet = ({ code }) => {
       )}
       {view === "css" && (
         <div className="code-snippet-codeblock">
-          <CssCodeFormatter
-            cssCode={`.code-snippet-container {
-  border: none;
-  height: 40vh;
-  background-color: #1e152a;
-  margin-bottom: 100px;
-  width: 95%;
-  max-width: 700px;
-  position: relative;
-  border-radius: 5px;
-  overflow-y: scroll;
-}`}
-          />
+          <CssCodeFormatter cssCode={css} />
         </div>
       )}
     </div>

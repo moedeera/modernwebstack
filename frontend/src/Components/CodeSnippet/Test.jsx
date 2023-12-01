@@ -23,7 +23,7 @@ export const Test = () => {
 
   return (
     <div className="test-container">
-      <div className="test-text">
+      <div className="test-text" onClick={function1}>
         <h3>Welcome</h3>
         <p>
           Our AI engine gives you everything you need to create stunning designs
