@@ -10,6 +10,7 @@ import { cssSyntax, codeSyntax } from "../../Context/TemplateVariable";
 export const CodeSnippet = ({ code, cssInfo }) => {
   const [view, setView] = useState("JSX");
   const [copyState, setCopyState] = useState("Copy");
+  const [clipBoard, setClipBoard] = useState(code.syntax);
 
   const [css, setCss] = useState(cssSyntax);
   const [codeSnippet, setCodeSnippet] = useState(codeSyntax);
@@ -67,7 +68,7 @@ export const CodeSnippet = ({ code, cssInfo }) => {
           <EndStart type={"start"} info={codeSnippet.name} />
           {codeSnippet.nodes.map((node, index) => (
             <div key={index}>
-              <NodeMapper node={node} />
+              <NodeMapper node={node} level={1} />
             </div>
           ))}
           <EndStart type={"end"} />

@@ -1,0 +1,15 @@
+.block-4-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+  border: 1px solid grey;
+  height: max-content;
+  padding: 40px 15px;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.block-4-container p {
+  margin-bottom: 20px;
+}

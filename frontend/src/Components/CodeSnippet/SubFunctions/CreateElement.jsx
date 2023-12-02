@@ -1,11 +1,15 @@
 import React from "react";
 
-export const CreateElement = ({ element }) => {
+export const CreateElement = ({ element, level }) => {
+  const padding = level * 5;
   return (
     <div>
       {element.type === "img" && (
         <>
-          <span className="empty">aaaaa</span>
+          <span
+            style={{ paddingLeft: `${padding}px` }}
+            className="empty"
+          ></span>
           <span>{`<img `}</span>
           <span className="node-class">
             {element.className !== "" ? `className =` : ""}
@@ -26,7 +30,10 @@ export const CreateElement = ({ element }) => {
       {element.type !== "img" && (
         <>
           {" "}
-          <span className="empty">aaaaa</span>
+          <span
+            style={{ paddingLeft: `${padding}px` }}
+            className="empty"
+          ></span>
           <span className="">
             <span>{`<${element.type}`}</span>
             <span className="node-class">

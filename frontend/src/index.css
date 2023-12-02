@@ -194,4 +194,8 @@ textarea {
     width: 500px;
     opacity: 0;
   }
+  .block-show {
+    display: flex;
+    gap: 15px;
+  }
 }
