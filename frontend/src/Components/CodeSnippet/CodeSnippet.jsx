@@ -6,7 +6,7 @@ import { NodeMapper } from "./SubFunctions/NodeMapper";
 import CssCodeFormatter from "./SubFunctions/CSSMapper";
 import { useEffect } from "react";
 import { cssSyntax, codeSyntax } from "../../Context/TemplateVariable";
-
+import { formatJSXString } from "./SubFunctions/FormatJsxString";
 export const CodeSnippet = ({ code, cssInfo }) => {
   const [view, setView] = useState("JSX");
   const [copyState, setCopyState] = useState("Copy");
@@ -41,6 +41,7 @@ export const CodeSnippet = ({ code, cssInfo }) => {
           className={view === "JSX" ? "view-selected" : ""}
           onClick={() => {
             setView("JSX");
+            setClipBoard(code.syntax);
           }}
         >
           JSX
@@ -49,6 +50,7 @@ export const CodeSnippet = ({ code, cssInfo }) => {
           className={view === "css" ? "view-selected" : ""}
           onClick={() => {
             setView("css");
+            setClipBoard(cssSyntax);
           }}
         >
           CSS
@@ -56,7 +58,7 @@ export const CodeSnippet = ({ code, cssInfo }) => {
         <div
           className="code-snippet-clipboard"
           onClick={() => {
-            copyToClipboard("Hello");
+            copyToClipboard(clipBoard);
           }}
         >
           {copyState}
@@ -71,6 +73,12 @@ export const CodeSnippet = ({ code, cssInfo }) => {
               <NodeMapper node={node} level={1} />
             </div>
           ))}
+          <formatJSXString
+            jsxString={`   <div> 
+            <h3>Title</h3>
+            <p>Paragraph</p>
+        </div>`}
+          />
           <EndStart type={"end"} />
         </div>
       )}

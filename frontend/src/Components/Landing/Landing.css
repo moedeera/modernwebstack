@@ -27,6 +27,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: baseline;
+  animation: fadeUp 750ms ease-in-out;
+}
+
+.landing-image {
+  animation: fadeInFromRight 750ms ease-in-out;
 }
 @media only screen and (min-width: 600px) {
   .landing-content {

@@ -26,7 +26,9 @@ export const Test = () => {
       <div className="test-text" onClick={function1}>
         <h3>Welcome</h3>
         <p>
-          Our AI engine gives you everything you need to create stunning designs
+          Our AI engine gives you everything you need to create stunning
+          designs.Our AI engine gives you everything you need to create stunning
+          designs.
         </p>
         <Link to={"/"} className="btn">
           More

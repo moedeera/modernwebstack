@@ -9,6 +9,7 @@ import CodeEditor from "../../Components/CodeEditor/CodeEditor";
 import { CodeSnippet } from "../../Components/CodeSnippet/CodeSnippet";
 import { Block4 } from "../../Components/Block4/Block4";
 import { block4CSS, codeSyntax } from "../../Context/TemplateVariable";
+import { IllustrationBlock } from "../../Components/IlustrationBlock/IllustrationBlock";
 
 export const Homepage = () => {
   return (

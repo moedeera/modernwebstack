@@ -9,11 +9,13 @@ import { Portfolio } from "./Pages/Portfolio/Portfolio";
 import { About } from "./Pages/About/About";
 import { Register } from "./Pages/Register/Register";
 import { Footer } from "./Components/Footer/Footer";
+import { Gradient } from "./Components/Gradient/Gradient";
 
 function App() {
   return (
     <SiteContextProvider>
-      <div>
+      <div className="mws-app">
+        <Gradient />
         <Router>
           <Navbar />
           <Routes>

@@ -157,7 +157,12 @@ textarea {
   max-width: 40rem;
   border: none;
 }
-
+.mws-app {
+  position: relative;
+}
+.block-show {
+  margin-bottom: 100px;
+}
 @media (prefers-color-scheme: light) {
 }
 @media only screen and (min-width: 600px) {
@@ -197,5 +202,31 @@ textarea {
   .block-show {
     display: flex;
     gap: 15px;
+
+    min-height: 40vh;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
