@@ -2,14 +2,13 @@
 
 .code-snippet-container {
   border: none;
-  height: 40vh;
+  height: 45vh;
   background-color: #1e152a;
   margin-bottom: 100px;
   width: 95%;
   max-width: 700px;
   position: relative;
-  border-radius: 5px;
-  overflow-y: scroll;
+  border-radius: 10px;
 }
 
 .code-snippet-options {
