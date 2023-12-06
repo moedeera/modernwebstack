@@ -48,9 +48,11 @@
   padding: 0;
   color: var(--text-primary);
   text-align: left;
+  /* border: 2px solid red; */
 }
 body {
   background-color: black;
+
   /* background-color: #2b4570;
   background-color: rgba(59, 130, 246, 0.5); */
 }
@@ -142,6 +144,12 @@ span {
 
   min-height: 100vh;
   padding-top: var(--padding-top);
+}
+
+.page {
+  padding-top: var(--padding-top-lg);
+  width: 95%;
+  margin: 0 auto;
 }
 input {
   padding: 20px 15px;

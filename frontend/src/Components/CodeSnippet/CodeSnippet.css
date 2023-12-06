@@ -2,7 +2,7 @@
 
 .code-snippet-container {
   border: none;
-  height: 35vh;
+  height: max-content;
   background-color: #1e152a;
   width: 95%;
   max-width: 700px;
@@ -43,7 +43,7 @@
   font-family: "Inconsolata", monospace;
   padding: 15px 10px 20px;
   font-size: x-small;
-  height: 30vh;
+  height: auto;
 }
 
 .cs-import-line {

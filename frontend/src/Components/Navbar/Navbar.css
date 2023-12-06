@@ -13,6 +13,11 @@
 }
 
 .navbar-container {
+}
+.mws-app {
+  width: 100%;
+}
+.navbar {
   padding: 20px 0px;
   width: 95%;
   margin: 0 auto;
@@ -34,17 +39,17 @@
 .navbar-menu-button {
   border: 1px solid lightgrey;
   position: relative;
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .bar-main {
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 80%;
-  background-color: black;
+  background-color: white;
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
@@ -54,9 +59,33 @@
   top: 35%;
 }
 .bar-bottom {
-  top: 65%;
+  top: 75%;
+}
+.bar-middle {
+  top: 55%;
+  /* left: 35%;
+  width: 80%; */
 }
 
+.navbar-mobile-container {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: aliceblue;
+  z-index: 2;
+  color: black;
+  border: 1px solid red;
+  display: flex;
+}
+.navbar-mobile {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
 @media only screen and (min-width: 1024px) {
   .navbar-menu-button {
     display: none;

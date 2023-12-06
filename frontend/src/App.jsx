@@ -10,12 +10,14 @@ import { About } from "./Pages/About/About";
 import { Register } from "./Pages/Register/Register";
 import { Footer } from "./Components/Footer/Footer";
 import { Gradient } from "./Components/Gradient/Gradient";
+import { Docs } from "./Pages/Docs/Docs";
+import { Template } from "./Pages/Template/Template";
 
 function App() {
   return (
     <SiteContextProvider>
       <div className="mws-app">
-        <Gradient />
+        {/* <Gradient /> */}
         <Router>
           <Navbar />
           <Routes>
@@ -23,6 +25,8 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<Register />} />
             <Route path="/about" element={<About />} />
+            <Route path="/templates" element={<Template />} />
+            <Route path="/docs" element={<Docs />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/budget" element={<Budget />} />
           </Routes>

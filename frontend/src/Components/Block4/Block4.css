@@ -1,7 +1,7 @@
 .block-4-box {
   border: 0.5px solid rgba(255, 255, 255, 0.25);
 
-  height: 30vh;
+  height: 35vh;
   padding: 10px 10px 30px;
   border-radius: 10px;
   background-color: #363338;
@@ -34,7 +34,7 @@
   position: absolute;
   top: 0%;
   left: 1%;
-  width: 100%;
+  width: 80%;
   height: 30px;
   display: flex;
   gap: 10px;
