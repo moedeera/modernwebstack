@@ -10,6 +10,7 @@ import { CodeSnippet } from "../../Components/CodeSnippet/CodeSnippet";
 import { Block4 } from "../../Components/Block4/Block4";
 import { block4CSS, codeSyntax } from "../../Context/TemplateVariable";
 import { Block5 } from "../../Components/Block5/Block5";
+import { Block6 } from "../../Components/Block6/Block6";
 
 export const Homepage = () => {
   return (
@@ -18,11 +19,7 @@ export const Homepage = () => {
       <Block1 data={landingPageAbout} />
       <Block1 data={landingPageLearning} />
       <Block3 />
-      <Block5 />
-      <div className="block-show">
-        <CodeSnippet code={codeSyntax} cssInfo={block4CSS} />
-        <Block4 />
-      </div>
+      <Block6 />
     </div>
   );
 };

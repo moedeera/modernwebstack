@@ -1,0 +1,11 @@
+.block-6-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title-container {
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+}
