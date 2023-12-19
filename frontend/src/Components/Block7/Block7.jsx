@@ -3,13 +3,14 @@ import "./Block7.css";
 import icon1 from "./icon1.png";
 import icon2 from "./icon2.png";
 import icon3 from "./icon3.png";
+import icon4 from "./icon4.png";
 
 export const Block7 = ({ info }) => {
   const [icons, setIcons] = useState([
     { id: 1, title: "Custom Settings", icon: icon1 },
     { id: 2, title: "Networking Platforms", icon: icon2 },
     { id: 3, title: "Design Resources", icon: icon3 },
-    { id: 4, title: "Design Resources", icon: icon3 },
+    { id: 4, title: "Support", icon: icon4 },
   ]);
   return (
     <div className="block-7-container">
