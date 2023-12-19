@@ -6,7 +6,6 @@ import { NodeMapper } from "./SubFunctions/NodeMapper";
 import CssCodeFormatter from "./SubFunctions/CSSMapper";
 import { useEffect } from "react";
 import { cssSyntax, codeSyntax } from "../../Context/TemplateVariable";
-import { formatJSXString } from "./SubFunctions/FormatJsxString";
 export const CodeSnippet = ({ code, cssInfo }) => {
   const [view, setView] = useState("JSX");
   const [copyState, setCopyState] = useState("Copy");
