@@ -33,6 +33,7 @@ export const Block7 = ({ info }) => {
         </p>
         <button className="btn btn-primary">Learn More</button>
       </div>
+
       <div className="block-7-lower">
         {icons.map((item) => (
           <div key={item.id} className="block-7-lower-unit">
