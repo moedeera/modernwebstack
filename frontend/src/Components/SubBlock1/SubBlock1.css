@@ -2,28 +2,32 @@
   display: none;
 
   height: 500px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   max-width: 550px;
   background-color: rgb(70, 66, 66);
   position: relative;
   border-radius: 10px;
+  font-family: "Inconsolata", monospace;
 }
 .sub-block-1-jsx {
   position: absolute;
-  width: 50%;
+  width: 80%;
   height: 30%;
   background-color: #1e152a;
-  top: 5%;
+  top: 3%;
   right: -10%;
   border: 1px solid rgba(245, 222, 179, 0.25);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 .sub-block-1-css {
   position: absolute;
-  width: 50%;
-  height: 30%;
+  width: 80%;
+  height: 35%;
   background-color: #1e152a;
-  top: 40%;
+  top: 37%;
   right: -20%;
   border: 1px solid rgba(245, 222, 179, 0.25);
   border-radius: 5px;
@@ -31,13 +35,32 @@
 
 .sub-block-1-files {
   position: absolute;
-  width: 50%;
+  width: 80%;
   height: 30%;
   background-color: #1e152a;
   top: 75%;
   right: -10%;
   border: 1px solid rgba(245, 222, 179, 0.25);
   border-radius: 5px;
+}
+
+.sb1-upper-portion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: 5px auto;
+}
+.sb1-upper-portion > div {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  gap: 10px;
+}
+.sb1-upper-portion > div img {
+  width: 100%;
+  max-width: 20px;
 }
 
 @media only screen and (min-width: 1024px) {
