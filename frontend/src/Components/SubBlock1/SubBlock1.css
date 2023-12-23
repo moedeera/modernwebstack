@@ -1,19 +1,23 @@
 .sub-block-1-container {
   display: none;
-
+  animation: fadeInFromRight 750ms ease-in-out;
   height: 500px;
   width: 90%;
   margin: 0 auto;
   max-width: 550px;
-  background-color: rgb(70, 66, 66);
+  background-color: rgb(48, 45, 45);
   position: relative;
   border-radius: 10px;
   font-family: "Inconsolata", monospace;
 }
+.sub-block-1-container > div {
+  box-shadow: 7.5px 7.5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
 .sub-block-1-jsx {
   position: absolute;
   width: 80%;
-  height: 30%;
+  height: 32%;
   background-color: #1e152a;
   top: 3%;
   right: -10%;
@@ -66,7 +70,10 @@
   /* border: 1px solid red; */
   width: 95%;
   margin: 10px auto 0;
-  font-size: small;
+  font-size: x-small;
+}
+.sb1-code-container :nth-child(1) {
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 1024px) {

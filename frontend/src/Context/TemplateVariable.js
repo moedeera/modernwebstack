@@ -90,7 +90,7 @@ export const Block4 = () => {
           type: "p",
           tags: [],
           className: "",
-          text: " Our AI engine gives you everything you need to create stunning designs",
+          text: " Our AI engine gives you everything you need ",
           functions: [],
         },
         {
@@ -127,5 +127,87 @@ export const Block4 = () => {
     },
   ],
 };
+const code2 = {
+  syntax: `import { Link } from "react-router-dom";
+import "./Block4.css";
 
-export { css as cssSyntax, code as codeSyntax, block4CSS as block4CSS };
+export const Block4 = () => {
+  return (
+    <div className="block-4-container">
+      <h3>Check out this Block</h3>
+      <p>
+        An amazing customizable block that has it's own CSS styling ready to go
+        so you don't have to worry about setting up everything yourself. Copy
+        and Paste and viola ! you have a professional sleek looking component
+        just lie that.
+      </p>
+      <Link to={"/"} className="btn">
+        Learn More
+      </Link>
+    </div>
+  );
+};
+`,
+
+  imports: [
+    { name: "React", from: "react", default: true },
+    { name: "Link", from: "react-router-dom", default: false },
+  ],
+  legacyImports: ["react", "useEffect", "useState"],
+  functions: [
+    {
+      type: "useState",
+      code: `{
+  id: 0,
+  name: "John",
+  info: [{ age: "27" }, { gender: "male" }],
+  registered: false,
+}`,
+    },
+    { type: "useEffect", code: ` console.log("hello");`, dep: [] },
+    {
+      type: "callback",
+      code: `let x = 10;
+  console.log("hello");
+  return x;`,
+      input: [],
+    },
+  ],
+  name: "Component",
+  nodes: [
+    {
+      className: "Block-text",
+      type: "div",
+      internal: [
+        {
+          type: "h3",
+          tags: [],
+          className: "",
+          text: "Welcome",
+          internal: [],
+          functions: [],
+        },
+        {
+          type: "p",
+          tags: [],
+          className: "",
+          text: " Our AI engine gives you everything you need ",
+          functions: [],
+        },
+        {
+          type: "Link",
+          tags: [{ label: "to", data: `"/"` }],
+          className: "btn",
+          text: "More",
+        },
+      ],
+    },
+  ],
+};
+
+export {
+  css as cssSyntax,
+  code as codeSyntax,
+  code2 as codeSyntax2,
+  block4CSS as block4CSS,
+};
