@@ -1,0 +1,47 @@
+.sub-block-1-container {
+  display: none;
+
+  height: 500px;
+  width: 100%;
+  max-width: 550px;
+  background-color: rgb(70, 66, 66);
+  position: relative;
+  border-radius: 10px;
+}
+.sub-block-1-jsx {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  background-color: #1e152a;
+  top: 5%;
+  right: -10%;
+  border: 1px solid rgba(245, 222, 179, 0.25);
+  border-radius: 5px;
+}
+.sub-block-1-css {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  background-color: #1e152a;
+  top: 40%;
+  right: -20%;
+  border: 1px solid rgba(245, 222, 179, 0.25);
+  border-radius: 5px;
+}
+
+.sub-block-1-files {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  background-color: #1e152a;
+  top: 75%;
+  right: -10%;
+  border: 1px solid rgba(245, 222, 179, 0.25);
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .sub-block-1-container {
+    display: block;
+  }
+}

@@ -32,6 +32,9 @@
 
 .landing-image {
   animation: fadeInFromRight 750ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 600px) {
   .landing-content {
@@ -45,9 +48,9 @@
     justify-content: center;
     gap: 20px;
   }
+}
+@media only screen and (min-width: 1024px) {
   .landing-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
   }
 }

@@ -1,3 +1,4 @@
+import { SubBlock1 } from "../SubBlock1/SubBlock1";
 import "./Landing.css";
 import img1 from "./code1.jpg";
 import { Link } from "react-router-dom";
@@ -26,6 +27,7 @@ export const Landing = () => {
         <div className="landing-image">
           <img src={img1} alt="main-image" />
         </div>
+        <SubBlock1 />
       </div>
     </div>
   );
