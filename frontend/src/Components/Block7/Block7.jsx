@@ -1,17 +1,10 @@
 import { useState } from "react";
 import "./Block7.css";
-import icon1 from "./icon01.png";
-import icon2 from "./icon02.png";
-import icon3 from "./icon03.png";
-import icon4 from "./icon04.png";
+
+import { Link } from "react-router-dom";
+import { SubBlock0 } from "../SubBlock0/SubBlock0";
 
 export const Block7 = ({ info }) => {
-  const [icons, setIcons] = useState([
-    { id: 1, title: "Custom Settings", icon: icon1 },
-    { id: 2, title: "Networking Platforms", icon: icon4 },
-    { id: 3, title: "Design Resources", icon: icon2 },
-    { id: 4, title: "Support", icon: icon3 },
-  ]);
   return (
     <div className="block-7-container">
       <div className="block-7-upper">
@@ -31,17 +24,12 @@ export const Block7 = ({ info }) => {
           their learning style, can confidently master React and bring their web
           projects to new heights
         </p>
-        <button className="btn btn-primary">Learn More</button>
+        <Link to="/" className="btn btn-primary">
+          Learn More
+        </Link>
       </div>
 
-      <div className="block-7-lower">
-        {icons.map((item) => (
-          <div key={item.id} className="block-7-lower-unit">
-            <img src={item.icon} alt="" srcset="" />
-            <p> {item.title}</p>
-          </div>
-        ))}
-      </div>
+      <SubBlock0 />
     </div>
   );
 };
