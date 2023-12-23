@@ -1,16 +1,16 @@
 import { useState } from "react";
 import "./Block7.css";
-import icon1 from "./icon1.png";
-import icon2 from "./icon2.png";
-import icon3 from "./icon3.png";
-import icon4 from "./icon4.png";
+import icon1 from "./icon01.png";
+import icon2 from "./icon02.png";
+import icon3 from "./icon03.png";
+import icon4 from "./icon04.png";
 
 export const Block7 = ({ info }) => {
   const [icons, setIcons] = useState([
     { id: 1, title: "Custom Settings", icon: icon1 },
-    { id: 2, title: "Networking Platforms", icon: icon2 },
-    { id: 3, title: "Design Resources", icon: icon3 },
-    { id: 4, title: "Support", icon: icon4 },
+    { id: 2, title: "Networking Platforms", icon: icon4 },
+    { id: 3, title: "Design Resources", icon: icon2 },
+    { id: 4, title: "Support", icon: icon3 },
   ]);
   return (
     <div className="block-7-container">
@@ -38,7 +38,7 @@ export const Block7 = ({ info }) => {
         {icons.map((item) => (
           <div key={item.id} className="block-7-lower-unit">
             <img src={item.icon} alt="" srcset="" />
-            <h4> {item.title}</h4>
+            <p> {item.title}</p>
           </div>
         ))}
       </div>

@@ -3,7 +3,10 @@
   margin: 100px auto;
 }
 .block-8-unit {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .block-8-text {
   /* border: 2px solid green; */
@@ -18,16 +21,17 @@
 }
 .block-8-text img {
   width: 100%;
-  max-width: 50px;
+  max-width: 30px;
 }
 
 .block-8-image {
+  margin-top: 30px;
   position: relative;
   /* border: 1px solid red; */
 }
 .block-8-image img {
   width: 100%;
-  max-width: 550px;
+  max-width: 500px;
   border-radius: 5px;
 }
 .bg-div {

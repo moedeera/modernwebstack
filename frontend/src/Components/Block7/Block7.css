@@ -15,17 +15,18 @@
 .block-7-lower {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 200px;
 }
 .block-7-lower-unit {
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   height: 230px;
   margin-bottom: 10px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   background-color: #202c5973;
@@ -39,7 +40,7 @@
 
 .block-7-lower-unit img {
   width: 100%;
-  max-width: 100px;
+  max-width: 70px;
 }
 
 @media only screen and (min-width: 1024px) {

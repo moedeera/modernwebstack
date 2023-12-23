@@ -8,34 +8,32 @@ import { useState } from "react";
 
 export const Block8 = () => {
   const [data, setData] = useState({
-    header: "",
+    header: "Styling components should be easy",
     points: [
       {
         id: 1,
-        header: "Supercharge your team arsenal",
+        header: "Supercharge your creativity",
         icon: icon1,
-        text: `"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        text: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
         quae ab illo inventore veritatis et quasi architecto beatae vitae
 `,
       },
       {
         id: 2,
-        header: "Supercharge your team arsenal",
-        icon: icon2,
-        text: `"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-        quae ab illo inventore veritatis et quasi architecto beatae vitae
-`,
+        header: "Networking is encouraged",
+        icon: icon3,
+        text: `Invite anyone to view your documents or share your documents
+         via a link. What they see is up to you,and anyone you invite 
+         can view at no cost.`,
       },
       {
         id: 3,
-        header: "Supercharge your team arsenal",
-        icon: icon3,
-        text: `"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-        quae ab illo inventore veritatis et quasi architecto beatae vitae
-`,
+        header: "Brainstorming new styles",
+        icon: icon2,
+        text: `Take advantage of a solid version history to monitor 
+        alterations. Manage the visibility of different versions
+        throughout the process, ensuring that crucial edits are acknowledged`,
       },
     ],
   });
@@ -44,7 +42,7 @@ export const Block8 = () => {
     <div className="block-8-container">
       <div className="block-8-text">
         <div className="block-8-header">
-          <h2>Supercharge your team arsenal</h2>
+          <h2>{data.header}</h2>
         </div>
 
         {data.points.map((item) => (
