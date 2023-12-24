@@ -15,11 +15,11 @@ export const SubBlock1 = () => {
       <div className="sub-block-1-jsx">
         <div className="sb1-upper-portion">
           <div className="sb1-label">
-            <img src={gear} alt="" srcset="" />
+            <img src={gear} alt="" />
             JSX
           </div>
           <div className="sb1-icon">
-            <img src={down} alt="" srcset="" />
+            <img src={down} alt="" />
           </div>
         </div>
         <div className="sb1-code-container ">
@@ -51,11 +51,11 @@ export const SubBlock1 = () => {
         {" "}
         <div className="sb1-upper-portion">
           <div className="sb1-label">
-            <img src={gear} alt="" srcset="" />
+            <img src={gear} alt="" />
             JSX
           </div>
           <div className="sb1-icon">
-            <img src={down} alt="" srcset="" />
+            <img src={down} alt="" />
           </div>
         </div>
         <div className="sb1-code-container">

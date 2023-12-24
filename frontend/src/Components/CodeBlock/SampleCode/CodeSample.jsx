@@ -17,6 +17,22 @@ export const CodeSample = ({ info }) => {
     console.log("component called");
   }, []);
 
+  const nodes = [
+    {
+      prop: "div",
+      overflow: false,
+      attributes: [{ type: "className", value: "parent" }],
+    },
+    {
+      prop: "div",
+      overflow: false,
+      attributes: [
+        { type: "className", value: `child` },
+        { type: "onClick", value: `{function1}` },
+      ],
+    },
+  ];
+
   return (
     <div className="parent">
       <div className="child" onClick={function1}>

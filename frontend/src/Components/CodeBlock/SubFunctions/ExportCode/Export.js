@@ -29,7 +29,7 @@ const code = `
   `;
 
 // Parsing the input
-const exported = parseExportedComponent(code);
-console.log(exported);
+// const exported = parseExportedComponent(code);
+// console.log(exported);
 
 export { parseExportedComponent };
