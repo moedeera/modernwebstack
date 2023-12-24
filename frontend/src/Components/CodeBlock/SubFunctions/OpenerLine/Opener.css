@@ -1,0 +1,12 @@
+.export-line-start-end {
+  color: rgb(186, 65, 186);
+}
+.export-line-const {
+  color: rgb(81, 151, 208);
+}
+.export-line-name {
+  color: gold;
+}
+.export-line-input {
+  color: lightgrey;
+}

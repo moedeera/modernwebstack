@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { test } from "react-tester";
 
-export const CodeSample = () => {
+export const CodeSample = ({ data, info }) => {
   const [count, setCount] = useState(1);
   const [data, setData] = useState([
     { id: 1, name: "John" },

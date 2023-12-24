@@ -3,7 +3,7 @@ import { parseImports } from "./ImportCode";
 
 export const ImportBlock = ({ code }) => {
   const imports = parseImports(code);
-  console.log(imports);
+
   return (
     <>
       {imports.map((imp, index) => (
