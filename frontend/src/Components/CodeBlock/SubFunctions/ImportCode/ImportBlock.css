@@ -1,0 +1,15 @@
+.import-line-start-from {
+  color: rgb(186, 65, 186);
+}
+.import-line-bracket {
+  color: gold;
+}
+.import-line-import {
+  color: lightblue;
+}
+.import-line-location {
+}
+
+.import-line-comma {
+  color: white;
+}

@@ -11,6 +11,7 @@ import { Register } from "./Pages/Register/Register";
 import { Footer } from "./Components/Footer/Footer";
 import { Docs } from "./Pages/Docs/Docs";
 import { Template } from "./Pages/Template/Template";
+import { CodeBlock } from "./Components/CodeBlock/CodeBlock";
 
 function App() {
   return (
