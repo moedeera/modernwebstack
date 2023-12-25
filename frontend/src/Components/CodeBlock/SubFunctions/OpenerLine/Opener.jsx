@@ -3,7 +3,7 @@ import "./Opener.css";
 
 export const Opener = ({ code }) => {
   const exported = parseExportedComponent(code);
-  console.log(exported);
+
   const propsString = exported.props
     .map((name, index) => {
       return `${name.charAt(0).toUpperCase()}${name.slice(1)}`;

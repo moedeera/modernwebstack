@@ -17,7 +17,6 @@ function App() {
   return (
     <SiteContextProvider>
       <div className="mws-app">
-        {/* <Gradient /> */}
         <Router>
           <Navbar />
           <Routes>
@@ -28,7 +27,7 @@ function App() {
             <Route path="/templates" element={<Template />} />
             <Route path="/docs" element={<Docs />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/budget" element={<Budget />} />
+            <Route path="/blog" element={<Docs />} />
           </Routes>
           <Footer />
         </Router>

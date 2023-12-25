@@ -9,6 +9,8 @@
   padding: 10px;
   font-family: "Inconsolata", monospace;
   font-size: x-small;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 .code-sample-line {
   white-space: nowrap;

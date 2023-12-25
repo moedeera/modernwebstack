@@ -1,4 +1,23 @@
 function parseHtmlToNodes(htmlString) {
+  // Filter the input to include only the relevant HTML part
+  const openingTagMatch = htmlString.match(/<\w+/); // Find the first opening tag like <div
+  if (!openingTagMatch) return []; // If no opening tag is found, return empty array
+
+  const openingTagIndex = openingTagMatch.index; // Index of first opening tag
+  const tagName = openingTagMatch[0].substring(1); // Extract tag name without "<"
+
+  // Find the last closing tag of the same type
+  const closingTag = `</${tagName}>`;
+  const closingTagIndex = htmlString.lastIndexOf(closingTag);
+
+  if (closingTagIndex === -1) return []; // If no corresponding closing tag is found, return empty
+
+  // Adjust htmlString to only include the desired segment
+  htmlString = htmlString.substring(
+    openingTagIndex,
+    closingTagIndex + closingTag.length
+  );
+
   // Helper function to process attributes string into objects
   const processAttributes = (attributeString) => {
     return attributeString
@@ -6,66 +25,77 @@ function parseHtmlToNodes(htmlString) {
       .filter(Boolean)
       .map((attr) => {
         const [type, ...values] = attr.split("=");
-        const value = values.join("=").replace(/['"{}`]/g, ""); // Remove quotes and braces
-        return { type, value: `{${value}}` };
+        const value = values.join("="); // Keep the entire attribute value as-is
+        return { type, value };
       });
   };
 
   // Helper function to create node object
-  const createNode = (tagString) => {
-    const [tag, ...attributes] = tagString.trim().split(/\s+/);
-    return {
-      prop: tag.toLowerCase(),
-      overflow: tagString.length > 40,
-      attributes: processAttributes(attributes.join(" ")),
-      children: [],
-    };
+  const createNode = (tagString, isText = false) => {
+    if (isText) {
+      return { prop: "text", text: tagString };
+    } else {
+      const [tag, ...attributes] = tagString.trim().split(/\s+/);
+      return {
+        prop: tag.toLowerCase(),
+        overflow: tagString.length > 40,
+        attributes: processAttributes(attributes.join(" ")),
+        children: [],
+      };
+    }
   };
 
-  // Initialize variables
   let currentPos = 0;
-  let char;
   let nodes = []; // This will hold the final nodes structure
-  let stack = []; // Use a stack to manage hierarchy
+  let stack = [nodes]; // Use a stack to manage hierarchy
 
   while (currentPos < htmlString.length) {
-    char = htmlString[currentPos];
+    let nextLessThan = htmlString.indexOf("<", currentPos);
+    let nextGreaterThan = htmlString.indexOf(">", currentPos);
 
-    if (char === "<" && htmlString[currentPos + 1] !== "/") {
-      // Opening tag
-      let endPos = htmlString.indexOf(">", currentPos);
-      if (endPos === -1) break; // No closing '>', invalid HTML
-
-      let tagContent = htmlString.substring(currentPos + 1, endPos);
-      let node = createNode(tagContent);
-
-      if (stack.length === 0) {
-        // Root node
-        nodes.push(node);
-      } else {
-        // It's a child of the node on top of the stack
-        stack[stack.length - 1].children.push(node);
+    if (nextLessThan > -1 && nextGreaterThan > -1) {
+      // Capture text nodes
+      if (nextLessThan > currentPos) {
+        let text = htmlString.substring(currentPos, nextLessThan).trim();
+        if (text.length > 0) {
+          // Add text to the current node's children
+          stack[stack.length - 1].push(createNode(text, true));
+        }
       }
 
-      // Push the node onto the stack
-      stack.push(node);
-      currentPos = endPos;
-    } else if (char === "<" && htmlString[currentPos + 1] === "/") {
-      // Closing tag
-      stack.pop(); // Pop from stack as we've closed the most recent node
-      currentPos = htmlString.indexOf(">", currentPos);
-    }
+      // Process the next tag
+      let isClosingTag = htmlString[nextLessThan + 1] === "/";
+      let tagContent = htmlString
+        .substring(nextLessThan + 1, nextGreaterThan)
+        .replace(/\//g, "")
+        .trim();
+      if (!isClosingTag) {
+        let node = createNode(tagContent);
+        if (stack.length > 0) {
+          stack[stack.length - 1].push(node);
+        }
+        stack.push(node.children);
+      } else {
+        stack.pop();
+      }
 
-    // Move to the next character
-    if (currentPos !== -1) currentPos++;
+      currentPos = nextGreaterThan + 1;
+    } else {
+      // No more tags, process any remaining text
+      let text = htmlString.substring(currentPos).trim();
+      if (text.length > 0) {
+        stack[stack.length - 1].push(createNode(text, true));
+      }
+      break;
+    }
   }
 
-  return nodes;
+  return nodes.length > 0 ? nodes[0] : {};
 }
 
-// Example usage:
-const htmlString = `<div className="parent" onClick={function1}><div className="child"></div><div className="sibling"></div></div><div className="parent"></div>`;
-const nodes = parseHtmlToNodes(htmlString);
-console.log(nodes);
+// Example usage
+const codeString = `import test from "test"; \\ this is my code <div> Hello </div> \\ thank you`;
+const nodes = parseHtmlToNodes(codeString);
+console.log(JSON.stringify(nodes, null, 2));
 
 export { parseHtmlToNodes };

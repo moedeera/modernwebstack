@@ -1,0 +1,16 @@
+.prop-bracket {
+  color: grey;
+  font-weight: 600;
+  margin-right: 1px;
+}
+
+.prop-label {
+  color: rgb(81, 151, 208);
+}
+
+.prop-attribute-type {
+  color: lightblue;
+}
+
+.prop-attribute-name {
+}

@@ -1,7 +1,7 @@
 import "./CodeBlock.css";
 import { code } from "./SampleCode/CodeSample";
 import { ImportBlock } from "./SubFunctions/ImportCode/ImportBlock";
-import { parseHtmlToNodes } from "./SubFunctions/NodesCode/NodeBlock";
+import { NodeCreator } from "./SubFunctions/NodesCode/NodeCreator";
 import { Opener } from "./SubFunctions/OpenerLine/Opener";
 
 export const CodeBlock = () => {
@@ -10,10 +10,7 @@ export const CodeBlock = () => {
       <ImportBlock code={code} />
       <div className="section-separation"></div>
       <Opener code={code} />
-      <div className="code-sample-line"></div>
-      <div className="code-sample-line"></div>
-      <div className="code-sample-line"></div>
-      <div className="code-sample-line"></div>
+      <NodeCreator code={code} />
       <div className="code-sample-line">
         <span>{"};"}</span>
       </div>
