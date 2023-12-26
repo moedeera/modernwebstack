@@ -1,10 +1,18 @@
+import { useState } from "react";
 import "./CodeBlock.css";
-import { code } from "./SampleCode/CodeSample";
 import { ImportBlock } from "./SubFunctions/ImportCode/ImportBlock";
 import { NodeCreator } from "./SubFunctions/NodesCode/NodeCreator";
 import { Opener } from "./SubFunctions/OpenerLine/Opener";
+import { codeSample } from "./SampleCode/CodeSample";
+import { useEffect } from "react";
+export const CodeBlock = ({ codeString }) => {
+  const [code, setCode] = useState(codeSample);
 
-export const CodeBlock = () => {
+  useEffect(() => {
+    if (codeString) {
+      setCode(codeString);
+    }
+  }, []);
   return (
     <div className="code-sample-container">
       <ImportBlock code={code} />

@@ -63,4 +63,4 @@ const imports = [
   },
   { from: "react-router-dom", imports: ["Link"] },
 ];
-export { codeSample as code };
+export { codeSample as codeSample };

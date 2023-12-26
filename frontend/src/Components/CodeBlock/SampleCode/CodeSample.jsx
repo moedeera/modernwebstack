@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { test } from "react-tester";
 
-export const CodeSample = ({ info }) => {
+export const CodeSample = ({ data, info }) => {
   const [count, setCount] = useState(1);
   const [data, setData] = useState([
     { id: 1, name: "John" },
@@ -16,22 +17,6 @@ export const CodeSample = ({ info }) => {
   useEffect(() => {
     console.log("component called");
   }, []);
-
-  const nodes = [
-    {
-      prop: "div",
-      overflow: false,
-      attributes: [{ type: "className", value: "parent" }],
-    },
-    {
-      prop: "div",
-      overflow: false,
-      attributes: [
-        { type: "className", value: `child` },
-        { type: "onClick", value: `{function1}` },
-      ],
-    },
-  ];
 
   return (
     <div className="parent">

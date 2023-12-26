@@ -16,7 +16,7 @@ export const SubBlock0 = () => {
     <div className="sub-block-0">
       {icons.map((item) => (
         <div key={item.id} className="sub-block-0-unit">
-          <img src={item.icon} alt="" srcset="" />
+          <img src={item.icon} alt="" />
           <p> {item.title}</p>
         </div>
       ))}

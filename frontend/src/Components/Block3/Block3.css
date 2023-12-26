@@ -12,6 +12,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .block3-container img {
