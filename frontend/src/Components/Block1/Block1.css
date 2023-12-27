@@ -1,7 +1,6 @@
 .block-1-container {
   display: flex;
   flex-direction: column;
-
   margin: 120px 0;
 }
 
@@ -17,6 +16,11 @@
 }
 .block-1-text h3 {
   max-width: 650px;
+}
+
+.block-1-text a {
+  font-size: medium;
+  margin-top: 10px;
 }
 .block-1-image {
   padding: 5px;
@@ -36,5 +40,9 @@
   }
   .reverse {
     flex-direction: row-reverse;
+  }
+  .block-1-text a {
+    font-size: large;
+    margin-top: 10px;
   }
 }

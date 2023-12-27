@@ -12,13 +12,15 @@ export const Landing = () => {
         {" "}
         <div className="landing-text">
           <h1>
-            Learn
-            <br /> Prototype
-            <br /> Collaborate
+            Simple
+            <br /> Ready-made
+            <br /> Components
           </h1>
           <p>
-            Create beautiful designs for websites, apps, and more, directly in
-            your browser
+            No libraries needed. Just copy and paste the templates and
+            components you want directly into your react project. Create
+            beautiful designs for websites, apps, and more with a simple copy
+            and paste.
           </p>
           <Link className="btn" to="/">
             Learn More
