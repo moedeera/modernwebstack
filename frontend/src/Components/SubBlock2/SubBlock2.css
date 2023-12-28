@@ -1,0 +1,42 @@
+.sub-block-2-container {
+  width: 100%;
+  margin: 100px auto;
+  font-family: "Inconsolata", monospace;
+}
+.sub-block-2 {
+  border: 5px solid grey;
+  height: 250px;
+  background-color: var(--code-bg);
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.upper-sub-block-2 {
+  position: relative;
+  height: 25px;
+
+  width: 100%;
+}
+.usb-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(204, 48, 48);
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+.yellow-dot {
+  left: 15px;
+  background-color: rgb(179, 179, 81);
+}
+
+.green-dot {
+  left: 30px;
+  background-color: rgb(29, 199, 29);
+}
