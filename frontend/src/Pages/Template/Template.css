@@ -1,0 +1,6 @@
+.main-code-block {
+  padding: 10px;
+  background-color: var(--code-bg);
+  border-radius: 10px;
+  max-width: 600px;
+}

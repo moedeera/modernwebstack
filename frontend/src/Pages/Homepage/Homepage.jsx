@@ -21,7 +21,11 @@ export const Homepage = () => {
       <Block6 />
       <Block8 />
       <SubBlock0 />
-      <SubBlock2 />
+      <div className="comp-block-1">
+        <SubBlock2 />
+        <SubBlock2 />
+        <SubBlock2 />
+      </div>
     </div>
   );
 };

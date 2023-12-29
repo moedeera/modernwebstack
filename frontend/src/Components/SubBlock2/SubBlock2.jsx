@@ -1,3 +1,4 @@
+import { CodeBlock } from "../CodeBlock/CodeBlock";
 import "./SubBlock2.css";
 
 export const SubBlock2 = ({ code }) => {
@@ -9,7 +10,10 @@ export const SubBlock2 = ({ code }) => {
           <div className="usb-dot yellow-dot"></div>
           <div className="usb-dot green-dot"></div>
         </div>
-        <div className="upper-sub-block-2-code">Code</div>
+
+        <div className="upper-sub-block-2-code">
+          <CodeBlock />
+        </div>
       </div>
     </div>
   );

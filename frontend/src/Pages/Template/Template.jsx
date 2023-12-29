@@ -7,7 +7,9 @@ export const Template = () => {
   return (
     <div className="container page">
       <Block3 />
-      <CodeBlock />
+      <div className="main-code-block">
+        <CodeBlock />
+      </div>
       <SubBlock0 />
     </div>
   );
