@@ -161,7 +161,40 @@ export const NodeCreator = ({ code }) => {
         <span className="prop-variable">{" => "}</span>
         <span className="prop-text">{"("}</span>
       </div>
-
+      <div className="code-sample-line" style={{ marginLeft: `${4 * 6}px` }}>
+        <span className="prop-bracket">{"<"}</span>
+        <span className="prop-label">div </span>
+        <span className="prop-attribute-type">key=</span>
+        <span className="prop-variable">{`{dat.id}`}</span>
+        <span className="prop-bracket">{">"}</span>
+      </div>
+      <div className="code-sample-line">
+        <span
+          className="hierarchy-spacing"
+          style={{ marginLeft: `${5 * 6}px` }}
+        ></span>
+        <span className="prop-bracket">{"<"}</span>
+        <span className="prop-label">p</span>
+        <span className="prop-bracket">{">"}</span>
+        <span className="prop-text">
+          <span className="prop-variable">{`{dat.name}`}</span>
+        </span>
+        <span className="prop-bracket">{"<"}</span>
+        <span className="prop-label">{"/p"}</span>
+        <span className="prop-bracket">{">"}</span>
+      </div>
+      {/*</div>*/}
+      <div className="code-sample-line" style={{ marginLeft: `${4 * 6}px` }}>
+        <span className="prop-bracket">{"</"}</span>
+        <span className="prop-label">div </span>
+        <span className="prop-bracket">{">"}</span>
+      </div>
+      {/* </div> */}
+      <div className="code-sample-line" style={{ marginLeft: `${4 * 6}px` }}>
+        <span className="prop-text">{")"}</span>
+        <span className="prop-variable-map-bracket-out">{")"}</span>
+        <span className="prop-bracket">{"}"}</span>
+      </div>
       {/* </div> */}
       <div className="code-sample-line">
         <span
