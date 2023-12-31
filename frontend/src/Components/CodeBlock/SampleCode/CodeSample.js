@@ -63,4 +63,54 @@ const imports = [
   },
   { from: "react-router-dom", imports: ["Link"] },
 ];
-export { codeSample as codeSample };
+
+const jsxRepresentation = {
+  type: "div",
+  props: {
+    className: "parent",
+    id: "parent1-id",
+    children: [
+      {
+        type: "h1",
+        props: {
+          children: "title",
+        },
+      },
+      {
+        type: "p",
+        props: {
+          onClick: "function1",
+          children: "Paragraph",
+        },
+      },
+      {
+        type: "Link", // Assuming 'Link' is a component
+        props: {
+          to: "/",
+          className: "btn",
+          children: "click",
+        },
+      },
+      {
+        type: "div",
+        props: {
+          children: `Hello {variable.name}`,
+        },
+      },
+      {
+        type: React.Fragment, // React.Fragment or just Fragment
+        props: {
+          children: variable.grades.map((mark) => ({
+            type: "div",
+            props: {
+              key: mark,
+              children: mark,
+            },
+          })),
+        },
+      },
+    ],
+  },
+};
+
+export { codeSample as codeSample, jsxRepresentation as codeSample2 };
