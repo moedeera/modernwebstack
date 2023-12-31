@@ -3,4 +3,7 @@
   background-color: var(--code-bg);
   border-radius: 10px;
   max-width: 600px;
+  height: 45vh;
+
+  overflow: auto;
 }

@@ -8,9 +8,11 @@ import { Block6 } from "../../Components/Block6/Block6";
 import { Block8 } from "../../Components/Block8/Block8";
 import { SubBlock0 } from "../../Components/SubBlock0/SubBlock0";
 import { SubBlock2 } from "../../Components/SubBlock2/SubBlock2";
+import { BlurredGradient } from "../../Components/BlurredGradient/BlurredGradient";
 export const Homepage = () => {
   return (
     <div className="container">
+      <BlurredGradient />
       {/* <CodeBlock codeString={codeSample} /> */}
       <Landing />
       <Block1 data={landingPageAbout} />
