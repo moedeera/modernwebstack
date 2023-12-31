@@ -7,8 +7,6 @@ import { Block3 } from "../../Components/Block3/Block3";
 import { Block6 } from "../../Components/Block6/Block6";
 import { Block8 } from "../../Components/Block8/Block8";
 import { SubBlock0 } from "../../Components/SubBlock0/SubBlock0";
-import { CodeBlock } from "../../Components/CodeBlock/CodeBlock";
-import { codeSample } from "../../Components/CodeBlock/SampleCode/CodeSample";
 import { SubBlock2 } from "../../Components/SubBlock2/SubBlock2";
 export const Homepage = () => {
   return (

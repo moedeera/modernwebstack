@@ -64,7 +64,7 @@ const imports = [
   { from: "react-router-dom", imports: ["Link"] },
 ];
 
-const jsxRepresentation = {
+const jsxRepresentation2 = {
   type: "div",
   props: {
     className: "parent",
@@ -98,19 +98,86 @@ const jsxRepresentation = {
         },
       },
       {
-        type: React.Fragment, // React.Fragment or just Fragment
+        type: `React.Fragment`, // React.Fragment or just Fragment
         props: {
-          children: variable.grades.map((mark) => ({
-            type: "div",
-            props: {
-              key: mark,
-              children: mark,
-            },
-          })),
+          children: `variable.grades.map((mark) => (
+            <div key={mark}>{mark}</div>
+          ))`,
         },
       },
     ],
   },
 };
 
-export { codeSample as codeSample, jsxRepresentation as codeSample2 };
+const jsxRepresentation1 = {
+  type: "div",
+  props: {
+    className: "parent",
+    children: [
+      {
+        type: "div",
+        props: {
+          className: "child",
+          onClick: "function1",
+          children: [
+            {
+              type: "h1",
+              props: {
+                children: "Count is at {count}",
+              },
+            },
+            {
+              type: "p",
+              props: {
+                children:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+              },
+            },
+            {
+              type: "Link", // Assuming 'Link' is a component
+              props: {
+                to: "/",
+                children: "Click Here",
+              },
+            },
+            {
+              type: "button",
+              props: {
+                onClick: "() => {setCount(count + 1);}",
+                children: "Increment Count",
+              },
+            },
+            {
+              type: "div",
+              props: {
+                className: "grand-child",
+                children: [
+                  {
+                    type: "h1",
+                    props: {
+                      children:
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    },
+                  },
+                  {
+                    type: "div",
+                    props: {
+                      children: ` data.map((data) => (
+                        <div key={data.id}>
+                          {" "}
+                          <p>{data.name}</p>
+                        </div>
+                      ))`,
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      },
+    ],
+  },
+};
+
+export { codeSample as codeSample, jsxRepresentation1 as codeSample2 };

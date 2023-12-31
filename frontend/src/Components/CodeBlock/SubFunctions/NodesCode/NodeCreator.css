@@ -8,9 +8,21 @@
   color: rgb(81, 151, 208);
 }
 
+.router-link {
+  color: rgb(140, 218, 24);
+}
+
 .prop-attribute-type {
   color: lightblue;
 }
 
 .prop-attribute-name {
+}
+
+.prop-text {
+  color: white;
+}
+
+.prop-variable {
+  color: skyblue;
 }
