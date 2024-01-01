@@ -19,7 +19,7 @@
   flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .comp-block-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

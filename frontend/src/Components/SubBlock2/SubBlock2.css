@@ -2,6 +2,7 @@
   width: 100%;
   margin: 100px auto;
   font-family: "Inconsolata", monospace;
+  overflow: hidden;
 }
 .sub-block-2 {
   border: 5px solid grey;
@@ -11,6 +12,7 @@
   max-width: 425px;
   padding: 5px;
   display: flex;
+
   flex-direction: column;
   justify-content: flex-start;
 }
