@@ -27,4 +27,7 @@
   .homepage {
     min-height: 900px;
   }
+  .features h3 {
+    text-align: center;
+  }
 }
