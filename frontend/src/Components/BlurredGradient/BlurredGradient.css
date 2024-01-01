@@ -1,9 +1,8 @@
 .blurred-gradient-container {
   position: absolute;
-
   width: 95%;
   max-width: var(--max-width);
-  height: 700px;
+  height: 600px;
 }
 .wrapper {
   width: 100%;

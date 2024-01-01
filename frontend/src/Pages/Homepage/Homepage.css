@@ -24,4 +24,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .homepage {
+    min-height: 900px;
+  }
 }
