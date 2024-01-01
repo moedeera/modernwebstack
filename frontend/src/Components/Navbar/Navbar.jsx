@@ -6,12 +6,7 @@ import { useState } from "react";
 export const Navbar = () => {
   const { websiteInfo } = useContext(siteContext);
   const [mobileNav, showMobileNav] = useState(false);
-  const menu = [
-    { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "Templates", link: "/" },
-    { id: 3, name: "Docs", link: "/" },
-    { id: 4, name: "About", link: "/" },
-  ];
+
   return (
     <div className="navbar-container">
       <div className="navbar">
@@ -45,7 +40,26 @@ export const Navbar = () => {
           <div className="bar-main bar-bottom"></div>
         </div>
       </div>
-      {mobileNav && <div className="navbar-mobile"></div>}
+      <div
+        className="navbar-mobile"
+        style={
+          mobileNav
+            ? { transform: "translateX(100%)", opacity: "0" }
+            : { transform: "translateX(0)", opacity: "1" }
+        }
+      >
+        {websiteInfo.menuExpanded.map((item) => (
+          <Link
+            key={item.id}
+            onClick={() => {
+              showMobileNav(!mobileNav);
+            }}
+            to={item.link}
+          >
+            {item.name}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
