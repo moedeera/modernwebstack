@@ -1,6 +1,6 @@
 import "./SubBlock1.css";
 
-import gear from "./gear.png";
+import gear from "./gear2.png";
 import down from "./down.png";
 import { ImportsMapper } from "../CodeSnippet/SubFunctions/ImportsMapper";
 

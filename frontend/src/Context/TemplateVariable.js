@@ -151,6 +151,7 @@ export const Block4 = () => {
 
   imports: [
     { name: "React", from: "react", default: true },
+    { name: ["useState", " useEffect"], from: "react", default: false },
     { name: "Link", from: "react-router-dom", default: false },
   ],
   legacyImports: ["react", "useEffect", "useState"],

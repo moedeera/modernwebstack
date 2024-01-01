@@ -6,8 +6,8 @@
   margin: 0 auto;
   max-width: 550px;
   background-color: rgb(48, 45, 45);
-  background: linear-gradient(to right, #2c2929, #000000);
-  background: linear-gradient(to right, #1f1d1d, #131212);
+  background: linear-gradient(to right, #2c2929, #000000cf);
+  background: linear-gradient(to right, #1f1d1d, #131212c2);
   position: relative;
   border-radius: 10px;
   font-family: "Inconsolata", monospace;
@@ -42,7 +42,7 @@
 .sub-block-1-files {
   position: absolute;
   width: 80%;
-  height: 30%;
+  height: 20%;
   background-color: #1e152a;
   top: 75%;
   right: -10%;
@@ -66,7 +66,7 @@
 }
 .sb1-upper-portion > div img {
   width: 100%;
-  max-width: 20px;
+  max-width: 15px;
 }
 .sb1-code-container {
   /* border: 1px solid red; */
