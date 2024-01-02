@@ -1,8 +1,9 @@
 .blurred-gradient-container {
   position: absolute;
-  width: 95%;
+  width: 100%;
   max-width: var(--max-width);
-  height: 600px;
+  height: 80vh;
+  overflow: hidden;
 }
 .wrapper {
   width: 100%;
@@ -12,12 +13,12 @@
 }
 
 .circle {
-  width: 170px; /* 50px radius */
-  height: 170px; /* 50px radius */
+  width: 85px; /* 50px radius */
+  height: 85px; /* 50px radius */
   border-radius: 50%; /* Makes it a circle */
   position: absolute;
   transform: translate(50%, 50%);
-  top: 100px; /* 50% overlap vertically */
+  top: 95px; /* 50% overlap vertically */
 }
 
 .red {
@@ -29,13 +30,13 @@
     rgba(148, 187, 233, 1) 100%
   );
 
-  left: 50%;
+  left: 40%;
   top: 30%;
 }
 
 .blue {
   background-color: blue;
-  left: 40%; /* additional 50px to overlap by 50% */
+  left: 30%; /* additional 50px to overlap by 50% */
 }
 
 .square {
@@ -45,5 +46,34 @@
   top: 0;
   left: 0;
   background: transparent;
-  backdrop-filter: blur(100px); /* blurs elements behind it */
+  backdrop-filter: blur(40px); /* blurs elements behind it */
+}
+
+@media only screen and (min-width: 1024px) {
+  .blurred-gradient-container {
+    width: 95%;
+    height: 550px;
+  }
+
+  .circle {
+    width: 120px; /* 50px radius */
+    height: 120px; /* 50px radius */
+    top: 100px; /* 50% overlap vertically */
+  }
+
+  .red {
+    left: 50%;
+    top: 30%;
+  }
+
+  .blue {
+    left: 40%; /* additional 50px to overlap by 50% */
+  }
+
+  .square {
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(100px); /* blurs elements behind it */
+  }
 }

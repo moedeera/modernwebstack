@@ -11,7 +11,7 @@ import { SubBlock2 } from "../../Components/SubBlock2/SubBlock2";
 import { BlurredGradient } from "../../Components/BlurredGradient/BlurredGradient";
 export const Homepage = () => {
   return (
-    <div className="container">
+    <div className="container homepage">
       <BlurredGradient />
       {/* <CodeBlock codeString={codeSample} /> */}
       <Landing />

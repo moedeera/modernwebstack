@@ -44,8 +44,8 @@ export const Navbar = () => {
         className="navbar-mobile"
         style={
           mobileNav
-            ? { transform: "translateX(100%)", opacity: "0" }
-            : { transform: "translateX(0)", opacity: "1" }
+            ? { transform: "translateX(0)", opacity: "1" }
+            : { transform: "translateX(100%)", opacity: "0" }
         }
       >
         {websiteInfo.menuExpanded.map((item) => (

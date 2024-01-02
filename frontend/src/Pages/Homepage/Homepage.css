@@ -1,12 +1,6 @@
 .homepage {
-  background-color: bisque;
-  color: black;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1300px;
+  position: relative;
+  overflow: hidden;
 }
 
 .login-register-form {
@@ -16,13 +10,18 @@
 
 .comp-block-1 {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+.comp-block-1 > div {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 1024px) {
   .comp-block-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 100px;
   }
   .homepage {
     min-height: 900px;

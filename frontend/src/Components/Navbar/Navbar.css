@@ -13,6 +13,8 @@
 }
 
 .navbar-container {
+  position: relative;
+  overflow: hidden;
 }
 .mws-app {
   width: 100%;
