@@ -116,4 +116,7 @@
   .navbar-mobile {
     display: none;
   }
+  .navbar-container {
+    overflow: visible;
+  }
 }

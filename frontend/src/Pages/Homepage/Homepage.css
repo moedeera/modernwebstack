@@ -25,6 +25,7 @@
   }
   .homepage {
     min-height: 900px;
+    overflow: visible;
   }
   .features h3 {
     text-align: center;
