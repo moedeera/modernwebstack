@@ -28,7 +28,7 @@ function App() {
             <Route path="/templates" element={<Template />} />
             <Route path="/docs" element={<Docs />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/blog" element={<Docs />} />
+            <Route path="/blog" element={<Template />} />
             <Route path="/test" element={<Testing />} />
           </Routes>
           <Footer />

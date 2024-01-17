@@ -6,7 +6,6 @@
   border-bottom: 1px solid rgba(128, 128, 128, 0.37);
 }
 .docs-side-menu {
-  border-right: 2px solid rgba(128, 128, 128, 0.753);
   height: 80vh;
   overflow-y: scroll;
   display: none;
@@ -34,7 +33,7 @@
   transition: all 0.35s ease-in-out;
 }
 .docs-content-container p {
-  font-size: medium;
+  font-size: small;
   max-width: 850px;
 }
 
@@ -76,6 +75,10 @@
   }
   .docs-content-container {
     padding-left: 20px;
+    overflow-y: auto;
+  }
+  .docs-content-container p {
+    font-size: medium;
   }
   .docs-side-menu {
     display: flex;
