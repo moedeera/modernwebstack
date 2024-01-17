@@ -1,18 +1,23 @@
 .docs-page {
-  min-height: 100vh;
+  min-height: 120vh;
 
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
   border-top: 1px solid rgba(128, 128, 128, 0.37);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.37);
 }
 .docs-side-menu {
   border-right: 2px solid rgba(128, 128, 128, 0.753);
-
-  height: 100vh;
-  display: flex;
+  height: 80vh;
+  overflow-y: scroll;
+  display: none;
   flex-direction: column;
   gap: 20px;
 }
 .docs-content-container {
+  padding: 10px;
+  padding-left: 20px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .content-section {
   display: flex;
@@ -24,10 +29,61 @@
   margin-bottom: 1.5px;
   font-weight: bold;
 }
+.content-section small {
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+.docs-content-container p {
+  font-size: medium;
+  max-width: 850px;
+}
+
+.docs-content-codeblock > div {
+  padding: 10px 15px;
+  padding-right: 25px;
+  margin-top: 20px;
+  font-size: x-small;
+  max-width: 850px;
+}
+
+.docs-page ::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+.docs-page ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 7.5px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Handle */
+.docs-page ::-webkit-scrollbar-thumb {
+  background: rgb(50, 50, 59);
+  border-radius: 7.5px;
+  transition: 0.35s all ease-in-out;
+}
+
+/* Handle on hover */
 
 @media only screen and (min-width: 1024px) {
   .docs-page {
     display: grid;
     grid-template-columns: 1fr 4fr;
+  }
+  .docs-content-container {
+    padding-left: 20px;
+  }
+  .docs-side-menu {
+    display: flex;
+  }
+  .content-section small:hover {
+    color: grey;
+  }
+  .docs-page ::-webkit-scrollbar-thumb:hover {
+    background: rgba(50, 50, 59, 0.85);
+  }
+  .docs-content-codeblock > div {
+    font-size: small;
   }
 }
