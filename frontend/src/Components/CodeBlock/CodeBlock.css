@@ -2,14 +2,15 @@
   /* border: 0.5px solid rgba(128, 128, 128, 0.25); */
   height: max-content;
   width: 95%;
-  /* min-width: 300px;
-  max-width: 700px; */
+  min-width: 300px;
+  max-width: 700px;
   background-color: var(--code-bg);
   border-radius: 5px;
   padding: 10px 0px;
   font-family: "Inconsolata", monospace;
   font-size: x-small;
   margin-bottom: 100px;
+
   /* margin-top: 50px; */
   /* border: 1px solid red; */
 }

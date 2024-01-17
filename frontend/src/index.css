@@ -142,6 +142,7 @@ span {
   border-radius: 100px;
   margin-bottom: 5px;
   font-weight: 700;
+  max-width: max-content;
 }
 .container {
   width: var(--width);
@@ -218,6 +219,11 @@ textarea {
 
     min-height: 40vh;
   }
+}
+
+.page-code-container > div {
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  padding: 15px 10px;
 }
 
 @keyframes fadeUp {

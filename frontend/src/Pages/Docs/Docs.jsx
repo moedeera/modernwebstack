@@ -9,7 +9,9 @@ export const Docs = () => {
     <div className="container page">
       <Block6 />
       <Block8 />
-      <CodeBlock />
+      <div className="page-code-container">
+        <CodeBlock />
+      </div>
     </div>
   );
 };
