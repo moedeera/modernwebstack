@@ -1,10 +1,10 @@
 import React from "react";
-import "./testing.css";
+import "./Testing.css";
 
 export const Testing = () => {
   const content = [
     {
-      section: "Main",
+      name: "Main",
       content: [
         "Why MWS",
         "Getting Started",
@@ -15,7 +15,7 @@ export const Testing = () => {
       ],
     },
     {
-      section: "Basic Components",
+      name: "Basic Components",
       content: [
         "Navbar",
         "Footers",
@@ -27,7 +27,19 @@ export const Testing = () => {
       ],
     },
     {
-      section: "Functional",
+      name: "Functional",
+      content: [
+        "Search bar",
+        "Multi-step",
+        "Loading",
+        "Carousel",
+        "Slider",
+        "Counter",
+        "Modal",
+      ],
+    },
+    {
+      name: "Functional",
       content: [
         "Search bar",
         "Multi-step",
@@ -42,7 +54,16 @@ export const Testing = () => {
 
   return (
     <div className="container docs-page">
-      <div className="docs-side-menu"></div>
+      <div className="docs-side-menu">
+        {content.map((section, index) => (
+          <div className="content-section" key={index}>
+            <p>{section.name}</p>
+            {section.content.map((item, index) => (
+              <small key={index}>{item}</small>
+            ))}
+          </div>
+        ))}
+      </div>
       <div className="docs-content-container"></div>
     </div>
   );

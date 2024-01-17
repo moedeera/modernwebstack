@@ -175,8 +175,11 @@ textarea {
 .mws-app {
   position: relative;
 }
-.block-show {
+.page-code-container > div {
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  padding: 15px 10px;
 }
+
 /* @media (prefers-color-scheme: light) {
 } */
 @media only screen and (min-width: 600px) {
@@ -219,11 +222,6 @@ textarea {
 
     min-height: 40vh;
   }
-}
-
-.page-code-container > div {
-  border: 1px solid rgba(128, 128, 128, 0.25);
-  padding: 15px 10px;
 }
 
 @keyframes fadeUp {

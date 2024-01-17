@@ -1,17 +1,69 @@
-import { Block3 } from "../../Components/Block3/Block3";
-import { Block6 } from "../../Components/Block6/Block6";
-import { Block8 } from "../../Components/Block8/Block8";
-import { CodeBlock } from "../../Components/CodeBlock/CodeBlock";
 import "./Docs.css";
 
 export const Docs = () => {
+  const content = [
+    {
+      name: "Main",
+      content: [
+        "Why MWS",
+        "Getting Started",
+        "Features",
+        "Components",
+        "Templates",
+        "Video Tutorials",
+      ],
+    },
+    {
+      name: "Basic Components",
+      content: [
+        "Navbar",
+        "Footers",
+        "Landing",
+        "Text",
+        "Images",
+        "Grids",
+        "Forms",
+      ],
+    },
+    {
+      name: "Functional",
+      content: [
+        "Search bar",
+        "Multi-step",
+        "Loading",
+        "Carousel",
+        "Slider",
+        "Counter",
+        "Modal",
+      ],
+    },
+    {
+      name: "Functional",
+      content: [
+        "Search bar",
+        "Multi-step",
+        "Loading",
+        "Carousel",
+        "Slider",
+        "Counter",
+        "Modal",
+      ],
+    },
+  ];
+
   return (
-    <div className="container page">
-      <Block6 />
-      <Block8 />
-      <div className="page-code-container">
-        <CodeBlock />
+    <div className="container docs-page">
+      <div className="docs-side-menu">
+        {content.map((section, index) => (
+          <div className="content-section" key={index}>
+            <p>{section.name}</p>
+            {section.content.map((item, index) => (
+              <small key={index}>{item}</small>
+            ))}
+          </div>
+        ))}
       </div>
+      <div className="docs-content-container"></div>
     </div>
   );
 };

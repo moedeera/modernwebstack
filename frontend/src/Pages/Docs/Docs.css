@@ -1,0 +1,33 @@
+.docs-page {
+  min-height: 100vh;
+
+  margin-bottom: 100px;
+  border-top: 1px solid rgba(128, 128, 128, 0.37);
+}
+.docs-side-menu {
+  border-right: 2px solid rgba(128, 128, 128, 0.753);
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.docs-content-container {
+}
+.content-section {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 7.5px;
+}
+.content-section p {
+  margin-bottom: 1.5px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1024px) {
+  .docs-page {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+}
