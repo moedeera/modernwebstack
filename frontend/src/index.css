@@ -224,6 +224,16 @@ textarea {
   }
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeUp {
   0% {
     opacity: 0;

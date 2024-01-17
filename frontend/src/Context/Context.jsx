@@ -11,10 +11,12 @@ export const SiteContextProvider = ({ children }) => {
     largeLogo: null,
     tagline: "",
     menuList: [
-      { name: "Home", link: "/" },
-      { name: "Portfolio", link: "/portfolio" },
-      { name: "About", link: "/about" },
-      { name: "Contact", link: "/contact" },
+      { id: 1, name: "Home", link: "/" },
+      { id: 2, name: "Templates", link: "/templates" },
+      { id: 3, name: "Docs", link: "/docs" },
+      { id: 4, name: "Blog", link: "/blog" },
+      { id: 5, name: "About", link: "/about" },
+      { id: 6, name: "Contact", link: "/contact" },
     ],
     menuButtons: [{ name: "contact", link: "contact" }],
     menuExpanded: [

@@ -10,6 +10,7 @@
   );
   -webkit-background-clip: text;
   color: transparent;
+  font-size: large;
 }
 
 .navbar-container {
@@ -39,7 +40,7 @@
 }
 
 .navbar-menu-button {
-  border: 1px solid lightgrey;
+  /* border: 1px solid lightgrey; */
   position: relative;
   height: 35px;
   width: 35px;

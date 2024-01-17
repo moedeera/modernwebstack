@@ -3,9 +3,14 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { siteContext } from "../../Context/Context";
 import { useState } from "react";
+import { NavbarMobile } from "../NavbarMobile/NavbarMobile";
 export const Navbar = () => {
   const { websiteInfo } = useContext(siteContext);
   const [mobileNav, showMobileNav] = useState(false);
+
+  if (mobileNav) {
+    return <NavbarMobile closeMobileMenu={showMobileNav} />;
+  }
 
   return (
     <div className="navbar-container">
@@ -14,9 +19,8 @@ export const Navbar = () => {
         <div className="navbar-main">
           {" "}
           <Link to="/" className="navbar-logo">
-            <span>Modern</span>
-            <br />
-            WebStack
+            <span>M</span>
+            <span>W</span>Stack
           </Link>
           <div className="navbar-links-lg">
             {websiteInfo.menuExpanded.map((item) => (
