@@ -45,6 +45,9 @@
   font-size: x-small;
   max-width: 850px;
 }
+.docs-content-container h3 {
+  margin-bottom: 15px;
+}
 
 .docs-page ::-webkit-scrollbar {
   width: 15px;

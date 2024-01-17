@@ -1,12 +1,15 @@
+import { useState } from "react";
 import { CodeBlock } from "../../Components/CodeBlock/CodeBlock";
 import "./Docs.css";
 
 export const Docs = () => {
+  const [view, setView] = useState("Why Modern WebStack");
+
   const content = [
     {
       name: "Main",
       content: [
-        "Why MWS",
+        "Why Modern WebStack",
         "Getting Started",
         "Features",
         "Components",
@@ -59,13 +62,20 @@ export const Docs = () => {
           <div className="content-section" key={index}>
             <p>{section.name}</p>
             {section.content.map((item, index) => (
-              <small key={index}>{item}</small>
+              <small
+                key={index}
+                onClick={() => {
+                  setView(item);
+                }}
+              >
+                {item}
+              </small>
             ))}
           </div>
         ))}
       </div>
       <div className="docs-content-container">
-        <h3>Getting Started</h3>
+        <h3>{view}</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
