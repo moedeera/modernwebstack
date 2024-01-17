@@ -1,10 +1,26 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./NavbarMobile.css";
 import { siteContext } from "../../Context/Context";
 import { Link } from "react-router-dom";
 
 export const NavbarMobile = ({ closeMobileMenu }) => {
   const { websiteInfo } = useContext(siteContext);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        closeMobileMenu(false);
+      }
+    };
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Call the handler right away so state gets updated with initial window size
+    handleResize();
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); //
   return (
     <div className="navbar-mobile-page">
       <div

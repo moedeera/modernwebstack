@@ -19,6 +19,9 @@
 .upper-footer a {
   font-size: small;
 }
+.upper-footer p {
+  color: goldenrod;
+}
 .upper-footer-section {
   display: flex;
   flex-direction: column;

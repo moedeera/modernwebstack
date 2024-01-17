@@ -8,7 +8,9 @@ export const Footer = () => {
       <div className="footer-container">
         <div className="upper-footer">
           <Link to="/">
-            <h4>ModernWebStack</h4>
+            <h4>
+              <span>MW</span>Stack
+            </h4>
           </Link>
           <div className="upper-footer-section">
             <p>Browse</p>

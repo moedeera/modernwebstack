@@ -10,6 +10,7 @@
   align-items: flex-start;
   padding-left: 20px;
   animation: fade 0.35s ease-in-out;
+  z-index: 3;
 }
 
 .navbar-close {
@@ -50,4 +51,10 @@
 
 .mobile-navbar-page-links > a {
   border-bottom: 1px solid grey;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar-mobile-page {
+    display: none;
+  }
 }
