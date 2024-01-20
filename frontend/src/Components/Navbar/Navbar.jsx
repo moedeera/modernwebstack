@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { siteContext } from "../../Context/Context";
 import { useState } from "react";
 import { NavbarMobile } from "../NavbarMobile/NavbarMobile";
+import logo from "../../../public/mws.png";
 export const Navbar = () => {
   const { websiteInfo } = useContext(siteContext);
   const [mobileNav, showMobileNav] = useState(false);
@@ -19,8 +20,14 @@ export const Navbar = () => {
         <div className="navbar-main">
           {" "}
           <Link to="/" className="navbar-logo">
-            <span>M</span>
-            <span>W</span>Stack
+            <div className="navbar-logo-image">
+              <img src={logo} alt="" />
+            </div>
+            <div>
+              {" "}
+              <span>M</span>
+              <span>W</span>Stack
+            </div>
           </Link>
           <div className="navbar-links-lg">
             {websiteInfo.menuExpanded.map((item) => (

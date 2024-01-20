@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import logo from "../../../public/mws.png";
 import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
@@ -7,7 +8,10 @@ export const Footer = () => {
       {" "}
       <div className="footer-container">
         <div className="upper-footer">
-          <Link to="/">
+          <Link to="/" className="footer-logo">
+            <div className="navbar-logo-image">
+              <img src={logo} alt="" />
+            </div>
             <h4>
               <span>MW</span>Stack
             </h4>

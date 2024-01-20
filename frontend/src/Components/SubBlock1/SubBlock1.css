@@ -1,10 +1,10 @@
 .sub-block-1-container {
   display: none;
   animation: fadeInFromRight 750ms ease-in-out;
-  height: 500px;
-  width: 90%;
+  height: 450px;
+  width: 70%;
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 470px;
   background-color: rgb(48, 45, 45);
   background: linear-gradient(to right, #2c2929, #000000cf);
   background: linear-gradient(to right, #1f1d1d, #131212c2);
@@ -19,7 +19,7 @@
 .sub-block-1-jsx {
   position: absolute;
   width: 80%;
-  height: 32%;
+  height: 62%;
   background-color: #1e152a;
   top: 3%;
   right: -10%;
@@ -28,15 +28,23 @@
   display: flex;
   flex-direction: column;
 }
+.sub-block-1-jsx > div {
+  margin-bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: xx-small;
+  padding: 15px 10px;
+}
 .sub-block-1-css {
   position: absolute;
   width: 70%;
-  height: 35%;
+  height: 45%;
   background-color: #1e152a;
-  top: 37%;
+  top: 50%;
   right: -15%;
   border: 1px solid rgba(245, 222, 179, 0.25);
   border-radius: 5px;
+  padding: 7.5px;
 }
 
 .sub-block-1-files {

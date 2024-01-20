@@ -38,7 +38,17 @@
 .btn-nav {
   display: none;
 }
-
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5px;
+}
+.navbar-logo img {
+  width: 100%;
+  max-width: 28px;
+  display: flex;
+}
 .navbar-menu-button {
   /* border: 1px solid lightgrey; */
   position: relative;
