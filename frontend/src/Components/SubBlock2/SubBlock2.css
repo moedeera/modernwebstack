@@ -2,7 +2,7 @@
   width: 100%;
   margin: 100px auto;
   font-family: "Inconsolata", monospace;
-  overflow: show;
+  overflow: hidden;
 
   position: relative;
 }
@@ -70,4 +70,9 @@
 }
 .upper-sub-block-2 > div {
   border: none;
+}
+@media only screen and (min-width: 768px) {
+  .sub-block-2-container {
+    overflow: visible;
+  }
 }

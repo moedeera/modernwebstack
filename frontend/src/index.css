@@ -92,6 +92,7 @@ h2 {
   );
   -webkit-background-clip: text;
   color: transparent;
+  color: goldenrod;
 }
 
 h3 {
@@ -107,6 +108,7 @@ h3 {
   );
   -webkit-background-clip: text;
   color: transparent;
+  color: goldenrod;
 }
 
 h4 {
@@ -212,8 +214,8 @@ textarea {
   }
 
   h3 {
-    letter-spacing: -3px;
-    font-size: 45px;
+    letter-spacing: -2px;
+    font-size: 35px;
   }
 
   p {
