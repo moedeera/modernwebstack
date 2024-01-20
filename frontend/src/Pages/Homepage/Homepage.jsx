@@ -18,18 +18,12 @@ export const Homepage = () => {
       <Block1 data={landingPageAbout} />
       <Block1 data={landingPageLearning} />
       <Block3 />
-      <Block6 />
+
       <Block8 />
 
       <div className="features">
         <h3>Our Features</h3>
         <SubBlock0 />
-      </div>
-
-      <div className="comp-block-1">
-        <SubBlock2 />
-        <SubBlock2 />
-        <SubBlock2 />
       </div>
     </div>
   );

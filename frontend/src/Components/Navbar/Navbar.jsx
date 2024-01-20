@@ -30,15 +30,18 @@ export const Navbar = () => {
             </div>
           </Link>
           <div className="navbar-links-lg">
-            {websiteInfo.menuExpanded.map((item) => (
-              <Link key={item.id} to={item.link}>
-                {item.name}
-              </Link>
-            ))}
+            {websiteInfo.menuExpanded.map(
+              (item, index) =>
+                index > 0 && (
+                  <Link key={item.id} to={item.link}>
+                    {item.name}
+                  </Link>
+                )
+            )}
           </div>
         </div>
         <Link to="/" className="btn btn-nav">
-          Login
+          Premium
         </Link>
         <div
           onClick={() => {

@@ -19,7 +19,9 @@
   --width: 92.5%;
   --padding-top: 50px;
   --text-primary: white;
+  --color-primary: #cc5de8;
   --primary-button: #0d6efd;
+  /* --primary-button: #cc5de8; */
   /* --code-bg: #1e152a; */
   --code-bg: #161719;
 }

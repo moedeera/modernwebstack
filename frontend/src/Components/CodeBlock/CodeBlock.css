@@ -6,12 +6,12 @@
   /* max-width: 700px; */
   background-color: var(--code-bg);
   border-radius: 5px;
-  padding: 10px 0px;
+  padding: 10px 5px;
   font-family: "Inconsolata", monospace;
-  font-size: x-small;
+  font-size: xx-small;
   margin-bottom: 100px;
   overflow-x: scroll;
-
+  /* border-radius: 5px; */
   /* margin-top: 50px; */
   /* border: 1px solid red; */
 }
@@ -20,14 +20,14 @@
   margin-bottom: 6.5px;
 }
 .section-separation {
-  height: 52px;
+  height: 32px;
   width: 100%;
   /* border: 1px solid red; */
 }
 
 @media only screen and (min-width: 768px) {
   .code-sample-container {
-    font-size: x-small;
+    font-size: xx-small;
     overflow-x: auto;
   }
 }

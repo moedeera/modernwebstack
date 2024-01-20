@@ -105,15 +105,7 @@ export const NodeCreator = ({ code }) => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         </span>
       </div>
-      <div className="code-sample-line">
-        <span
-          className="hierarchy-spacing"
-          style={{ marginLeft: `${3 * 6}px` }}
-        ></span>{" "}
-        <span className="prop-text">
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-        </span>
-      </div>
+
       {/* </p> */}
       <div className="code-sample-line">
         {" "}
