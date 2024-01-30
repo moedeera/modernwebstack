@@ -1,11 +1,13 @@
 console.log("hello");
+
 const express = require("express");
 const dotenv = require("dotenv").config;
 const port = process.env.PORT || 5000;
 const path = require("path");
 const cors = require("cors");
-
 const app = express();
+
+app.use("/api/testing", require("./Routes/TestRoutes"));
 
 app.use(
   cors({
