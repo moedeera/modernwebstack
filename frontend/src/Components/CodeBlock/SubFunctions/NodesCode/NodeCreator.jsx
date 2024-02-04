@@ -6,7 +6,7 @@ export const NodeCreator = ({ code }) => {
 
   nodes = parseHtmlToNodes(code);
 
-  console.log(nodes);
+  // console.log(nodes);
 
   return (
     <>

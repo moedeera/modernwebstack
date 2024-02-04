@@ -108,6 +108,6 @@ const htmlString = `  <div className="parent">
     </div>`;
 
 const nodes = parseHtmlToNodes(htmlString);
-console.log(nodes);
+// console.log(nodes);
 
 export { parseHtmlToNodes };

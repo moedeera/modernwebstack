@@ -4,10 +4,10 @@ export const BlurredGradient = () => {
   return (
     <div className="blurred-gradient-container">
       {" "}
-      <div class="wrapper">
-        <div class="circle red"></div>
-        <div class="circle blue"></div>
-        <div class="square"></div>
+      <div className="wrapper">
+        <div className="circle red"></div>
+        <div className="circle blue"></div>
+        <div className="square"></div>
       </div>
     </div>
   );

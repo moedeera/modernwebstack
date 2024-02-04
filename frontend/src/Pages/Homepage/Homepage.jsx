@@ -14,7 +14,9 @@ export const Homepage = () => {
     fetch(url, {
       method: "POST", // Specifies the method to be used
       headers: {
-        "Content-Type": "application/json", // Specifies the content type
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "POST,PATCH,OPTIONS", // Specifies the content type
       },
       body: JSON.stringify(data), // Converts the JavaScript object to a JSON string
     })
