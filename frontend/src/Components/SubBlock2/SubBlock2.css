@@ -21,6 +21,7 @@
   z-index: -1;
   border-radius: 5px;
   padding: 10px 15px;
+  display: none;
 }
 .sub-block-2 {
   border: 5px solid grey;
@@ -74,5 +75,10 @@
 @media only screen and (min-width: 768px) {
   .sub-block-2-container {
     overflow: visible;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .sb2-image-container {
+    display: block;
   }
 }
