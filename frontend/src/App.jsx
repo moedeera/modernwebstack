@@ -12,6 +12,7 @@ import { Docs } from "./Pages/Docs/Docs";
 import { Template } from "./Pages/Template/Template";
 import { Testing } from "./Pages/Testing/Testing";
 import { ErrorPage } from "./Pages/ErrorPage/ErrorPage";
+import Testing2 from "./Pages/Testing/Testing2";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
             <Route path="/docs" element={<Docs />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/blog" element={<Template />} />
-            <Route path="/test" element={<Testing />} />
+            <Route path="/test" element={<Testing2 />} />
           </Routes>
           <Footer />
         </Router>
