@@ -6,7 +6,7 @@ import icon3 from "./icon3.png";
 
 import { useState } from "react";
 
-export const Block8 = () => {
+export const Block8 = ({ info }) => {
   const [data, setData] = useState({
     header: "Styling components should be easy",
     points: [
@@ -42,7 +42,7 @@ export const Block8 = () => {
     <div className="block-8-container">
       <div className="block-8-text">
         <div className="block-8-header">
-          <h2>{data.header}</h2>
+          <h3>{data.header}</h3>
         </div>
 
         {data.points.map((item) => (

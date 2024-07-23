@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export const Block3 = ({ data }) => {
   const [info, setInfo] = useState({
-    small: "Prototyping",
+    small: "Design",
     header: "Prototyping and create stunning animations",
     text: ` Our AI engine gives you everything you need to create stunning
             designs, from vector graphics to interactive prototypes with our
