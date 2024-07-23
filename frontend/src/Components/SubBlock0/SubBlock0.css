@@ -55,7 +55,7 @@
   .sub-block-0-unit {
     width: 100%;
     max-width: 500px;
-    height: 290px;
+    min-height: 190px;
     justify-content: space-between;
     align-items: flex-start;
   }

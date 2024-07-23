@@ -1,5 +1,5 @@
 import "./Block8.css";
-import image1 from "./block8.png";
+import image1 from "./img.png";
 import icon1 from "./icon1.png";
 import icon2 from "./icon2.png";
 import icon3 from "./icon3.png";

@@ -8,18 +8,25 @@ import figma from "./figma.png";
 import google from "./google.png";
 import instagram from "./instagram.png";
 import twitter from "./twitter.png";
+import { useEffect } from "react";
 
-export const SubBlock0 = () => {
+export const SubBlock0 = ({ data }) => {
   const [icons, setIcons] = useState([
     { id: 1, title: "Custom Settings", icon: icon1 },
-    { id: 2, title: "Networking Platforms", icon: icon4 },
-    { id: 3, title: "Design Resources", icon: icon3 },
+    { id: 2, title: "Share Repositories", icon: icon4 },
+    { id: 3, title: "Adobe Designs", icon: icon3 },
     { id: 4, title: "Support", icon: icon2 },
     { id: 5, title: "Follow Us", icon: twitter },
     { id: 6, title: "Figma Toolkit", icon: figma },
     { id: 7, title: "Share your work", icon: instagram },
     { id: 8, title: "Google Services", icon: google },
   ]);
+
+  useEffect(() => {
+    if (data) {
+      setIcons(data);
+    }
+  });
   return (
     <div className="sub-block-0">
       {icons.map((item) => (
@@ -27,10 +34,12 @@ export const SubBlock0 = () => {
           <img src={item.icon} alt="" />
           <p> {item.title}</p>
           <small>
-            Select from numerous add-ons that enhance features and streamline
-            tasks, all within your web browser
+            {item.details && item.details}
+            {/* Select from numerous add-ons that enhance features and streamline
+            tasks, all within your web browser */}
           </small>
-          <div className="cta">Learn more</div>
+          {item.link && item.link}
+          <div className="cta">More</div>
         </div>
       ))}
     </div>

@@ -1,3 +1,8 @@
+import chakra from "../Components/Block7/chakra.png";
+import mui from "../Components/Block7/materialsui.png";
+import js from "../Components/Block7/js.png";
+import tailwindcss from "../Components/Block7/tailwind.png";
+
 const landingPageAbout = {
   small: "",
   header: "Empower Your React Journey",
@@ -134,9 +139,17 @@ export const Block3 = ({ data }) => {
 
 `;
 
+const componentLibraries = [
+  { id: 1, title: "TailwindCSS", icon: tailwindcss },
+  { id: 2, title: "MaterialsUI", icon: mui },
+  { id: 3, title: "Plain JS", icon: js },
+  { id: 4, title: "Chakra UI", icon: chakra },
+];
+
 export {
   landingPageAbout as landingPageAbout,
   landingPageLearning as landingPageLearning,
   codeblock1 as codeblock1,
   codeblock2 as codeblock2,
+  componentLibraries,
 };

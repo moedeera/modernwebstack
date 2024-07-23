@@ -2,7 +2,11 @@ import React from "react";
 import "./Homepage.css";
 import { Landing } from "../../Components/Landing/Landing";
 import { Block1 } from "../../Components/Block1/Block1";
-import { landingPageAbout, landingPageLearning } from "../../Context/Content";
+import {
+  componentLibraries,
+  landingPageAbout,
+  landingPageLearning,
+} from "../../Context/Content";
 import { Block3 } from "../../Components/Block3/Block3";
 import { Block6 } from "../../Components/Block6/Block6";
 import { Block8 } from "../../Components/Block8/Block8";
@@ -107,12 +111,16 @@ export const Homepage = () => {
       </div>
       <Block3 />
 
-      <Block8 />
+      {/* <Block8 /> */}
 
       <div className="features">
-        <h3>Our Features</h3>
-        <SubBlock0 />
+        <h3>Libraries we work with</h3>
+        <SubBlock0 data={componentLibraries} />
       </div>
+      {/* <div className="features">
+        <h3>Share Your Designs</h3>
+        <SubBlock0 />
+      </div> */}
     </div>
   );
 };
