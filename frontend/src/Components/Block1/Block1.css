@@ -25,9 +25,7 @@
 .block-1-image {
   padding: 5px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 .block-1-image img {
   width: 100%;
@@ -44,5 +42,11 @@
   .block-1-text a {
     font-size: large;
     margin-top: 10px;
+  }
+
+  .block-1-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
