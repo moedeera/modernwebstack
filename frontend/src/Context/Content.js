@@ -140,10 +140,11 @@ export const Block3 = ({ data }) => {
 `;
 
 const componentLibraries = [
-  { id: 1, title: "TailwindCSS", icon: tailwindcss },
-  { id: 2, title: "MaterialsUI", icon: mui },
-  { id: 3, title: "Plain JS", icon: js },
-  { id: 4, title: "Chakra UI", icon: chakra },
+  { id: 0, title: "Shadcn", icon: null, svg: true, version: 1 },
+  { id: 1, title: "TailwindCSS", svg: false, icon: tailwindcss },
+  { id: 2, title: "MaterialsUI", svg: false, icon: mui },
+  // { id: 3, title: "Plain JS", svg: false, icon: js },
+  { id: 4, title: "Chakra UI", svg: false, icon: chakra },
 ];
 
 export {
