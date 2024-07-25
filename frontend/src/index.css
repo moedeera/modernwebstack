@@ -96,7 +96,7 @@ h2 {
   );
   -webkit-background-clip: text;
   color: transparent;
-  color: goldenrod;
+  color: white;
 }
 
 h3 {
@@ -113,6 +113,7 @@ h3 {
   -webkit-background-clip: text;
   color: transparent;
   color: goldenrod;
+  color: white;
 }
 
 h4 {
@@ -195,6 +196,11 @@ textarea {
 .footer-logo img {
   width: 100%;
   max-width: 32px;
+}
+small {
+  color: goldenrod;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 /* @media (prefers-color-scheme: light) {
 } */

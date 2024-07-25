@@ -4,7 +4,7 @@ import js from "../Components/Block7/js.png";
 import tailwindcss from "../Components/Block7/tailwind.png";
 
 const landingPageAbout = {
-  small: "",
+  small: "Skills Development",
   header: "Empower Your React Journey",
   text: `Modern Web Stack is a comprehensive online platform
      dedicated to providing exceptional learning resources for ReactJS enthusiasts.
@@ -30,7 +30,7 @@ const landingPageAbout2 = {
 };
 
 const landingPageLearning = {
-  small: "",
+  small: "Resources",
   header: "Learning Resources and a Treasure Trove of Free-to-Copy Components",
   text: `At Modern Web Stack, our commitment to fostering a thriving
    ReactJS community goes beyond just providing an extensive collection of
