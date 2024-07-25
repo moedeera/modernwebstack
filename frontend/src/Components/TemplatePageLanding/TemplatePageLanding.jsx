@@ -17,9 +17,7 @@ export const TemplatePageLanding = () => {
             Variety of Templates to suit your needs for building a React or
             NextJS application.
           </p>
-          <Link className="btn" to="/">
-            Learn More
-          </Link>
+          <div></div>
         </div>
         <div className="landing-image">
           <img src={img1} alt="main-image" />
