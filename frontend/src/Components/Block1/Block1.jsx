@@ -70,6 +70,8 @@ export const Block1 = ({ data }) => {
         <small>{info.small}</small>
         <h3>{info.header}</h3>
         <p>{info.text}</p>
+        {/* <br /> */}
+        <p>{info.text_sec}</p>
         <Link className="btn btn-primary" to={info.link}>
           {info.buttonText}
         </Link>

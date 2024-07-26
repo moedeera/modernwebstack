@@ -8,7 +8,8 @@ const landingPageAbout = {
   header: "Empower Your React Journey",
   text: `Modern Web Stack is a comprehensive online platform
      dedicated to providing exceptional learning resources for ReactJS enthusiasts.
-     Whether you're a beginner seeking to grasp the fundamentals or an experienced
+     `,
+  text_sec: `Whether you're a beginner seeking to grasp the fundamentals or an experienced
      developer looking to enhance your skills, Modern Web Stack offers a curated
      collection of tutorials, guides, and interactive lessons.`,
   button: true,
