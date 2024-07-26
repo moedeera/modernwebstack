@@ -34,19 +34,17 @@ export const Block3 = ({ data }) => {
         /> */}
         <div className="block-3-icon">
           <img src={designgif} alt="" style={{ width: "64px" }} srcset="" />
-          <h4>Submit a Design</h4>
+          <h4>Design</h4>
         </div>
 
         <div className="block-3-icon">
           <img src={code} alt="" style={{ width: "64px" }} srcset="" />
-          <h4>We Create The Code</h4>
+          <h4>Code</h4>
         </div>
 
         <div className="block-3-icon">
           <img src={share} alt="" style={{ width: "64px" }} srcset="" />
-          <h4>
-            Share with <br /> community
-          </h4>
+          <h4>Share</h4>
         </div>
       </div>
     </div>

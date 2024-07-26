@@ -12,7 +12,10 @@ export const TemplatePageLanding = () => {
         {" "}
         <div className="landing-text">
           <h3>Supercharge your site</h3>
-          <h1>Free Easy-to-use Templates</h1>
+          <h1>
+            Free <span style={{ color: "var(--primary-button)" }}>Simple</span>{" "}
+            Templates
+          </h1>
           <p>
             Variety of Templates to suit your needs for building a React or
             NextJS application.

@@ -76,7 +76,7 @@ export const SubBlock0 = ({ data }) => {
             tasks, all within your web browser */}
           </small>
           {item.link && item.link}
-          <div className="cta">More</div>
+          {/* <div className="cta">More</div> */}
         </div>
       ))}
     </div>

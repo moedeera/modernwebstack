@@ -29,7 +29,10 @@
   align-items: baseline;
   animation: fadeUp 750ms ease-in-out;
 }
-
+.landing-text h3 {
+  color: var(--secondary-color);
+  /* color: var(--primary-button); */
+}
 .landing-image {
   animation: fadeInFromRight 750ms ease-in-out;
   display: flex;

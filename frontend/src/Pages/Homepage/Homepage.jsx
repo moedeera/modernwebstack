@@ -47,50 +47,50 @@ export const Homepage = () => {
   const blockRef3 = useRef(null);
   const blockRef4 = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fadeInUp");
-          }
-        });
-      },
-      {
-        threshold: 0.1, // Trigger when the element is at least 10% visible
-      }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add("animate-fadeInUp");
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 0.1, // Trigger when the element is at least 10% visible
+  //     }
+  //   );
 
-    // Observe the divs wrapping the Block1 components
-    if (blockRef1.current) {
-      observer.observe(blockRef1.current);
-    }
-    if (blockRef2.current) {
-      observer.observe(blockRef2.current);
-    }
-    if (blockRef3.current) {
-      observer.observe(blockRef3.current);
-    }
-    if (blockRef4.current) {
-      observer.observe(blockRef4.current);
-    }
+  //   // Observe the divs wrapping the Block1 components
+  //   if (blockRef1.current) {
+  //     observer.observe(blockRef1.current);
+  //   }
+  //   if (blockRef2.current) {
+  //     observer.observe(blockRef2.current);
+  //   }
+  //   if (blockRef3.current) {
+  //     observer.observe(blockRef3.current);
+  //   }
+  //   if (blockRef4.current) {
+  //     observer.observe(blockRef4.current);
+  //   }
 
-    // Clean up the observer on component unmount
-    return () => {
-      if (blockRef1.current) {
-        observer.unobserve(blockRef1.current);
-      }
-      if (blockRef2.current) {
-        observer.unobserve(blockRef2.current);
-      }
-      if (blockRef3.current) {
-        observer.unobserve(blockRef3.current);
-      }
-      if (blockRef4.current) {
-        observer.unobserve(blockRef4.current);
-      }
-    };
-  }, []);
+  //   // Clean up the observer on component unmount
+  //   return () => {
+  //     if (blockRef1.current) {
+  //       observer.unobserve(blockRef1.current);
+  //     }
+  //     if (blockRef2.current) {
+  //       observer.unobserve(blockRef2.current);
+  //     }
+  //     if (blockRef3.current) {
+  //       observer.unobserve(blockRef3.current);
+  //     }
+  //     if (blockRef4.current) {
+  //       observer.unobserve(blockRef4.current);
+  //     }
+  //   };
+  // }, []);
 
   // Example usage:
   // sendPostRequest('https://your-api-url.com', { key1: 'value1', key2: 'value2' });
