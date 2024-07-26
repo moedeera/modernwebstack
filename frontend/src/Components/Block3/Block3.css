@@ -14,10 +14,9 @@
 
 .block3-image-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 50px;
   overflow: hidden;
-  flex-wrap: wrap;
 }
 
 .block3-container img {
@@ -33,8 +32,6 @@
 }
 @media only screen and (min-width: 1024px) {
   .block3-image-container {
-    flex-direction: row;
-
     justify-content: space-between;
     align-items: center;
   }

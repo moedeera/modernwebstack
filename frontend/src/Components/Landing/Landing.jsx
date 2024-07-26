@@ -13,7 +13,7 @@ export const Landing = () => {
         <div className="landing-text">
           <h1>
             Simple
-            <br /> Ready-made
+            <br /> <span className="middle-text"> Ready-made</span>
             <br /> Components
           </h1>
           <p>

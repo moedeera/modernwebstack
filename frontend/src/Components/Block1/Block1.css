@@ -19,7 +19,6 @@
 }
 
 .block-1-text a {
-  font-size: medium;
   margin-top: 10px;
 }
 .block-1-image {
@@ -40,7 +39,6 @@
     flex-direction: row-reverse;
   }
   .block-1-text a {
-    font-size: large;
     margin-top: 10px;
   }
 
