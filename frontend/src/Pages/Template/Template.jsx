@@ -12,9 +12,6 @@ export const Template = () => {
     <div className="container homepage">
       <TemplatePageLanding />
       <Block1x />
-      <div className="main-code-block">
-        <CodeBlock />
-      </div>
     </div>
   );
 };

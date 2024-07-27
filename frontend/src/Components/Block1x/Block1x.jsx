@@ -8,7 +8,7 @@ import { CodeBlock } from "../CodeBlock/CodeBlock";
 export const Block1x = ({ data }) => {
   const [info, setInfo] = useState({
     small: "Fundamentals",
-    header: "You need to understand design to know what you want",
+    header: "You need to understand design to know what you want.",
     text: ` UI is a simple yet complex concept for most developers. Understanding what looks good is easy. Breaking down the concepts to build
     good looking component is hard.
     `,
