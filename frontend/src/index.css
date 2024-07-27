@@ -166,6 +166,10 @@ span {
   font-size: small;
   letter-spacing: 1px;
 }
+
+.btn-secondary {
+  background-color: gray;
+}
 .container {
   width: var(--width);
   max-width: var(--max-width);
@@ -214,6 +218,11 @@ small {
   font-weight: bold;
   letter-spacing: 1px;
   color: #92dce5;
+}
+.btn-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 /* @media (prefers-color-scheme: light) {
 } */
