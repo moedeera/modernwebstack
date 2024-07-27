@@ -3,6 +3,7 @@ import "./Block1x.css";
 import { Link } from "react-router-dom";
 
 import { SubBlock2 } from "../SubBlock2/SubBlock2";
+import { CodeBlock } from "../CodeBlock/CodeBlock";
 
 export const Block1x = ({ data }) => {
   const [info, setInfo] = useState({
@@ -14,7 +15,7 @@ export const Block1x = ({ data }) => {
     text_sec: `Thats why we simplify things for you. with a breakdown of these concepts.`,
     buttonText: "Learn More",
     link: "/",
-    reverse: true,
+    reverse: false,
   });
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export const Block1x = ({ data }) => {
       </div>
       <div className="Block-1x-image">
         {/* <img src={basicImage} alt="" /> */}
-        <SubBlock2 />
+        <CodeBlock />
       </div>
     </div>
   );
