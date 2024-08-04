@@ -49,6 +49,9 @@ export const SiteContextProvider = ({ children }) => {
 
   const [searchPage, setSearchPage] = useState(false);
   const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
 
   return (
     <siteContext.Provider
@@ -59,6 +62,7 @@ export const SiteContextProvider = ({ children }) => {
         setSearchPage,
         theme,
         setTheme,
+        toggleTheme,
       }}
     >
       {children}

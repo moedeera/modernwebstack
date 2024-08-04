@@ -26,28 +26,7 @@ export const Landing = () => {
             beautiful designs for websites, apps, and more with a simple copy
             and paste.
           </p>
-          {/* <div className="button-container">
-            {" "}
-            <Link className="btn" to="/">
-              Learn More
-            </Link>
-            <div
-              className="search-bar"
-              onClick={() => {
-                setSearchPage(true);
-              }}
-            >
-              <img
-                src={searchIcon}
-                alt=""
-                srcset=""
-                style={{ width: "100%", maxWidth: "20px" }}
-              />
-              <div className="quick-search">
-                <small>Search</small>
-              </div>
-            </div>
-          </div> */}
+
           <div className="landing-buttons-container">
             <div className="btn">See Templates</div>
             <div

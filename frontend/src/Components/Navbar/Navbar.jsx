@@ -10,7 +10,7 @@ import dark from "./darkmode.png";
 import github from "./github.png";
 
 export const Navbar = () => {
-  const { websiteInfo, searchPage, setSearchPage, theme, setTheme } =
+  const { websiteInfo, searchPage, setSearchPage, theme, toggleTheme } =
     useContext(siteContext);
   const [mobileNav, showMobileNav] = useState(false);
 
@@ -50,12 +50,7 @@ export const Navbar = () => {
           <Link to="/" className="btn btn-nav">
             Premium
           </Link>
-          <div
-            className="light-dark-icons"
-            onClick={() => {
-              setTheme((curr) => (curr === "light" ? "dark" : "light"));
-            }}
-          >
+          <div className="light-dark-icons" onClick={toggleTheme}>
             {theme === "light" ? (
               <img src={light} alt="" />
             ) : (

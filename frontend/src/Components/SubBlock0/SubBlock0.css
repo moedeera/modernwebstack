@@ -5,6 +5,10 @@
   margin-top: 50px;
   margin-bottom: 200px;
 }
+
+.sub-block-0 svg {
+  color: grey;
+}
 .sub-block-0-unit {
   width: 100%;
   max-width: 400px;
@@ -17,8 +21,8 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  background-color: #202c5973;
-  background-color: var(--code-bg);
+  /* background-color: #202c5973;
+  background-color: var(--code-bg); */
   border: 1px solid rgba(128, 128, 128, 0.25);
   padding: 22.5px 15px;
 }

@@ -55,7 +55,7 @@
   /* border: 2px solid red; */
 }
 body {
-  background-color: black;
+  /* background-color: black; */
 }
 
 img {
@@ -74,7 +74,8 @@ h1 {
   margin-bottom: 5px;
   letter-spacing: -2px;
   line-height: 1.1em;
-  background: rgb(238, 174, 202);
+  transition: all 0.45s ease-in-out;
+  /* background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
@@ -83,8 +84,23 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
   color: #0d6efd;
-  color: white;
+  color: white; */
   /* color: goldenrod; */
+}
+#light {
+  background-color: white;
+  color: #161719;
+}
+
+#dark {
+  background-color: #161719;
+  color: white;
+}
+
+#light h1,
+#light h2,
+#light h3 {
+  color: black;
 }
 .middle-text {
   color: #0d6efd;
@@ -138,6 +154,10 @@ p {
   line-height: 1.5em;
   letter-spacing: 1px;
   color: var(--off-gray);
+}
+
+#light p {
+  color: rgba(0, 0, 0, 0.75);
 }
 
 a,
@@ -196,6 +216,7 @@ span {
   margin-top: 0;
   cursor: pointer;
   transition: all 0.35s ease-in-out;
+  border: 1px solid rgba(128, 128, 128, 0.25);
 }
 .search-input small {
   color: #0d6efd;
