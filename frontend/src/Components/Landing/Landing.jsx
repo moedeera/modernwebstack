@@ -2,7 +2,6 @@ import { SubBlock1 } from "../SubBlock1/SubBlock1";
 import "./Landing.css";
 import img1 from "./code1.jpg";
 import { Link } from "react-router-dom";
-import { FaMagnifyingGlass } from "react-icons/fa6";
 import searchIcon from "./magnifying_glass.png";
 import { useContext } from "react";
 import { siteContext } from "../../Context/Context";
