@@ -48,6 +48,7 @@ export const SiteContextProvider = ({ children }) => {
   ];
 
   const [searchPage, setSearchPage] = useState(false);
+  const [theme, setTheme] = useState("light");
 
   return (
     <siteContext.Provider
@@ -56,6 +57,8 @@ export const SiteContextProvider = ({ children }) => {
         websiteInfo,
         searchPage,
         setSearchPage,
+        theme,
+        setTheme,
       }}
     >
       {children}

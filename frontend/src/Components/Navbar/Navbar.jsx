@@ -5,8 +5,13 @@ import { siteContext } from "../../Context/Context";
 import { useState } from "react";
 import { NavbarMobile } from "../NavbarMobile/NavbarMobile";
 import logo from "../../../public/mws.png";
+import light from "./lightmode.png";
+import dark from "./darkmode.png";
+import github from "./github.png";
+
 export const Navbar = () => {
-  const { websiteInfo } = useContext(siteContext);
+  const { websiteInfo, searchPage, setSearchPage, theme, setTheme } =
+    useContext(siteContext);
   const [mobileNav, showMobileNav] = useState(false);
 
   if (mobileNav) {
@@ -40,18 +45,36 @@ export const Navbar = () => {
             )}
           </div>
         </div>
-        <Link to="/" className="btn btn-nav">
-          Premium
-        </Link>
-        <div
-          onClick={() => {
-            showMobileNav(!mobileNav);
-          }}
-          className="navbar-menu-button"
-        >
-          <div className="bar-main bar-top"></div>
-          <div className="bar-main bar-middle"></div>
-          <div className="bar-main bar-bottom"></div>
+        <div className="navbar-right-menu">
+          {" "}
+          <Link to="/" className="btn btn-nav">
+            Premium
+          </Link>
+          <div
+            className="light-dark-icons"
+            onClick={() => {
+              setTheme((curr) => (curr === "light" ? "dark" : "light"));
+            }}
+          >
+            {theme === "light" ? (
+              <img src={light} alt="" />
+            ) : (
+              <img src={dark} alt="" />
+            )}
+          </div>
+          <div className="light-dark-icons">
+            <img src={github} alt="" />
+          </div>
+          <div
+            onClick={() => {
+              showMobileNav(!mobileNav);
+            }}
+            className="navbar-menu-button"
+          >
+            <div className="bar-main bar-top"></div>
+            <div className="bar-main bar-middle"></div>
+            <div className="bar-main bar-bottom"></div>
+          </div>
         </div>
       </div>
       <div

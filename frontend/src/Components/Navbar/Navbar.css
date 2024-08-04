@@ -50,9 +50,9 @@
   display: flex;
 }
 .navbar-menu-button {
-  /* border: 1px solid lightgrey; */
+  border: 0.5px solid rgba(211, 211, 211, 0.75);
   position: relative;
-  height: 35px;
+  height: 32.5px;
   width: 35px;
   border-radius: 5px;
   cursor: pointer;
@@ -60,22 +60,22 @@
 
 .bar-main {
   position: absolute;
-  height: 1px;
-  width: 80%;
-  background-color: white;
+  height: 3px;
+  width: 70%;
+  background-color: #339af0;
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .bar-top {
-  top: 35%;
+  top: 25%;
 }
 .bar-bottom {
-  top: 75%;
+  top: 65%;
 }
 .bar-middle {
-  top: 55%;
+  top: 45%;
   /* left: 35%;
   width: 80%; */
 }
@@ -107,6 +107,17 @@
 }
 .navbar-mobile a {
   font-weight: bold;
+}
+.navbar-right-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.light-dark-icons img {
+  width: 100%;
+  max-width: 25px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 600px) {
