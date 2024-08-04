@@ -10,6 +10,7 @@
   align-items: self-start;
   transition: all 0.5s ease-in-out;
   animation: appear 0.25s ease-in-out;
+  backdrop-filter: blur(5px);
 }
 .search-block-box {
   border: 1px solid rgba(128, 128, 128, 0.473);
