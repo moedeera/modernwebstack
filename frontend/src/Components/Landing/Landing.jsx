@@ -2,8 +2,13 @@ import { SubBlock1 } from "../SubBlock1/SubBlock1";
 import "./Landing.css";
 import img1 from "./code1.jpg";
 import { Link } from "react-router-dom";
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import searchIcon from "./magnifying_glass.png";
+import { useContext } from "react";
+import { siteContext } from "../../Context/Context";
 
 export const Landing = () => {
+  const { searchPage, setSearchPage } = useContext(siteContext);
   return (
     <div className="landing-container">
       {/* <div className="gradient"></div> */}
@@ -22,14 +27,50 @@ export const Landing = () => {
             beautiful designs for websites, apps, and more with a simple copy
             and paste.
           </p>
-          <Link className="btn" to="/">
-            Learn More
-          </Link>
+          {/* <div className="button-container">
+            {" "}
+            <Link className="btn" to="/">
+              Learn More
+            </Link>
+            <div
+              className="search-bar"
+              onClick={() => {
+                setSearchPage(true);
+              }}
+            >
+              <img
+                src={searchIcon}
+                alt=""
+                srcset=""
+                style={{ width: "100%", maxWidth: "20px" }}
+              />
+              <div className="quick-search">
+                <small>Search</small>
+              </div>
+            </div>
+          </div> */}
+          <div className="landing-buttons-container">
+            <div className="btn">See Templates</div>
+            <div
+              className="search-input"
+              onClick={() => {
+                setSearchPage(true);
+              }}
+            >
+              <img
+                src={searchIcon}
+                alt=""
+                srcset=""
+                style={{ width: "100%", maxWidth: "20px" }}
+              />
+              <small>Search</small>
+            </div>
+          </div>
         </div>
-        <div className="landing-image">
+        {/* <div className="landing-image">
           <img src={img1} alt="main-image" />
-        </div>
-        <SubBlock1 />
+        </div> */}
+        {/* <SubBlock1 /> */}
       </div>
     </div>
   );

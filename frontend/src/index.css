@@ -156,17 +156,48 @@ span {
 .btn,
 .btn a,
 .btn a:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-button);
   padding: 10px 28px !important;
   color: white !important;
   border-radius: 10px;
   margin-bottom: 5px;
   font-weight: 700;
-  max-width: max-content;
+  width: 100%;
   font-size: small;
   letter-spacing: 1px;
+  height: 90%;
+  max-height: 2.75rem;
+  margin-top: 5%;
+  margin-top: 0;
 }
 
+.search-input {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  padding: 10px 28px !important;
+  color: grey;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  width: 100%;
+  font-size: small;
+  letter-spacing: 1px;
+  height: 90%;
+  max-height: 2.75rem;
+  margin-top: 5%;
+  margin-top: 0;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+.search-input small {
+  color: #0d6efd;
+}
 .btn-secondary {
   background-color: gray;
 }
@@ -184,14 +215,21 @@ span {
   width: 95%;
   margin: 0 auto;
 }
+
 input {
-  padding: 20px 15px;
+  padding: 15px;
   width: 90%;
   border: none;
   border-radius: 5px;
-  max-width: 40rem;
-  background-color: white;
+  max-width: 50rem;
+  background-color: transparent;
 }
+
+input:focus {
+  outline: none; /* Removes the outline */
+  border: none; /* Removes the border */
+}
+
 textarea {
   padding: 15px;
   width: 90%;
@@ -227,10 +265,16 @@ small {
 /* @media (prefers-color-scheme: light) {
 } */
 @media only screen and (min-width: 600px) {
+  .btn {
+    max-width: max-content;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .search-input:hover {
+    opacity: 0.85;
+  }
 }
 
 /* Large devices (laptops/desktops, 1024px and up) */

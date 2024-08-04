@@ -15,6 +15,7 @@ import { SubBlock2 } from "../../Components/SubBlock2/SubBlock2";
 import { BlurredGradient } from "../../Components/BlurredGradient/BlurredGradient";
 import { useEffect } from "react";
 import { useRef } from "react";
+import SearchBlock from "../../Components/SearchBlock/SearchBlock";
 export const Homepage = () => {
   function sendPostRequest(url, data) {
     fetch(url, {
@@ -47,80 +48,37 @@ export const Homepage = () => {
   const blockRef3 = useRef(null);
   const blockRef4 = useRef(null);
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           entry.target.classList.add("animate-fadeInUp");
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.1, // Trigger when the element is at least 10% visible
-  //     }
-  //   );
-
-  //   // Observe the divs wrapping the Block1 components
-  //   if (blockRef1.current) {
-  //     observer.observe(blockRef1.current);
-  //   }
-  //   if (blockRef2.current) {
-  //     observer.observe(blockRef2.current);
-  //   }
-  //   if (blockRef3.current) {
-  //     observer.observe(blockRef3.current);
-  //   }
-  //   if (blockRef4.current) {
-  //     observer.observe(blockRef4.current);
-  //   }
-
-  //   // Clean up the observer on component unmount
-  //   return () => {
-  //     if (blockRef1.current) {
-  //       observer.unobserve(blockRef1.current);
-  //     }
-  //     if (blockRef2.current) {
-  //       observer.unobserve(blockRef2.current);
-  //     }
-  //     if (blockRef3.current) {
-  //       observer.unobserve(blockRef3.current);
-  //     }
-  //     if (blockRef4.current) {
-  //       observer.unobserve(blockRef4.current);
-  //     }
-  //   };
-  // }, []);
-
-  // Example usage:
-  // sendPostRequest('https://your-api-url.com', { key1: 'value1', key2: 'value2' });
   sendPostRequest("https://www.modernwebstack.com/api/testing/test", {
     key1: "value1",
     key2: "value2",
   });
   return (
-    <div className="container homepage">
-      <BlurredGradient />
-      {/* <CodeBlock codeString={codeSample} /> */}
-      <Landing />
-      <div className="animated-block" ref={blockRef1}>
-        <Block1 data={landingPageAbout} />
-      </div>
-      <div className="animated-block" ref={blockRef2}>
-        <Block1 data={landingPageLearning} />
-      </div>
-      <Block3 />
+    <>
+      {" "}
+      <div className="container homepage">
+        <BlurredGradient />
+        {/* <CodeBlock codeString={codeSample} /> */}
+        <Landing />
 
-      {/* <Block8 /> */}
+        <div className="animated-block" ref={blockRef1}>
+          <Block1 data={landingPageAbout} />
+        </div>
+        <div className="animated-block" ref={blockRef2}>
+          <Block1 data={landingPageLearning} />
+        </div>
+        <Block3 />
 
-      <div className="features">
-        <h3>Libraries we work with</h3>
-        <SubBlock0 data={componentLibraries} />
-      </div>
-      {/* <div className="features">
+        {/* <Block8 /> */}
+
+        <div className="features">
+          <h3>Libraries we work with</h3>
+          <SubBlock0 data={componentLibraries} />
+        </div>
+        {/* <div className="features">
         <h3>Share Your Designs</h3>
         <SubBlock0 />
       </div> */}
-    </div>
+      </div>
+    </>
   );
 };

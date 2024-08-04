@@ -35,7 +35,7 @@
 .navbar-links-lg {
   display: none;
 }
-.btn-nav {
+.btn.btn-nav {
   display: none;
 }
 .navbar-logo {
@@ -107,6 +107,12 @@
 }
 .navbar-mobile a {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+  .btn.btn-nav {
+    display: flex;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .navbar-menu-button {

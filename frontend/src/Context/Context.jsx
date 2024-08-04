@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createContext } from "react";
 
 export const siteContext = createContext({});
@@ -46,11 +47,15 @@ export const SiteContextProvider = ({ children }) => {
     },
   ];
 
+  const [searchPage, setSearchPage] = useState(false);
+
   return (
     <siteContext.Provider
       value={{
         menuList,
         websiteInfo,
+        searchPage,
+        setSearchPage,
       }}
     >
       {children}

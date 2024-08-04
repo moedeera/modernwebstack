@@ -13,12 +13,14 @@ import { Template } from "./Pages/Template/Template";
 import { Testing } from "./Pages/Testing/Testing";
 import { ErrorPage } from "./Pages/ErrorPage/ErrorPage";
 import Testing2 from "./Pages/Testing/Testing2";
+import SearchBlock from "./Components/SearchBlock/SearchBlock";
 
 function App() {
   return (
     <SiteContextProvider>
       <div className="mws-app">
         <Router>
+          <SearchBlock />
           <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />
