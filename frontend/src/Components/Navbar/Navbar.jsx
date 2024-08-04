@@ -28,7 +28,7 @@ export const Navbar = () => {
             <div className="navbar-logo-image">
               <img src={logo} alt="" />
             </div>
-            <div>
+            <div id={theme}>
               {" "}
               <span>M</span>
               <span>W</span>Stack
@@ -38,7 +38,7 @@ export const Navbar = () => {
             {websiteInfo.menuExpanded.map(
               (item, index) =>
                 index > 0 && (
-                  <Link key={item.id} to={item.link}>
+                  <Link key={item.id} to={item.link} id={theme}>
                     {item.name}
                   </Link>
                 )

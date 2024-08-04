@@ -3,7 +3,7 @@
   width: 100%;
   max-width: var(--max-width);
   height: 80vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .wrapper {
   width: 100%;
@@ -58,7 +58,7 @@
   .circle {
     width: 120px; /* 50px radius */
     height: 120px; /* 50px radius */
-    top: 100px; /* 50% overlap vertically */
+    top: 150px; /* 50% overlap vertically */
   }
 
   .red {
