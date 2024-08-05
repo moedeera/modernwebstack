@@ -13,7 +13,7 @@ const DemoComponent1 = () => {
         </div>
         <div className="demo-author-name">
           <h3>James Smith</h3>
-          <small>React Trainer</small>
+          <small>Frontend developer</small>
         </div>
       </div>
       <div>

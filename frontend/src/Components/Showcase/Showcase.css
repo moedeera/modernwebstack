@@ -1,12 +1,11 @@
 .showcase-container {
-  /* border: 1px solid green; */
-  height: 550px;
+  height: 750px;
   width: 100%;
   min-width: 300px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   border-bottom-left-radius: 15px;
-
+  overflow-y: hidden;
   padding: 0px;
 }
 
@@ -25,14 +24,14 @@
 
   position: relative;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 2.5%;
   transform: translateX(00%);
 
-  animation: moveConveyor 27s linear infinite reverse;
+  /* animation: moveConveyor 27s linear infinite reverse; */
 }
 .showcase-component {
   /* border: 1px solid red; */
-  height: 150px;
+  height: 250px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -51,14 +50,35 @@
 .showcase-component-code {
   background-color: black;
   overflow: hidden;
+  overflow-y: hidden;
 }
 .demo-component {
   border: 1px solid rgba(128, 128, 128, 0.25);
   border-radius: 15px;
-  padding: 10px;
+  padding: 15px;
   width: 90%;
   margin: 0 auto;
   /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.demo-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.demo-landing h3 {
+  text-align: center;
+}
+.demo-landing p {
+  font-size: small;
+  text-align: center;
+}
+.demo-component h3 {
+  font-size: xx-large;
+}
+.demo-component span {
+  color: #357ded;
 }
 
 .demo-image-container {
@@ -81,7 +101,7 @@
   margin-bottom: 5px;
 }
 .demo-component-author h3 {
-  font-size: large;
+  font-size: medium;
 }
 .demo-component-author small {
   color: var(--primary-button);
@@ -96,10 +116,35 @@
   letter-spacing: 0.5px;
   font-weight: 600;
 }
+
+.demo-btn {
+  padding: 10px 15px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.6);
+  background-color: #357ded;
+  border: none;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .demo-component h3 {
+    font-size: x-large;
+  }
+  .demo-component p {
+    font-size: small;
+  }
+  .demo-component-2 button,
+  .demo-component small {
+    font-size: small;
+  }
+}
 @media only screen and (min-width: 600px) {
   .showcase-container {
     height: 600px;
     width: 80%;
+  }
+  .showcase-conveyor-built {
+    margin-top: 7.5%;
   }
 }
 

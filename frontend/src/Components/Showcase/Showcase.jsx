@@ -2,6 +2,8 @@ import React from "react";
 import "./Showcase.css";
 import { CodeBlock } from "../CodeBlock/CodeBlock";
 import DemoComponent1 from "./DemoComponent1";
+import DemoComponent2 from "./DemoComponent2";
+import DemoComponent3 from "./DemoComponent3";
 
 const Showcase = () => {
   return (
@@ -10,10 +12,10 @@ const Showcase = () => {
         <div className="showcase-conveyor-built">
           {" "}
           <div className="showcase-component" id="first-scc">
-            <DemoComponent1 />
+            <DemoComponent3 />
           </div>
           <div className="showcase-component" id="second-scc">
-            <DemoComponent1 />
+            <DemoComponent2 />
           </div>
           <div className="showcase-component" id="third-scc">
             <DemoComponent1 />

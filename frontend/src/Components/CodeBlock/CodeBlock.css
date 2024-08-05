@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Code:wght@300..700&family=Inconsolata:wght@400;500;700;900&display=swap");
+
 .code-sample-container {
   border: 0.5px solid rgba(128, 128, 128, 0.35);
   /* border: 3px solid goldenrod; */
@@ -13,6 +15,7 @@
   font-size: xx-small;
   margin-bottom: 100px;
   overflow-x: scroll;
+  font-family: "Fira Code", monospace;
   /* overflow-y: scroll; */
   /* border-radius: 5px; */
   /* margin-top: 50px; */
@@ -30,7 +33,7 @@
 
 @media only screen and (min-width: 768px) {
   .code-sample-container {
-    font-size: x-small;
+    font-size: 12px;
     overflow-x: auto;
   }
 }
