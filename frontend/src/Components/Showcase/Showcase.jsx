@@ -4,6 +4,7 @@ import { CodeBlock } from "../CodeBlock/CodeBlock";
 import DemoComponent1 from "./DemoComponent1";
 import DemoComponent2 from "./DemoComponent2";
 import DemoComponent3 from "./DemoComponent3";
+import { codeSample, codeSampleB } from "../CodeBlock/SampleCode/CodeSample";
 
 const Showcase = () => {
   return (
@@ -12,18 +13,19 @@ const Showcase = () => {
         <div className="showcase-conveyor-built">
           {" "}
           <div className="showcase-component" id="first-scc">
-            <DemoComponent3 />
+            <DemoComponent1 />
           </div>
           <div className="showcase-component" id="second-scc">
             <DemoComponent2 />
           </div>
           <div className="showcase-component" id="third-scc">
-            <DemoComponent1 />
+            <DemoComponent3 />
           </div>
         </div>
       </div>
       <div className="showcase-component-code">
-        <CodeBlock />
+        {/* <CodeBlock codeString={codeSample} /> */}
+        <CodeBlock codeString={codeSampleB} />
       </div>
     </div>
   );

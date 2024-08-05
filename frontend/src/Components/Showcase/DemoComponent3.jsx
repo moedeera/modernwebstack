@@ -4,8 +4,8 @@ const DemoComponent3 = () => {
   return (
     <div className="demo-component demo-landing">
       <h3>
-        Simple <span>Landing Block</span> to get the job done <br />
-        to build your site with ease
+        Simple <span>Landing Block</span> to get the job done to build your site
+        with ease
       </h3>
       <p>
         {" "}

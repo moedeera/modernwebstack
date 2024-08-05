@@ -46,9 +46,6 @@ export const Landing = () => {
             </div>
           </div>
         </div>
-        {/* <div className="landing-image">
-          <img src={img1} alt="main-image" />
-        </div> */}
         <Showcase />
       </div>
     </div>

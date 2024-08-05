@@ -56,6 +56,61 @@ export const CodeSample = ({ data, info }) => {
   );
 };
 `;
+const codeSampleB = `
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { test } from "react-tester";
+
+export const CodeSample = ({ data, info }) => {
+  const [count, setCount] = useState(1);
+  const [data, setData] = useState([
+    { id: 1, name: "John" },
+    { id: 2, name: "Steve" },
+    { id: 3, name: "Kevin" },
+  ]);
+
+  const function1 = () => {
+    console.log("hello world");
+  };
+
+  useEffect(() => {
+    console.log("component called");
+  }, []);
+
+  return (
+    <div className="parent">
+      <div className="child" onClick={function1}>
+        <h3>Count is at {count}</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut        
+        </p>
+        <Link to={"/"}>Click Here</Link>
+        <button
+          onClick={() => {
+            setCount(count + 1);
+          }}
+        >
+          Increment Count
+        </button>
+        <div className="grand-child">
+          <h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          </h1>
+          {data.map((data) => (
+            <div key={data.id}>
+              {" "}
+              <p>{data.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+`;
+
 const imports = [
   {
     from: "react",
@@ -180,4 +235,8 @@ const jsxRepresentation1 = {
   },
 };
 
-export { codeSample as codeSample, jsxRepresentation1 as codeSample2 };
+export {
+  codeSample as codeSample,
+  jsxRepresentation1 as codeSample2,
+  codeSampleB,
+};

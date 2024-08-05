@@ -30,7 +30,7 @@ export const Navbar = () => {
             </div>
             <div id={theme}>
               {" "}
-              <span>M</span>
+              <span style={{ color: "var(--primary-button" }}>M</span>
               <span>W</span>Stack
             </div>
           </Link>

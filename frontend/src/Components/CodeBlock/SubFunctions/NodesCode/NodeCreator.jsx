@@ -10,28 +10,6 @@ export const NodeCreator = ({ code }) => {
 
   return (
     <>
-      {/* <>
-        {" "}
-        <div className="code-sample-line">
-          <span className="prop-bracket">{"<"}</span>
-          <span className="prop-label">{nodes.prop} </span>
-          {nodes.attributes.map((att) => (
-            <>
-              {" "}
-              <span className="prop-attribute-type">{att.type}=</span>
-              <span className="prop-attribute-name">{att.value}</span>
-            </>
-          ))}
-
-          <span className="prop-bracket">{">"}</span>
-        </div>
-        <div className="code-sample-line">
-          <span className="prop-bracket">{"<"}</span>
-          <span className="prop-label">{"/div"}</span>
-          <span className="prop-bracket">{">"}</span>
-        </div>
-      </> */}
-
       <div className="code-sample-line">
         <span className="prop-bracket">{"<"}</span>
         <span className="prop-label">div </span>
