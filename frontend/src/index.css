@@ -285,6 +285,28 @@ small {
   display: flex;
   gap: 10px;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+
+  transition: all 0.35s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.85);
+}
+
 /* @media (prefers-color-scheme: light) {
 } */
 @media only screen and (min-width: 600px) {

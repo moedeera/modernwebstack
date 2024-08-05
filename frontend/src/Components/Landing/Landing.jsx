@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import searchIcon from "./magnifying_glass.png";
 import { useContext } from "react";
 import { siteContext } from "../../Context/Context";
+import Showcase from "../Showcase/Showcase";
 
 export const Landing = () => {
   const { searchPage, setSearchPage } = useContext(siteContext);
@@ -48,7 +49,7 @@ export const Landing = () => {
         {/* <div className="landing-image">
           <img src={img1} alt="main-image" />
         </div> */}
-        {/* <SubBlock1 /> */}
+        <Showcase />
       </div>
     </div>
   );
