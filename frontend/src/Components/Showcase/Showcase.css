@@ -1,5 +1,5 @@
 .showcase-container {
-  height: 750px;
+  height: 650px;
   width: 100%;
   min-width: 300px;
   display: grid;
@@ -69,6 +69,7 @@
 }
 .demo-landing h3 {
   text-align: center;
+  font-size: small;
 }
 .demo-landing p {
   font-size: small;
@@ -110,6 +111,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .demo-author-name h3,
 .demo-author-name small {
   margin: 0;
@@ -125,10 +127,17 @@
   border: none;
   border-radius: 10px;
 }
+.demo-author-name h3 {
+  font-size: medium;
+}
+.demo-author-bio p {
+  font-size: small;
+}
 
 @media only screen and (max-width: 600px) {
   .demo-component h3 {
-    font-size: x-large;
+    font-size: large;
+    color: red;
   }
   .demo-component p {
     font-size: small;
@@ -141,6 +150,12 @@
     font-size: x-large;
   }
   .demo-landing p {
+    font-size: x-small;
+  }
+  .demo-author-name h3 {
+    font-size: small;
+  }
+  .demo-author-bio p {
     font-size: x-small;
   }
 }

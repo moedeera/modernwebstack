@@ -48,7 +48,7 @@ export const Navbar = () => {
         <div className="navbar-right-menu">
           {" "}
           <Link to="/" className="btn btn-nav">
-            Premium
+            Sponsor
           </Link>
           <div className="light-dark-icons" onClick={toggleTheme}>
             {theme === "light" ? (
