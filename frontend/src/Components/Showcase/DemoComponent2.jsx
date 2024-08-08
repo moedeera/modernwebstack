@@ -2,7 +2,7 @@ import React from "react";
 
 const DemoComponent2 = () => {
   return (
-    <div className="demo-component demo-component-2">
+    <div className="demo-component">
       <small>Commitment</small>
       <h3>Understanding Learning</h3>
       <p>

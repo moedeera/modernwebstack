@@ -1,9 +1,10 @@
 .showcase-container {
-  height: 650px;
+  min-height: 375px !important;
   width: 100%;
   min-width: 300px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1.35fr 1fr;
+
   border-bottom-left-radius: 15px;
   overflow-y: hidden;
   padding: 0px;
@@ -36,6 +37,28 @@
   position: absolute;
   top: 0;
 }
+
+.showcase-component h3,
+.demo-component h3 {
+  font-size: small !important;
+  letter-spacing: normal;
+  color: red;
+}
+.showcase-component small,
+.demo-component small {
+  font-size: xx-small;
+  letter-spacing: normal;
+  color: #357ded;
+}
+.showcase-component p {
+  font-size: x-small;
+}
+.demo-image-container {
+  height: 150%;
+  width: 150%;
+  border-radius: 50%;
+}
+
 #first-scc {
   left: 0;
 }
@@ -55,7 +78,7 @@
 .demo-component {
   border: 1px solid rgba(128, 128, 128, 0.125);
   border-radius: 15px;
-  padding: 15px;
+  padding: 15px 15px 10px;
   width: 90%;
   margin: 0 auto;
   /* background-color: rgba(255, 255, 255, 0.5); */
@@ -67,24 +90,10 @@
   align-items: center;
   text-align: center;
 }
-.demo-landing h3 {
-  text-align: center;
-  font-size: small;
-}
-.demo-landing p {
-  font-size: small;
-  text-align: center;
-}
-.demo-component h3 {
-  font-size: xx-large;
-}
-.demo-component span {
-  color: #357ded;
-}
 
 .demo-image-container {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   overflow: hidden;
 
@@ -102,11 +111,9 @@
   margin-bottom: 5px;
 }
 .demo-component-author h3 {
-  font-size: medium;
+  /* font-size: medium; */
 }
-.demo-component-author small {
-  color: var(--primary-button);
-}
+
 .demo-author-name {
   display: flex;
   flex-direction: column;
@@ -120,44 +127,22 @@
 }
 
 .demo-btn {
-  padding: 10px 15px;
+  padding: 6.7px 10px;
   color: white;
   background-color: rgba(128, 128, 128, 0.6);
   background-color: #357ded;
   border: none;
   border-radius: 10px;
+  font-size: xx-small;
 }
 .demo-author-name h3 {
-  font-size: medium;
+  /* font-size: medium; */
 }
 .demo-author-bio p {
-  font-size: small;
+  /* font-size: small; */
 }
 
 @media only screen and (max-width: 600px) {
-  .demo-component h3 {
-    font-size: large;
-    color: red;
-  }
-  .demo-component p {
-    font-size: small;
-  }
-  .demo-component-2 button,
-  .demo-component small {
-    font-size: small;
-  }
-  .demo-landing h3 {
-    font-size: x-large;
-  }
-  .demo-landing p {
-    font-size: x-small;
-  }
-  .demo-author-name h3 {
-    font-size: small;
-  }
-  .demo-author-bio p {
-    font-size: x-small;
-  }
 }
 @media only screen and (min-width: 600px) {
   .showcase-container {
@@ -166,6 +151,24 @@
   }
   .showcase-conveyor-built {
     margin-top: 7.5%;
+  }
+  .showcase-component h3 {
+    font-size: medium;
+  }
+  .showcase-component small {
+    font-size: small;
+  }
+  .showcase-component p {
+    font-size: smaller;
+  }
+  .demo-component-1 {
+    min-height: 130px;
+  }
+  .demo-image-container {
+    width: 40px;
+    height: 40px;
+  }
+  .demo-btn {
   }
 }
 

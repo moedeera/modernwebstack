@@ -2,7 +2,7 @@ import React from "react";
 
 const DemoComponent1 = () => {
   return (
-    <div className="demo-component">
+    <div className="demo-component demo-component-1">
       <div className="demo-component-author">
         {" "}
         <div className="demo-image-container">
