@@ -38,6 +38,11 @@
   top: 0;
 }
 
+.showcase-component h1 {
+  color: var(--primary-button) !important;
+  font-size: medium;
+  letter-spacing: normal !important;
+}
 .showcase-component h3,
 .demo-component h3 {
   font-size: small !important;
@@ -127,13 +132,13 @@
 }
 
 .demo-btn {
+  font-size: xx-small;
   padding: 6.7px 10px;
   color: white;
   background-color: rgba(128, 128, 128, 0.6);
   background-color: #357ded;
   border: none;
   border-radius: 10px;
-  font-size: xx-small;
 }
 .demo-author-name h3 {
   /* font-size: medium; */
@@ -141,7 +146,9 @@
 .demo-author-bio p {
   /* font-size: small; */
 }
-
+.demo-2-extra {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
 }
 @media only screen and (min-width: 600px) {
@@ -169,6 +176,28 @@
     height: 40px;
   }
   .demo-btn {
+    font-size: small;
+    padding: 10px 15px;
+  }
+
+  .showcase-component h1 {
+    font-size: xx-large;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .demo-2 h3 {
+    font-size: large !important;
+  }
+  .demo-2-extra {
+    display: block;
+  }
+  .demo-landing {
+    height: 95%;
+    text-align: center;
+  }
+  .demo-landing p {
+    text-align: center;
   }
 }
 

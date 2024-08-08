@@ -13,7 +13,7 @@ const Showcase = () => {
         <div className="showcase-conveyor-built">
           {" "}
           <div className="showcase-component" id="first-scc">
-            <DemoComponent1 />
+            <DemoComponent3 />
           </div>
           <div className="showcase-component" id="second-scc">
             <DemoComponent2 />
