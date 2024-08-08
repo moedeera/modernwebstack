@@ -25,10 +25,11 @@
 }
 .sub-block-2 {
   border: 5px solid grey;
+  border-radius: 15px;
   height: 280px;
   background-color: var(--code-bg);
   width: 100%;
-  max-width: 425px;
+  max-width: 525px;
   padding: 5px;
   display: flex;
   flex-direction: column;
