@@ -8,13 +8,15 @@
   border-bottom-left-radius: 15px;
   overflow-y: hidden;
   padding: 0px;
+  border: 1px solid rgba(128, 128, 128, 0.195);
+  border-radius: 5px;
 }
 
 .showcase-component-container {
   background-color: transparent;
   width: 100%;
   height: 100%;
-  border: 1px solid rgba(128, 128, 128, 0.15);
+  /* border: 1px solid rgba(128, 128, 128, 0.15); */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   overflow-y: hidden;

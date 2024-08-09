@@ -51,7 +51,7 @@ export const Navbar = () => {
             Sponsor
           </Link>
           <div className="light-dark-icons" onClick={toggleTheme}>
-            {theme === "light" ? (
+            {theme === "dark" ? (
               <img src={light} alt="" />
             ) : (
               <img src={dark} alt="" />
