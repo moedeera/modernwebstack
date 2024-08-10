@@ -4,7 +4,7 @@ const DemoComponent2 = () => {
   return (
     <div className="demo-component demo-2">
       <small>Content Blocks</small>
-      <h3>Customizable & Reusable Blocks</h3>
+      <h3 style={{ marginTop: "5px" }}>Customizable & Reusable Blocks</h3>
       <p>
         {" "}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

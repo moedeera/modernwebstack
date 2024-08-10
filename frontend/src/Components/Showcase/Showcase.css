@@ -23,8 +23,6 @@
   overflow-x: hidden;
 }
 .showcase-conveyor-built {
-  background-color: aquamarine;
-
   position: relative;
   width: 100%;
   margin-top: 2.5%;
@@ -49,13 +47,14 @@
 .demo-component h3 {
   font-size: small !important;
   letter-spacing: normal;
-  color: red;
+  margin-bottom: 3px !important;
 }
 .showcase-component small,
 .demo-component small {
   font-size: xx-small;
   letter-spacing: normal;
   color: #357ded;
+  margin-bottom: 3px !important;
 }
 .showcase-component p {
   font-size: x-small;
