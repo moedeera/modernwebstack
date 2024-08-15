@@ -3,7 +3,8 @@
 .code-sample-container {
   /* border: 0.5px solid rgba(128, 128, 128, 0.35); */
   /* border: 3px solid goldenrod; */
-
+  border-top: 1px solid gray;
+  padding-top: 5px;
   border-right: none;
   height: 300px;
   width: 100%;
@@ -39,5 +40,7 @@
   .code-sample-container {
     font-size: 12px;
     overflow-x: auto;
+    border-top: none;
+    padding-top: 5px;
   }
 }

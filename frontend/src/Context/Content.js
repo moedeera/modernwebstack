@@ -4,6 +4,20 @@ import js from "../Components/Block7/js.png";
 import tailwindcss from "../Components/Block7/tailwind.png";
 
 const landingPageAbout = {
+  small: "Our Philosophy",
+  header: "Simple & Convenient ",
+  text: `Overwhelmed by all the UI Libraries nowadays? 
+  Already using one for your project? 
+  No worries, we have templates for everything including vanilla React. Have the ability to create or customize your ideal website with ease`,
+  text_sec: `
+  Choose the aesthetic you are looking for and simply select the specific UI framework you want to use and viola!  No need to download or install any package.`,
+  button: true,
+  buttonText: "See Templates",
+  link: "/",
+  reverse: true,
+};
+
+const landingPageAbout2 = {
   small: "Skills Development",
   header: "Empower Your React Journey",
   text: `Modern Web Stack is a comprehensive online platform
@@ -18,7 +32,7 @@ const landingPageAbout = {
   reverse: true,
 };
 
-const landingPageAbout2 = {
+const landingPageAbout3 = {
   small: "",
   header: "",
   text: `What sets this
