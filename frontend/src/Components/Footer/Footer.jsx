@@ -2,9 +2,13 @@ import React from "react";
 import "./Footer.css";
 import logo from "../../../public/mws.png";
 import { Link } from "react-router-dom";
+import { siteContext } from "../../Context/Context";
+import { useContext } from "react";
 export const Footer = () => {
+  const { websiteInfo, searchPage, setSearchPage, theme, toggleTheme } =
+    useContext(siteContext);
   return (
-    <div className="footer">
+    <div className="footer" id={theme === "light" ? "light" : "dark"}>
       {" "}
       <div className="footer-container">
         <div className="upper-footer">
@@ -13,7 +17,14 @@ export const Footer = () => {
               <img src={logo} alt="" />
             </div>
             <h4>
-              <span>MW</span>Stack
+              <span>MW</span>
+              <span
+                style={
+                  theme === "light" ? { color: "black" } : { color: "white" }
+                }
+              >
+                Stack
+              </span>
             </h4>
           </Link>
           <div className="upper-footer-section">

@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import { createContext } from "react";
 
 export const siteContext = createContext({});
-
+const getInitialTheme = () => {
+  const savedTheme = localStorage.getItem("theme");
+  return savedTheme ? savedTheme : "light";
+};
 export const SiteContextProvider = ({ children }) => {
   const websiteInfo = {
     title: "",
@@ -48,11 +52,13 @@ export const SiteContextProvider = ({ children }) => {
   ];
 
   const [searchPage, setSearchPage] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(getInitialTheme());
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
-
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
   return (
     <siteContext.Provider
       value={{

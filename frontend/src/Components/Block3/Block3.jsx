@@ -1,7 +1,7 @@
 import React from "react";
 import "./Block3.css";
 import b3svg from "./block3.svg";
-import designgif from "./design.png";
+import designgif from "./design2.png";
 import code from "./code.png";
 import share from "./share.png";
 import { useEffect, useState } from "react";

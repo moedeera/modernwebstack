@@ -16,11 +16,13 @@
   flex-direction: column;
   gap: 40px;
 }
-.upper-footer a {
+.upper-footer a,
+.upper-footer a:visited {
   font-size: small;
+  color: var(--primary-button);
 }
 .upper-footer p {
-  color: goldenrod;
+  /* color: goldenrod; */
 }
 .upper-footer-section {
   display: flex;
