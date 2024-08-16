@@ -1,0 +1,23 @@
+.block-a-container {
+  margin: 100px auto;
+}
+.block-a-text {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.block-a-text small {
+  background-color: #0d6efd;
+  width: max-content;
+  padding: 7.5px;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+@media only screen and (min-width: 600px) {
+  .block-a-container {
+  }
+}

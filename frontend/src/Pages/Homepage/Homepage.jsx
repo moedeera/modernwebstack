@@ -16,6 +16,7 @@ import { BlurredGradient } from "../../Components/BlurredGradient/BlurredGradien
 import { useEffect } from "react";
 import { useRef } from "react";
 import SearchBlock from "../../Components/SearchBlock/SearchBlock";
+import BlockA from "../../Components/BlockA/BlockA";
 export const Homepage = () => {
   function sendPostRequest(url, data) {
     fetch(url, {
@@ -61,10 +62,11 @@ export const Homepage = () => {
         <Landing />
 
         <div className="animated-block" ref={blockRef1}>
-          <Block1 data={landingPageAbout} />
+          {/* <Block1 data={landingPageAbout} /> */}
+          <BlockA />
         </div>
         <div className="animated-block" ref={blockRef2}>
-          <Block1 data={landingPageLearning} />
+          {/* <Block1 data={landingPageLearning} /> */}
         </div>
         <Block3 />
 

@@ -76,13 +76,18 @@ export const Block1 = ({ data }) => {
           {info.buttonText}
         </Link>
       </div>
-      <div
+      {/* <div
         className="block-1-image"
         ref={targetRef}
         style={{ opacity: 0, transition: "opacity 0.75s" }}
-      >
-        {/* <img src={basicImage} alt="" /> */}
-        <SubBlock2 />
+      > </div> */}
+      {/* <img src={info.image ? info.image : basicImage} alt="" /> */}
+      <div className="block-1-animation">
+        <div className="block1-a-frame" id="frame-1"></div>
+        <div className="block1-a-frame" id="frame-2"></div>
+        <div className="block1-a-frame" id="frame-3">
+          <SubBlock2 />
+        </div>
       </div>
     </div>
   );

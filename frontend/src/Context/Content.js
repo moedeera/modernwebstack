@@ -2,6 +2,7 @@ import chakra from "../Components/Block7/chakra.png";
 import mui from "../Components/Block7/materialsui.png";
 import js from "../Components/Block7/js.png";
 import tailwindcss from "../Components/Block7/tailwind.png";
+import img1 from "./images/homepageblock1.svg";
 
 const landingPageAbout = {
   small: "Our Philosophy",
@@ -15,6 +16,7 @@ const landingPageAbout = {
   buttonText: "See Templates",
   link: "/",
   reverse: true,
+  image: img1,
 };
 
 const landingPageAbout2 = {

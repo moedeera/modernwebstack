@@ -30,6 +30,34 @@
   width: 100%;
   max-width: 400px;
 }
+
+/* animation */
+.block-1-animation {
+  border: 1px solid gray;
+  position: relative;
+  width: 100%;
+}
+.block1-a-frame {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 0%;
+  left: 0%;
+}
+
+#frame-1 {
+  background-color: aqua;
+  top: 0%;
+  left: 20%;
+  border-radius: 5px;
+}
+#frame-2 {
+  background-color: red;
+  top: 20%;
+  left: 10%;
+  border-radius: 5px;
+}
+
 @media only screen and (min-width: 600px) {
   .block-1-container {
     flex-direction: row;
