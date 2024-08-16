@@ -74,6 +74,7 @@ export const Navbar = () => {
       </div>
       <div
         className="navbar-mobile"
+        id={theme === "light" ? "light" : "dark"}
         style={
           mobileNav
             ? { transform: "translateX(0)", opacity: "1" }

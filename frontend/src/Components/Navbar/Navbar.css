@@ -85,7 +85,7 @@
   width: 100%;
   left: 0;
   top: 0;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   z-index: 2;
   color: black;
   border: 1px solid red;
@@ -95,7 +95,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  /* background-color: transparent; */
   z-index: 2;
   transition: all 0.35s ease-in-out;
   display: flex;
