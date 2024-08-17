@@ -17,6 +17,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import SearchBlock from "../../Components/SearchBlock/SearchBlock";
 import BlockA from "../../Components/BlockA/BlockA";
+import BlockB from "../../Components/BlockB/BlockB";
 export const Homepage = () => {
   function sendPostRequest(url, data) {
     fetch(url, {
@@ -66,7 +67,7 @@ export const Homepage = () => {
           <BlockA />
         </div>
         <div className="animated-block" ref={blockRef2}>
-          {/* <Block1 data={landingPageLearning} /> */}
+          <BlockB />
         </div>
         <Block3 />
 

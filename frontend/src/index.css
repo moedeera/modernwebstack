@@ -72,7 +72,7 @@ h1 {
   font-size: 50px;
   font-size: 45.5px;
   margin-bottom: 5px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   line-height: 1.1em;
   transition: all 0.45s ease-in-out;
   /* background: rgb(238, 174, 202);
@@ -194,6 +194,10 @@ span {
   max-height: 2.75rem;
   margin-top: 5%;
   margin-top: 0;
+}
+
+.btn-alt {
+  background-color: grey;
 }
 
 .search-input {

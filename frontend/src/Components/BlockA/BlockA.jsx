@@ -12,11 +12,13 @@ const BlockA = () => {
           {" "}
           <p>
             Overwhelmed by all the UI Libraries nowadays? Already using one for
-            your project. No worries,
-            <span>
+            your project? No worries,{" "}
+            <strong>
               {" "}
-              we have templates for everything including vanilla React
-            </span>
+              <span>
+                we have templates for everything including vanilla ReactJS
+              </span>
+            </strong>{" "}
             Have the ability to create or customize your ideal website with ease
           </p>
           <br />
@@ -28,7 +30,7 @@ const BlockA = () => {
           </p>
         </div>
       </div>
-      <div className="block-a-image">Block A Image</div>
+      {/* <div className="block-a-image">Block A Image</div> */}
     </div>
   );
 };
