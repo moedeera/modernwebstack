@@ -16,7 +16,9 @@
     "cors": "^2.8.5",
     "monaco-jsx-highlighter": "^2.0.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-code-blocks": "^0.1.6",
+    "react-dom": "^18.2.0",
+    "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

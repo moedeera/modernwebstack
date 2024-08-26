@@ -18,6 +18,9 @@ import { useRef } from "react";
 import SearchBlock from "../../Components/SearchBlock/SearchBlock";
 import BlockA from "../../Components/BlockA/BlockA";
 import BlockB from "../../Components/BlockB/BlockB";
+import CodeEditor from "../../Components/CodeEditor/CodeEditor";
+import CodeEditorReactCodeBlocks from "../../Components/CodeCopyBlock/CodeCopyBlock";
+import LandingBlock from "../../Components/LandingBlock/LandingBlock";
 export const Homepage = () => {
   function sendPostRequest(url, data) {
     fetch(url, {
@@ -58,10 +61,10 @@ export const Homepage = () => {
     <>
       {" "}
       <div className="container homepage">
-        <BlurredGradient />
+        {/* <BlurredGradient /> */}
         {/* <CodeBlock codeString={codeSample} /> */}
-        <Landing />
-
+        {/* <Landing /> */}
+        <LandingBlock />
         <div className="animated-block" ref={blockRef1}>
           {/* <Block1 data={landingPageAbout} /> */}
           <BlockA />
@@ -70,6 +73,8 @@ export const Homepage = () => {
           <BlockB />
         </div>
         <Block3 />
+        <CodeEditor />
+        <CodeEditorReactCodeBlocks />
 
         {/* <Block8 /> */}
 

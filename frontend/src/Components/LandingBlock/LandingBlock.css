@@ -1,0 +1,45 @@
+.landing-block-container {
+  height: 80vh;
+
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.landing-block-text {
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+}
+.landing-block-demo {
+}
+
+.landing-blocks-buttons-container {
+  display: flex;
+  /* border: 1px solid gray; */
+  width: 100%;
+  max-width: 400px;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.btn-1 {
+  border: 1px solid green;
+  min-width: 8rem;
+  padding: 5px;
+  border-radius: 7.5px 5px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .landing-block-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .landing-blocks-buttons-container {
+    flex-wrap: nowrap;
+  }
+}
