@@ -73,8 +73,8 @@ export const Homepage = () => {
           <BlockB />
         </div>
         <Block3 />
-        <CodeEditor />
-        <CodeEditorReactCodeBlocks />
+        {/* <CodeEditor />
+        <CodeEditorReactCodeBlocks /> */}
 
         {/* <Block8 /> */}
 

@@ -1,6 +1,5 @@
 .landing-block-container {
-  height: 80vh;
-
+  height: 77vh;
   width: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -9,12 +8,13 @@
 .landing-block-text {
   height: 100%;
   width: 100%;
-  border-bottom: 1px solid grey;
-  border-right: 1px solid grey;
+  /* border-bottom: 1px solid grey;
+  border-right: 1px solid grey; */
   display: flex;
   flex-direction: column;
 }
 .landing-block-demo {
+  border: 1px solid gray;
 }
 
 .landing-blocks-buttons-container {
@@ -25,14 +25,23 @@
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 10px;
+  padding: 3px 0;
 }
 .btn-1 {
-  border: 1px solid green;
   min-width: 8rem;
-  padding: 5px;
-  border-radius: 7.5px 5px;
+  padding: 7.5px 5px;
+  border-radius: 7.5px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: var(--primary-button);
+  font-size: small;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.btn-1-alt {
+  background-color: aliceblue;
+  color: rgba(0, 0, 0, 0.75);
 }
 @media only screen and (min-width: 768px) {
   .landing-block-container {
@@ -41,5 +50,8 @@
   }
   .landing-blocks-buttons-container {
     flex-wrap: nowrap;
+  }
+  .btn-1 {
+    font-size: 14px;
   }
 }

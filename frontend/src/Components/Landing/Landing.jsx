@@ -27,7 +27,7 @@ export const Landing = () => {
           </p>
 
           <div className="landing-buttons-container">
-            <div className="btn">See Templates</div>
+            <div className="btn">Templates</div>
             <div
               className="search-input"
               onClick={() => {

@@ -22,12 +22,9 @@ const LandingBlock = () => {
         </p>
         <div className="landing-blocks-buttons-container">
           <Link to={"/"} className="btn-1">
-            <p>See Templates</p>
+            See Templates
           </Link>
-          <div className="btn-1">
-            {" "}
-            <p>Search</p>
-          </div>
+          <div className="btn-1"> Search</div>
         </div>
       </div>
       <div className="landing-block-demo">
