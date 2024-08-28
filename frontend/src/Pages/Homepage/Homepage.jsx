@@ -63,8 +63,8 @@ export const Homepage = () => {
       <div className="container homepage">
         {/* <BlurredGradient /> */}
         {/* <CodeBlock codeString={codeSample} /> */}
-        {/* <Landing /> */}
-        <LandingBlock />
+        <Landing />
+        {/* <LandingBlock /> */}
         <div className="animated-block" ref={blockRef1}>
           {/* <Block1 data={landingPageAbout} /> */}
           <BlockA />
