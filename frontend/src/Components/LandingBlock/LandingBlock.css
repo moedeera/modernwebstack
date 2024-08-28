@@ -29,7 +29,7 @@
 }
 .btn-1 {
   min-width: 8rem;
-  padding: 7.5px 5px;
+  padding: 10px 5px;
   border-radius: 7.5px;
   display: flex;
   justify-content: center;
@@ -38,11 +38,16 @@
   font-size: small;
   font-weight: 600;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .btn-1-alt {
   background-color: aliceblue;
   color: rgba(0, 0, 0, 0.75);
 }
+.gray-alt {
+  background-color: silver;
+}
+
 @media only screen and (min-width: 768px) {
   .landing-block-container {
     grid-template-columns: 1fr 1fr;

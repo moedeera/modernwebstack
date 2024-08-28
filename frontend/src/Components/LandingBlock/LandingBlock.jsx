@@ -22,9 +22,17 @@ const LandingBlock = () => {
         </p>
         <div className="landing-blocks-buttons-container">
           <Link to={"/"} className="btn-1">
-            See Templates
+            Templates
           </Link>
-          <div className="btn-1"> Search</div>
+          <div
+            className="btn-1 gray-alt"
+            onClick={() => {
+              setSearchPage(true);
+            }}
+          >
+            {" "}
+            Search
+          </div>
         </div>
       </div>
       <div className="landing-block-demo">
