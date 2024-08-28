@@ -3,6 +3,7 @@ import "./LandingBlock.css";
 import { siteContext } from "../../Context/Context";
 import searchIcon from "../Landing/magnifying_glass.png";
 import { Link } from "react-router-dom";
+import LandingBlockDemo from "./LandingBlockDemo";
 
 const LandingBlock = () => {
   const { searchPage, setSearchPage } = useContext(siteContext);
@@ -35,10 +36,7 @@ const LandingBlock = () => {
           </div>
         </div>
       </div>
-      <div className="landing-block-demo">
-        <p>Demo</p>
-      </div>
-      <div></div>
+      <LandingBlockDemo />
     </div>
   );
 };

@@ -1,0 +1,51 @@
+.landing-block-demo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid gray;
+  position: relative;
+}
+
+.demo-carousel-container {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transform: translateX(0%);
+}
+
+.demo-box {
+  width: 40%;
+  height: 60%;
+  margin: 5%;
+  background-color: lightcoral;
+  flex-shrink: 0;
+}
+
+.box-a {
+  background-color: lightcoral;
+}
+
+.box-b {
+  background-color: lightblue;
+}
+
+.box-c {
+  background-color: lightgreen;
+}
+
+.box-d {
+  background-color: lightpink;
+}
+
+.demo-code-container {
+  border-top: 1px solid red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+  width: 40%;
+  background-color: red;
+}
