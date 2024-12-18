@@ -90,6 +90,7 @@
   .block-b-container {
   }
   .block-b-text {
+    max-width: 900px;
   }
   .block-b-image {
     width: 100%;
