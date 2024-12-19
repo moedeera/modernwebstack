@@ -6,7 +6,6 @@ import img4 from "./design.png";
 import { useState } from "react";
 
 const BlockB = () => {
-  const [view, setView] = useState(0);
   const items = [
     { name: "Choices", image: img4 },
     {
@@ -29,15 +28,19 @@ const BlockB = () => {
         {" "}
         <div className="block-b-image">
           {items.map((item, index) => (
-            <div
-              key={index}
-              onClick={() => {
-                setView(index);
-                console.log(index * 25);
-              }}
-            >
-              <img src={item.image} alt="" srcset="" />
-              <small>{item.name}</small>
+            <div className="block-b-card" key={index}>
+              <div className="bbi-image">
+                <img src={item.image} alt="" srcset="" />{" "}
+              </div>
+              <div>
+                <div className="bbi-text">
+                  {" "}
+                  <h4>{item.name}</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur.sed do eiusmod</p>
+                  {/* <small>{item.name}</small> */}
+                  {/* <div className="btn"> More</div> */}
+                </div>{" "}
+              </div>
             </div>
           ))}
         </div>
@@ -49,41 +52,19 @@ const BlockB = () => {
           <div>
             {" "}
             <p>
-              Work with what you have already,{" "}
+              Want to keep your project as minimalist as possible? Work with
+              what you have already, . Our goal is to help you reduce the number
+              of stacks and add-ons you are using for your UI.
               <strong>
                 {" "}
                 <span>
                   Our components and designs are built with every UI Library
                 </span>
               </strong>{" "}
-              Easily build on top of what you were already working with.
+              Easily build on top of what you were already with.
             </p>
             <br />
             {/* <div className="btn">Search Templates</div> */}
-          </div>
-        </div>
-      </div>
-      <div className="block-b-scrolling-container">
-        <div
-          className="block-b-scrolling-contents"
-          style={{ transform: `translateY(-${view * 25}%)` }}
-        >
-          {" "}
-          <div className="block-b-box" id="box-1">
-            {" "}
-            A
-          </div>
-          <div className="block-b-box" id="box-2">
-            {" "}
-            B
-          </div>
-          <div className="block-b-box" id="box-3">
-            {" "}
-            C{" "}
-          </div>
-          <div className="block-b-box " id="box-4">
-            {" "}
-            D
           </div>
         </div>
       </div>
