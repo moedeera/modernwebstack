@@ -178,12 +178,13 @@ span {
 .btn,
 .btn a,
 .btn a:visited {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--primary-button);
-  padding: 10px 28px !important;
-  color: white !important;
+  padding: 10px 28px;
+  color: white;
   border-radius: 10px;
   margin-bottom: 5px;
   font-weight: 700;
@@ -195,7 +196,11 @@ span {
 }
 
 .btn-alt {
-  background-color: grey;
+  background-color: aliceblue;
+  padding: 20px 10px;
+  min-width: 10rem;
+  color: var(--primary-button);
+  border: 1px solid rgba(220, 220, 220, 0.5);
 }
 
 .search-input {

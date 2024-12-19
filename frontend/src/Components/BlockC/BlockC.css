@@ -3,39 +3,53 @@
 }
 .block-c-scrolling-container {
   border: 1px solid rgba(128, 128, 128, 0.25);
-  height: 320px;
+  height: 420px;
   width: 100%;
   overflow-y: hidden;
-  background-color: red;
+  background-color: grey;
 }
 .block-c-scrolling-contents {
-  width: 90%;
+  height: 90%;
   margin: 0 auto;
-  height: 400%;
+  width: 100%;
   background-color: aliceblue;
   position: relative;
-  transition: all 0.35s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .block-c-box {
   position: absolute;
   border: 1px solid black;
-  top: 0%;
-  left: 0%;
+  top: 0 !important;
+
   width: 100%;
-  height: 25%;
+  height: 100% !important;
+  transition: all 0.5s ease-in-out;
+}
+.block-c-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid green; */
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+}
+.btn.btn-alt.block-c-selected {
+  color: white;
+  background-color: var(--primary-button) !important;
 }
 #box-1 {
   background-color: blue;
+  left: 0%;
 }
 #box-2 {
   background-color: red;
-  top: 25%;
+  left: 100%;
 }
 #box-3 {
   background-color: green;
-  top: 50%;
+  left: 200%;
 }
 #box-4 {
   background-color: yellow;
-  top: 75%;
+  left: 300%;
 }
