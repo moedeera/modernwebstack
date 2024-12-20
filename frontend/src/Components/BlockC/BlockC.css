@@ -6,13 +6,13 @@
   height: 420px;
   width: 100%;
   overflow-y: hidden;
-  background-color: grey;
+  /* background-color: grey; */
 }
 .block-c-scrolling-contents {
   height: 90%;
   margin: 0 auto;
   width: 100%;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   position: relative;
   transition: all 1s ease-in-out;
 }
@@ -38,7 +38,6 @@
   background-color: var(--primary-button) !important;
 }
 #box-1 {
-  background-color: blue;
   left: 0%;
 }
 #box-2 {
@@ -49,7 +48,11 @@
   background-color: green;
   left: 200%;
 }
+#box-3b {
+  background-color: gray;
+  left: 300%;
+}
 #box-4 {
   background-color: yellow;
-  left: 300%;
+  left: 400%;
 }
