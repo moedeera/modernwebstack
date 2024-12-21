@@ -7,42 +7,109 @@
   width: 90%;
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 8fr 2fr;
+  grid-template-columns: 4fr 2fr;
+  gap: 10px;
 }
 /* Navbar */
 .mws-navbar-1 {
-  border: 1px solid grey;
+  border: 0.5px solid grey;
   width: 100%;
-  margin: 0 auto;
-
+  margin: 5px auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   border-radius: 10px;
-  padding: 20px 20px 0px;
+  padding: 10px;
+  transition: all 0.35s ease-in-out;
+  cursor: pointer;
 }
 .mws-navbar-1-link {
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 15px 20px;
   cursor: pointer;
   display: none;
 }
 
-.mws-navbar-1 > div:nth-child(1) {
-  border-bottom: 2px solid green;
+.mws-navbar-1 .mws-navbar-1-selected {
+  border-bottom: 2px solid gray;
+}
+.mws-navbar-1-menu-container {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+.mws-navbar-1-menu-bar {
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  background-color: #339af0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mws-upper {
+  top: 25%;
+}
+.mws-middle {
+  top: 65%;
+}
+.mws-lower {
+  top: 45%;
+  /* left: 35%;
+  width: 80%; */
 }
 
 /* Dropdown */
-.mws-drop-down {
+.mws-navbar-dropdown-1 {
   border: 1px solid grey;
   border-radius: 10px;
+  height: 80%;
+  margin: auto auto;
+  width: 100%;
+  max-width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mws-navbar-dropdown-image {
+  display: flex;
+  gap: 10px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.mws-navbar-dropdown-image img {
+  width: 100%;
+  max-width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.mws-navbar-dropdown-label {
+  display: none;
+}
+.mws-navbar-dropdown-label img {
+  width: 20px;
 }
 
 @media only screen and (min-width: 900px) {
   .mws-navbar-1 {
-    display: flex;
-
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 20px 20px 0px;
   }
   .mws-navbar-1-link {
-    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mws-navbar-1-menu-container {
+    display: none;
+  }
+  .mws-navbar-dropdown-label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .mws-navbar-dropdown-image {
+    display: none;
   }
 }
