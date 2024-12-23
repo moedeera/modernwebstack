@@ -12,6 +12,7 @@ const DemoA = () => {
   ];
 
   const [selected, setSelected] = useState("Home");
+  const [showDropdown, setShowDropdown] = useState(false);
   return (
     <div className="demoA-container">
       <div className="demoA-upper">
@@ -46,10 +47,31 @@ const DemoA = () => {
               alt=""
             />
           </div>
-          <div className="mws-navbar-dropdown-label">
+          <div
+            className="mws-navbar-dropdown-label"
+            onClick={() => {
+              setShowDropdown(!showDropdown);
+            }}
+          >
             <p>Account</p>
             <img src={chevronDown} alt="" />
           </div>
+          {showDropdown && (
+            <div className="mws-dropdown-1-options">
+              <div>
+                {" "}
+                <p>Option A</p>
+              </div>
+              <div>
+                {" "}
+                <p>Option B</p>
+              </div>
+              <div>
+                {" "}
+                <p>Option C</p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <div className="demoA-main"></div>
