@@ -11,6 +11,29 @@ const DemoA = () => {
     { name: "Contact" },
   ];
 
+  const blocks = [
+    {
+      name: "Nature",
+      image:
+        "https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      name: "Patterns",
+      image:
+        "https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      name: "City",
+      image:
+        "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      name: "Social",
+      image:
+        "https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+  ];
+
   const [selected, setSelected] = useState("Home");
   const [showDropdown, setShowDropdown] = useState(false);
   return (
@@ -74,7 +97,19 @@ const DemoA = () => {
           )}
         </div>
       </div>
-      <div className="demoA-main"></div>
+      <div className="demoA-main">
+        <div className="demoA-block-1">
+          <div>
+            <p>Header</p>
+          </div>
+          <div className="demoA-block-1-grid">
+            {blocks.map((block, index) => (
+              <div key={index} className="grid-unit"></div>
+            ))}
+          </div>
+        </div>
+        <div className="demoA-block-2"></div>
+      </div>
       <div className="demoA-lower"></div>
     </div>
   );

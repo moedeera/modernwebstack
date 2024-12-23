@@ -111,6 +111,12 @@
   transition: all 0.5s ease-in-out;
 }
 
+/* DemoA-Main */
+.demoA-main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 @media only screen and (min-width: 900px) {
   .mws-navbar-1 {
     justify-content: space-evenly;
@@ -148,5 +154,10 @@
   }
   .mws-dropdown-1-options > div:hover {
     background-color: rgba(240, 248, 255, 0.1);
+  }
+  /* DemoA-Main */
+  .demoA-main {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
   }
 }
