@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./DemoA.css";
 import chevronDown from "./chevron_down.png";
+import chevronRight from "./chevron_right.png";
 
 const DemoA = () => {
   const list = [
@@ -14,21 +15,25 @@ const DemoA = () => {
   const blocks = [
     {
       name: "Nature",
+      count: 235,
       image:
         "https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Patterns",
+      count: 145,
       image:
         "https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "City",
+      count: 203,
       image:
         "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Social",
+      count: 167,
       image:
         "https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
@@ -111,15 +116,31 @@ const DemoA = () => {
                 ></div>
                 <div className="demoA-grid-unit-label">
                   <p>{block.name}</p>
-                  <small>145 photos</small>
+                  <small>{block.count}photos</small>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="demoA-block-2"></div>
+        <div className="demoA-block-2">
+          <div
+            className="demoA-block-2-image"
+            style={{
+              backgroundImage: `url("https://images.pexels.com/photos/5926460/pexels-photo-5926460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")`,
+            }}
+          ></div>
+          <h3>Discounts this Holiday</h3>
+          <small>Janet Smith</small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div className="demoA-block-2-readMore">
+            <p>Read More</p>
+            <img src={chevronRight} alt="right arrow" />
+          </div>
+        </div>
       </div>
-      <div className="demoA-lower"></div>
     </div>
   );
 };

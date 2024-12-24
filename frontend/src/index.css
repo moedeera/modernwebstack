@@ -126,7 +126,7 @@ h2 {
 
 h3 {
   font-size: 35px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   line-height: 1.1em;
   margin-bottom: 5px;
   background: rgb(238, 174, 202);
@@ -346,7 +346,7 @@ small {
   }
 
   h3 {
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     font-size: 35px;
   }
 

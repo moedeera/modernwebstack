@@ -5,10 +5,10 @@ import DemoA from "./DemoA/DemoA";
 const BlockC = () => {
   const [currentView, setCurrentView] = useState(0);
   const views = [
-    { id: 1, name: "Simple", viewNumber: 0 },
-    { id: 2, name: "Semi-Functional", viewNumber: 1 },
-    { id: 3, name: "Full Functional", viewNumber: 2 },
-    { id: 4, name: "Layouts", viewNumber: 3 },
+    { id: 1, name: "Simple", viewNumber: 0, count: 235 },
+    { id: 2, name: "Semi-Functional", viewNumber: 1, count: 301 },
+    { id: 3, name: "Full Functional", viewNumber: 2, count: 152 },
+    { id: 4, name: "Layouts", viewNumber: 3, count: 145 },
   ];
   return (
     <div>

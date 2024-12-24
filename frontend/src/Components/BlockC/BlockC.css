@@ -1,12 +1,20 @@
 .block-c-container h2 {
   text-align: center;
 }
+.block-c-container h3 {
+  font-size: x-large;
+}
+.block-c-container p {
+  font-size: small;
+}
+.block-c-container small {
+  font-size: smaller;
+}
 .block-c-scrolling-container {
-  border: 1px solid rgba(128, 128, 128, 0.25);
+  /* border: 1px solid rgba(128, 128, 128, 0.25); */
   min-height: 500px;
   width: 100%;
   overflow-y: hidden;
-
   /* background-color: grey; */
 }
 .block-c-scrolling-contents {
@@ -19,7 +27,7 @@
 }
 .block-c-box {
   position: absolute;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   top: 0 !important;
 
   width: 100%;
