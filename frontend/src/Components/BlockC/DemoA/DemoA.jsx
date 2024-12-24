@@ -100,11 +100,20 @@ const DemoA = () => {
       <div className="demoA-main">
         <div className="demoA-block-1">
           <div>
-            <p>Header</p>
+            <h3>Images</h3>
           </div>
           <div className="demoA-block-1-grid">
             {blocks.map((block, index) => (
-              <div key={index} className="grid-unit"></div>
+              <div key={index} className="demoA-grid-unit">
+                <div
+                  className="demoA-grid-unit-image"
+                  style={{ backgroundImage: `url("${block.image}")` }}
+                ></div>
+                <div className="demoA-grid-unit-label">
+                  <p>{block.name}</p>
+                  <small>145 photos</small>
+                </div>
+              </div>
             ))}
           </div>
         </div>
