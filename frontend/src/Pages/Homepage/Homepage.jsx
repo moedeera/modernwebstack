@@ -1,7 +1,6 @@
 import React from "react";
 import "./Homepage.css";
 import { Landing } from "../../Components/Landing/Landing";
-import { Block1 } from "../../Components/Block1/Block1";
 import { componentLibraries } from "../../Context/Content";
 import { Block3 } from "../../Components/Block3/Block3";
 
