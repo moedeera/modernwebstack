@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import { siteContext } from "../../Context/Context";
 import { useContext } from "react";
 export const Footer = () => {
-  const { websiteInfo, searchPage, setSearchPage, theme, toggleTheme } =
-    useContext(siteContext);
+  const { theme } = useContext(siteContext);
   return (
     <div className="footer" id={theme === "light" ? "light" : "dark"}>
       {" "}
