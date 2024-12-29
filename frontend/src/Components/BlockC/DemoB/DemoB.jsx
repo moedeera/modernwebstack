@@ -1,7 +1,7 @@
 import React from "react";
 import chevronRight from "../DemoA/chevron_right.png";
 import "./DemoB.css";
-import CodeEditor from "../../CodeEditor/CodeEditor";
+
 import { CodeBlock } from "../../CodeBlock/CodeBlock";
 
 const DemoB = () => {
