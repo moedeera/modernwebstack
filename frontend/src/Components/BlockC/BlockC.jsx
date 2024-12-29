@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BlockC.css";
 import DemoA from "./DemoA/DemoA";
 import DemoB from "./DemoB/DemoB";
+import DemoC from "./DemoC/DemoC";
 
 const BlockC = () => {
   const [currentView, setCurrentView] = useState(0);
@@ -52,7 +53,7 @@ const BlockC = () => {
             </div>
             <div className="block-c-box" id="box-3">
               {" "}
-              C{" "}
+              <DemoC />
             </div>
             <div className="block-c-box" id="box-3b">
               {" "}

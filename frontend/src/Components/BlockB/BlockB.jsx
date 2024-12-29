@@ -3,7 +3,6 @@ import img1 from "./responsive.png";
 import img2 from "./reusable.png";
 import img3 from "./simple.png";
 import img4 from "./design.png";
-import { useState } from "react";
 
 const BlockB = () => {
   const items = [

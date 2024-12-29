@@ -3,7 +3,7 @@
   width: 100%;
   min-width: 300px;
   display: grid;
-  grid-template-rows: 1.35fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
 
   border-bottom-left-radius: 15px;
   overflow-y: hidden;
@@ -31,7 +31,6 @@
   animation: moveConveyor 27s linear infinite reverse;
 }
 .showcase-component {
-  /* border: 1px solid red; */
   height: 250px;
   width: 100%;
   position: absolute;
@@ -87,6 +86,7 @@
   padding: 15px 15px 10px;
   width: 90%;
   margin: 0 auto;
+  box-shadow: var(--standard-box-shadow);
   /* background-color: rgba(255, 255, 255, 0.5); */
 }
 .demo-landing {
@@ -154,6 +154,7 @@
 }
 @media only screen and (min-width: 600px) {
   .showcase-container {
+    grid-template-rows: 1fr 1fr;
     height: 600px;
     width: 80%;
   }
@@ -182,7 +183,7 @@
   }
 
   .showcase-component h1 {
-    font-size: xx-large;
+    font-size: x-large;
   }
 }
 
