@@ -1,6 +1,7 @@
 import React from "react";
 import "./DemoC.css";
 import keyboard from "./keyboard.png";
+import { CodeBlock } from "../../CodeBlock/CodeBlock";
 const DemoC = () => {
   return (
     <div className="demoC-container">
@@ -32,6 +33,9 @@ const DemoC = () => {
           </div>
         </div>
       </div>
+      {/* <div className="demoC-codeBlock">
+        <CodeBlock />
+      </div> */}
     </div>
   );
 };
